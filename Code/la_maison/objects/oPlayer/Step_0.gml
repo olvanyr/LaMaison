@@ -51,7 +51,9 @@ case "move":
 	{
 		mask_index = sPlayer;
 	}
-
+	
+	if distance_to_slope > 8 mask_index = sPlayer;
+	
 	//put the player in the air and back on the top of the slope 
 	if (position_meeting(x,y + 1,oSlope) || place_meeting(x,y,oSlope)) && mask_index == sPlayer_colision
 	{
