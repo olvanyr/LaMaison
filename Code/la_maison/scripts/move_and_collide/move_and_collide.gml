@@ -21,18 +21,8 @@ if place_meeting(x, y + vsp, oWall)
 	vsp = 0;
 }
 
-if place_meeting(x, y + vsp, oSlope)
-{
-	while !place_meeting(x, y + sign(vsp), oSlope)
-	{
-		y += sign(vsp)/100;
-	}
-	
-	if vsp < 0 
-	{}else vsp = 0;
-}
 
-if place_meeting(x, y + vsp, oSlope) && vsp > 0
+if place_meeting(x, y + vsp, oSlope)
 {
 	while !place_meeting(x, y + sign(vsp), oSlope)
 	{
