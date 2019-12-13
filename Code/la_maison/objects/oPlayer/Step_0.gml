@@ -8,13 +8,18 @@ case "move":
 	if input.right 
 	{
 		move = 1;
+		set_state_sprite(sPlayer_walk,0.5,0);
+		
 	}
 	if input.left
 	{
 		move = -1;
+		set_state_sprite(sPlayer_walk,0.5,0);
 	}
+	
 	if (!input.right && !input.left) || (input.right && input.left) 
 	{
+		set_state_sprite(sPlayer_idle,0.5,0);
 		move = 0;
 		walk_speed = 0;
 	}
@@ -26,12 +31,14 @@ case "move":
 	
 	if move != 0
 	{
+		image_xscale = move;
+		
 		walk_speed += walk_acceleration;
 		if walk_speed > max_walk_speed walk_speed = max_walk_speed;
 	}
 	hsp = walk_speed * move;
 	
-	
+	#region slope
 	//check if there is a slope under 
 	var distance_to_wall = 0;
 	var distance_to_slope = 0;
@@ -61,11 +68,13 @@ case "move":
 		move_contact_solid(270, -1);
 	}
 	
+	#endregion
 	
 	//show_debug_message("walk_speed : " + string(walk_speed));
 	//show_debug_message("vsp : " + string(vsp));
-	show_debug_message("mask index : " + string(sprite_get_name(mask_index)));
-	show_debug_message("distance_to_wall : " + string(distance_to_wall));
-	show_debug_message("distance_to_slope : " + string(distance_to_slope));
+	//show_debug_message("mask index : " + string(sprite_get_name(mask_index)));
+	//show_debug_message("distance_to_wall : " + string(distance_to_wall));
+	//show_debug_message("distance_to_slope : " + string(distance_to_slope));
+	//show_debug_message("y : " + string(y));
 break;
 }

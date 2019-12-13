@@ -2,7 +2,7 @@
 event_inherited();
 
 
-
+set_layer("Player",depth_layer.player);
 #region dependencise
 if !instance_exists(oInput)
 {
@@ -16,8 +16,6 @@ state = "move";
 
 //move state 
 	walk_speed = 0;
-	walk_acceleration = 0.07;
-	max_walk_speed = 2;
+	walk_acceleration = 0.035;
+	max_walk_speed = 1;
 	jump_speed = -4;
-	
-	last_x = x;
