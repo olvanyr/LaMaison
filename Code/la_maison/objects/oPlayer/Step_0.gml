@@ -1,7 +1,6 @@
 // Inherit the parent event
 event_inherited();
 
-
 // move
 switch (state)
 {
@@ -32,8 +31,11 @@ case "move":
 	}
 	hsp = walk_speed * move;
 	
+	
+	//check if there is a slope under 
 	var distance_to_wall = 0;
 	var distance_to_slope = 0;
+	mask_index = sPlayer;
 	while !place_meeting(x,y + distance_to_wall, oWall) && distance_to_wall < 1000
 	{
 		distance_to_wall++;
@@ -42,7 +44,6 @@ case "move":
 	{
 		distance_to_slope++;
 	}
-
 	if distance_to_wall >= distance_to_slope
 	{
 		mask_index = sPlayer_colision;
@@ -50,19 +51,8 @@ case "move":
 	{
 		mask_index = sPlayer;
 	}
-	
-	
-	if place_meeting(x,y + 1, oWall) && !place_meeting(x,y + 1,oSlope)
-	{
-		mask_index = sPlayer;
-	}
-	
-	
-	if position_meeting(x + 1,y,oSlope) || position_meeting(x - 1,y,oSlope) || position_meeting(x,y + 1,oSlope)
-	{
-		mask_index = sPlayer_colision;
-	}
-	
+
+	//put the player in the air and back on the top of the slope 
 	if (position_meeting(x,y + 1,oSlope) || place_meeting(x,y,oSlope)) && mask_index == sPlayer_colision
 	{
 		y-= 3;
@@ -71,7 +61,9 @@ case "move":
 	
 	
 	//show_debug_message("walk_speed : " + string(walk_speed));
-	show_debug_message("vsp : " + string(vsp));
+	//show_debug_message("vsp : " + string(vsp));
 	show_debug_message("mask index : " + string(sprite_get_name(mask_index)));
+	show_debug_message("distance_to_wall : " + string(distance_to_wall));
+	show_debug_message("distance_to_slope : " + string(distance_to_slope));
 break;
 }
