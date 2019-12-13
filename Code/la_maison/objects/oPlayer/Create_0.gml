@@ -18,6 +18,6 @@ state = "move";
 	walk_speed = 0;
 	walk_acceleration = 0.07;
 	max_walk_speed = 2;
-	jump_speed = -6;
-
-
+	jump_speed = -4;
+	
+	last_x = x;

@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "1920b0a7-ed52-4763-a346-131a11b5e2fe",
+            "Value": {
+                "id": "f0ce9d4f-8b2c-49d1-b53c-2db1a13ab491",
+                "resourcePath": "sprites\\sSlope\\sSlope.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1c90f3d2-bc83-4573-9ed8-99793a249b0f",
             "Value": {
                 "id": "93d4ce5e-d99f-4ea2-8374-e4999ad95a6b",
@@ -111,6 +119,14 @@
             }
         },
         {
+            "Key": "5d86563d-8d48-4530-a8bd-dff4c93be532",
+            "Value": {
+                "id": "390f2c66-54f1-4d83-a0f2-ac0ed6ec60b8",
+                "resourcePath": "objects\\oSlope\\oSlope.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5f8a54ea-df8b-4502-923b-23c1f9b4583c",
             "Value": {
                 "id": "dc1dde05-b08d-4f28-9c97-2a07bab87271",
@@ -132,6 +148,14 @@
                 "id": "bfd8be20-7962-4821-a06b-bb3289f6197d",
                 "resourcePath": "views\\664e4cad-9d61-4eb4-b03d-c24348be23df.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "7d33385a-e4cf-4bd0-b0ea-493c7d77d8ce",
+            "Value": {
+                "id": "459deecd-022a-4f84-b081-b5bead0e74d9",
+                "resourcePath": "sprites\\sPlayer_colision\\sPlayer_colision.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
