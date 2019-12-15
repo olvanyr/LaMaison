@@ -50,7 +50,8 @@
         "f9fa7314-894e-4ec1-a029-e41179def091",
         "1482476c-7a5c-436d-a1ae-7819bd55a1fb",
         "7491e047-3186-4a7f-a8c5-1f37a7b46008",
-        "2cc50cf7-f3bb-4d78-bbfb-e8903bc051c1"
+        "2cc50cf7-f3bb-4d78-bbfb-e8903bc051c1",
+        "f8e279f0-c4b5-41e1-a2bb-6f3cc8e9e41a"
     ],
     "IsDnD": false,
     "layers": [
@@ -111,7 +112,8 @@
 {"name": "inst_3E8E9FA5","id": "f9fa7314-894e-4ec1-a029-e41179def091","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_3E8E9FA5","objId": "5d86563d-8d48-4530-a8bd-dff4c93be532","properties": null,"rotation": 0,"scaleX": -1,"scaleY": 1,"mvc": "1.1","x": 176,"y": 72},
 {"name": "inst_4FA12C84","id": "1482476c-7a5c-436d-a1ae-7819bd55a1fb","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_4FA12C84","objId": "c474c288-f28a-43ad-ac42-aa5c49b84a4f","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 176,"y": 72},
 {"name": "inst_6FEF5B6B","id": "7491e047-3186-4a7f-a8c5-1f37a7b46008","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_6FEF5B6B","objId": "c474c288-f28a-43ad-ac42-aa5c49b84a4f","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 184,"y": 72},
-{"name": "inst_2039C8FF","id": "2cc50cf7-f3bb-4d78-bbfb-e8903bc051c1","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_2039C8FF","objId": "5d86563d-8d48-4530-a8bd-dff4c93be532","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 112,"y": 56}
+{"name": "inst_2039C8FF","id": "2cc50cf7-f3bb-4d78-bbfb-e8903bc051c1","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_2039C8FF","objId": "5d86563d-8d48-4530-a8bd-dff4c93be532","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 112,"y": 56},
+{"name": "inst_25A1A33B","id": "f8e279f0-c4b5-41e1-a2bb-6f3cc8e9e41a","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_25A1A33B","objId": "757e8739-381c-4f3c-b54a-4a87b57c3b98","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 80,"y": 64}
             ],
             "layers": [
 
@@ -165,9 +167,9 @@
         "id": "d7999858-dc10-4911-bc10-42bcf9274118",
         "inheritPhysicsSettings": false,
         "modelName": "GMRoomPhysicsSettings",
-        "PhysicsWorld": false,
+        "PhysicsWorld": true,
         "PhysicsWorldGravityX": 0,
-        "PhysicsWorldGravityY": 10,
+        "PhysicsWorldGravityY": 50,
         "PhysicsWorldPixToMeters": 0.1,
         "mvc": "1.0"
     },

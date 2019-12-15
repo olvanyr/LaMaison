@@ -26,6 +26,8 @@ case "move":
 	
 	if input.jump && grounded 
 	{
+		vsp = 0;
+		vsp_fraction = 0;
 		vsp = jump_speed;
 	}
 	
