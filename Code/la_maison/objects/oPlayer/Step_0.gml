@@ -1,6 +1,20 @@
 // Inherit the parent event
 event_inherited();
 
+if sprite_index == sPlayer_walk
+{
+	if animation_hit_frame(1) y_variation = 0;
+	if animation_hit_frame(2) y_variation = -1;
+	if animation_hit_frame(3) y_variation = 0;
+	if animation_hit_frame(4) y_variation = +1;
+	if animation_hit_frame(5) y_variation = 0;
+	if animation_hit_frame(6) y_variation = -1;
+	if animation_hit_frame(7) y_variation = 0;
+	if animation_hit_frame(8) y_variation = +1;
+}else y_variation = 0;
+oScarf.y_variation = y_variation;
+
+
 // move
 switch (state)
 {

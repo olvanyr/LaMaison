@@ -11,9 +11,9 @@ if !instance_exists(oInput)
 #endregion
 
 
-//scraf
-last_x = 0;
-last_y = 0;
+#region scraf
+y_variation = 0;
+#endregion
 
 // initialise state engine
 state = "move";
