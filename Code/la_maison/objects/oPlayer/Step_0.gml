@@ -22,18 +22,18 @@ case "move":
 	if input.right 
 	{
 		move = 1;
-		set_state_sprite(sPlayer_walk1,0.5,0);
+		set_state_sprite(sPlayer_walk1,walk_anim_speed,0);
 		
 	}
 	if input.left
 	{
 		move = -1;
-		set_state_sprite(sPlayer_walk1,0.5,0);
+		set_state_sprite(sPlayer_walk1,walk_anim_speed,0);
 	}
 	
 	if (!input.right && !input.left) || (input.right && input.left) 
 	{
-		set_state_sprite(sPlayer_idle1,0.5,0);
+		set_state_sprite(sPlayer_idle,0.5,0);
 		move = 0;
 		walk_speed = 0;
 	}
