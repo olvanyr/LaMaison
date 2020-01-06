@@ -16,11 +16,23 @@ if place_meeting(x, y + vsp, oWall)
 {
 	while !place_meeting(x, y + sign(vsp), oWall)
 	{
-		y += sign(vsp);
+		y += sign(vsp)/100;
 	}
 	vsp = 0;
 }
+
+
+if place_meeting(x, y + vsp, oSlope)
+{
+	while !place_meeting(x, y + sign(vsp), oSlope)
+	{
+		y += sign(vsp)/100;
+	}
+	vsp = 0;
+}
+
 y += vsp;
+
 
 
 /*  old way, don't remember why I have done it this way
