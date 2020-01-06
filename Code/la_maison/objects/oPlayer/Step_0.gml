@@ -12,7 +12,7 @@ if sprite_index == sPlayer_walk
 	if animation_hit_frame(7) y_variation = 0;
 	if animation_hit_frame(8) y_variation = +1;
 }else y_variation = 0;
-oScarf.y_variation = y_variation;
+//oScarf.y_variation = y_variation;
 
 
 // move
@@ -22,18 +22,18 @@ case "move":
 	if input.right 
 	{
 		move = 1;
-		set_state_sprite(sPlayer_walk,0.5,0);
+		set_state_sprite(sPlayer_walk1,0.5,0);
 		
 	}
 	if input.left
 	{
 		move = -1;
-		set_state_sprite(sPlayer_walk,0.5,0);
+		set_state_sprite(sPlayer_walk1,0.5,0);
 	}
 	
 	if (!input.right && !input.left) || (input.right && input.left) 
 	{
-		set_state_sprite(sPlayer_idle,0.5,0);
+		set_state_sprite(sPlayer_idle1,0.5,0);
 		move = 0;
 		walk_speed = 0;
 	}

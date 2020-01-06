@@ -135,11 +135,27 @@
             }
         },
         {
+            "Key": "49f97049-5bf5-4eb8-b55a-3313e9d073e2",
+            "Value": {
+                "id": "35360848-6508-4397-a2bd-710d5d285cb1",
+                "resourcePath": "sprites\\sPlayer_idle1\\sPlayer_idle1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4ef7a41a-af5c-4e6b-9ac0-d660b13951e1",
             "Value": {
                 "id": "f8423d18-9d44-4cb1-bedd-78f5b0c4d16a",
                 "resourcePath": "objects\\olife_form\\olife_form.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "5218a09e-a19e-480d-9bee-33be15691f4f",
+            "Value": {
+                "id": "3bccb403-1c45-4d58-b9d8-e89a370e6204",
+                "resourcePath": "sprites\\sPlayer_walk1\\sPlayer_walk1.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
