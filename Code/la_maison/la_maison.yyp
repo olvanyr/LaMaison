@@ -399,6 +399,14 @@
             }
         },
         {
+            "Key": "6ce49a64-ce4d-4ee7-924d-6f2f975eddbf",
+            "Value": {
+                "id": "0d94ec0f-a20a-4142-b13a-07584dfcb393",
+                "resourcePath": "sprites\\sTyping_door\\sTyping_door.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6e33068b-ba52-431d-80c1-5ed21504b10c",
             "Value": {
                 "id": "df25f7a3-3c06-4aa8-812b-56bd8ebf9766",
@@ -415,6 +423,14 @@
             }
         },
         {
+            "Key": "7aa84023-4249-4dd7-a4be-92a22e3e4a03",
+            "Value": {
+                "id": "fb5d1ea6-55e6-4cd4-a092-0399b25cdc25",
+                "resourcePath": "fonts\\fTyping\\fTyping.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "7acddf56-f663-4928-9a03-75121a124369",
             "Value": {
                 "id": "66f6b5c0-07ad-4604-b38a-4a5cbc6623af",
@@ -423,11 +439,27 @@
             }
         },
         {
+            "Key": "7c06bb17-addd-455e-89b2-1e91aa55af02",
+            "Value": {
+                "id": "8a8a7b61-8c7f-49e7-91a0-c3c47ffe628a",
+                "resourcePath": "objects\\oTyping_interact\\oTyping_interact.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "7d33385a-e4cf-4bd0-b0ea-493c7d77d8ce",
             "Value": {
                 "id": "459deecd-022a-4f84-b081-b5bead0e74d9",
                 "resourcePath": "sprites\\sPlayer_colision\\sPlayer_colision.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "811d50ec-5b3d-4ad9-b79c-7c48096dff70",
+            "Value": {
+                "id": "97007013-2afd-4711-a307-bce504ede34f",
+                "resourcePath": "objects\\oTyping\\oTyping.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -443,6 +475,14 @@
             "Value": {
                 "id": "cf35f9e5-f8d1-463c-886b-eed9ec61725c",
                 "resourcePath": "sprites\\sTiles_Wood_3corner_tl_tr_bl_br\\sTiles_Wood_3corner_tl_tr_bl_br.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "822e34ea-eaa2-47a1-bdf8-890fa9131242",
+            "Value": {
+                "id": "7b1d5f98-b0ce-4292-92e7-c105eeb9d809",
+                "resourcePath": "sprites\\sTyping\\sTyping.yy",
                 "resourceType": "GMSprite"
             }
         },
