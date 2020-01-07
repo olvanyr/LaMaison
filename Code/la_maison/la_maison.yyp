@@ -231,6 +231,14 @@
             }
         },
         {
+            "Key": "3455672b-162c-4c58-9115-b46ceed89ecc",
+            "Value": {
+                "id": "01b21fe6-6d61-4cd5-bb4a-ed29ba165938",
+                "resourcePath": "views\\3455672b-162c-4c58-9115-b46ceed89ecc.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "3686e456-ee60-49fd-a80c-dd8cb91fea23",
             "Value": {
                 "id": "733bfae2-ef3f-4b51-b51e-b92452c73237",
@@ -356,6 +364,14 @@
                 "id": "b5fbb3b6-4115-4fac-8228-ff048fef0c2c",
                 "resourcePath": "sprites\\sTiles_Wood_1side_r_1corner_tl\\sTiles_Wood_1side_r_1corner_tl.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6323f869-3e2a-49b4-b2b5-c1a5d3e6981b",
+            "Value": {
+                "id": "e507fefa-1334-47e2-85ad-391e4ff004fb",
+                "resourcePath": "views\\6323f869-3e2a-49b4-b2b5-c1a5d3e6981b.yy",
+                "resourceType": "GMFolder"
             }
         },
         {

@@ -10,11 +10,6 @@ if !instance_exists(oInput)
 }
 #endregion
 
-
-#region scraf
-y_variation = 0;
-#endregion
-
 // initialise state engine
 state = "move";
 
@@ -25,3 +20,6 @@ state = "move";
 	walk_acceleration = 0.035;
 	max_walk_speed = 1;
 	jump_speed = -4;
+	//double jump
+	jump = 0;
+	number_of_jump = 2;
