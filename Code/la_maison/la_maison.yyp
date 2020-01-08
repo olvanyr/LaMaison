@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "03a0d4cf-48a8-4565-a64a-fd8b82b5ca6d",
+            "Value": {
+                "id": "cf1c3bd3-d405-4adb-b7ff-d91a03de65b7",
+                "resourcePath": "objects\\oLight_child\\oLight_child.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "03fa4f89-fa32-4ff5-a8d0-404483748f7f",
             "Value": {
                 "id": "803420c2-9c42-4fc1-b4b6-02c7746a700a",
@@ -84,6 +92,14 @@
                 "id": "3fad306d-e757-49f9-8604-d166dee69662",
                 "resourcePath": "sprites\\sTiles_Wood_1side_t_1corner_br\\sTiles_Wood_1side_t_1corner_br.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "0ec5e93e-6491-4d2f-9b52-f2ebe669add7",
+            "Value": {
+                "id": "71d0f4e7-8ff8-4e1a-b4c1-854143b88cf8",
+                "resourcePath": "objects\\oLight\\oLight.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -303,6 +319,14 @@
             }
         },
         {
+            "Key": "4ef6e067-4398-4810-b1fc-dab8682499ae",
+            "Value": {
+                "id": "797a5439-9ef3-4aff-8054-287f7cb6efd7",
+                "resourcePath": "objects\\oSurface_light\\oSurface_light.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4ef7a41a-af5c-4e6b-9ac0-d660b13951e1",
             "Value": {
                 "id": "f8423d18-9d44-4cb1-bedd-78f5b0c4d16a",
@@ -399,6 +423,14 @@
             }
         },
         {
+            "Key": "6b46bc80-41d8-4c1d-bea9-da25c86b8549",
+            "Value": {
+                "id": "ace35462-764c-4377-9033-23ac553d531c",
+                "resourcePath": "scripts\\in_list\\in_list.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "6ce49a64-ce4d-4ee7-924d-6f2f975eddbf",
             "Value": {
                 "id": "0d94ec0f-a20a-4142-b13a-07584dfcb393",
@@ -412,6 +444,14 @@
                 "id": "df25f7a3-3c06-4aa8-812b-56bd8ebf9766",
                 "resourcePath": "sprites\\sTiles_Wood_2side_t_b\\sTiles_Wood_2side_t_b.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "72db466c-df7e-4acf-a89a-c1ee4c8333da",
+            "Value": {
+                "id": "af88c9e2-b564-4e4b-a876-5cec1a5f910f",
+                "resourcePath": "views\\72db466c-df7e-4acf-a89a-c1ee4c8333da.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -460,6 +500,14 @@
                 "id": "97007013-2afd-4711-a307-bce504ede34f",
                 "resourcePath": "objects\\oTyping\\oTyping.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "81387e57-bc29-4d92-aef4-4654bf4f1643",
+            "Value": {
+                "id": "23db2137-08f4-46d2-ae59-47e27e8c0700",
+                "resourcePath": "views\\81387e57-bc29-4d92-aef4-4654bf4f1643.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -583,6 +631,14 @@
             }
         },
         {
+            "Key": "a48412f2-70ea-4289-bf9f-86b361c494e9",
+            "Value": {
+                "id": "940e2188-7266-4ffd-b32c-06215193bfe6",
+                "resourcePath": "sprites\\sLight_circle3\\sLight_circle3.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a7e80936-6d54-4ec0-b138-9be0a3797b3c",
             "Value": {
                 "id": "54923481-0891-4368-896f-1e664819bfd1",
@@ -644,6 +700,14 @@
                 "id": "a6e1285a-f487-44fe-972e-548f9032c612",
                 "resourcePath": "scripts\\set_state_sprite\\set_state_sprite.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "b7d1447d-2269-4d98-bf9c-d3642870a861",
+            "Value": {
+                "id": "51763a44-d7f8-43fe-8dd0-35d5951f0d01",
+                "resourcePath": "objects\\oLight_manager\\oLight_manager.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -879,7 +943,8 @@
         "ef5be34f-d4c9-42c0-b648-881160fd52d6",
         "3f27a615-126b-4623-a841-a13b19ae47e3",
         "2b4829f1-41d0-41f3-8a98-ada9191d9953",
-        "c037fd16-712b-4ff8-a23c-db0d9183e92e"
+        "c037fd16-712b-4ff8-a23c-db0d9183e92e",
+        "6b46bc80-41d8-4c1d-bea9-da25c86b8549"
     ],
     "tutorial": ""
 }
