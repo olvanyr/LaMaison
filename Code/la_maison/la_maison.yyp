@@ -383,6 +383,14 @@
             }
         },
         {
+            "Key": "5fb4757e-90a0-48e6-9faf-6b1652aa4698",
+            "Value": {
+                "id": "a14c1506-84c2-411e-8d15-65ccf6b9cd5f",
+                "resourcePath": "objects\\oShadow_caster\\oShadow_caster.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "62be0663-4c0d-4259-a099-edc0b0f6452f",
             "Value": {
                 "id": "b5fbb3b6-4115-4fac-8228-ff048fef0c2c",
@@ -452,14 +460,6 @@
                 "id": "af88c9e2-b564-4e4b-a876-5cec1a5f910f",
                 "resourcePath": "views\\72db466c-df7e-4acf-a89a-c1ee4c8333da.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "757e8739-381c-4f3c-b54a-4a87b57c3b98",
-            "Value": {
-                "id": "447e5fb9-3e3b-4e13-aa0d-c83edffab1ad",
-                "resourcePath": "objects\\oScarf\\oScarf.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -823,11 +823,27 @@
             }
         },
         {
+            "Key": "e0bb1dfe-a45d-420e-a53f-6ad7586645f6",
+            "Value": {
+                "id": "5a127bff-f6ca-44b7-957f-e9236798c6ba",
+                "resourcePath": "objects\\oChair\\oChair.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e28ad58f-140b-41bb-90c1-63d4eaaa6442",
             "Value": {
                 "id": "ce3e5ea1-5305-4c12-ab27-592b35ad84ed",
                 "resourcePath": "rooms\\room0\\room0.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "e3ba55ac-f89d-40c2-af3f-e31acb6854e3",
+            "Value": {
+                "id": "abcf881b-59be-4de5-8d6d-229abcf8794b",
+                "resourcePath": "sprites\\sTest\\sTest.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

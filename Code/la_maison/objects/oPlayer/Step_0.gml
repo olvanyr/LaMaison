@@ -1,5 +1,4 @@
-// Inherit the parent event
-event_inherited();
+
 
 // move
 switch (state)
@@ -80,10 +79,13 @@ case "move":
 	#endregion
 	
 	//show_debug_message("walk_speed : " + string(walk_speed));
-	//show_debug_message("vsp : " + string(vsp));
+	show_debug_message("vsp : " + string(vsp));
 	//show_debug_message("mask index : " + string(sprite_get_name(mask_index)));
 	//show_debug_message("distance_to_wall : " + string(distance_to_wall));
 	//show_debug_message("distance_to_slope : " + string(distance_to_slope));
-	//show_debug_message("y : " + string(y));
+	show_debug_message("y : " + string(y));
 break;
 }
+
+// Inherit the parent event
+event_inherited();

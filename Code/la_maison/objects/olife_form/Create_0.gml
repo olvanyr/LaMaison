@@ -1,3 +1,7 @@
+// Inherit the parent event
+event_inherited();
+
+
 vsp = 0;
 vsp_fraction = 0;
 hsp = 0;
