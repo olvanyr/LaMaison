@@ -1,4 +1,15 @@
 
+if instance_exists(shadow)
+{
+	with shadow
+	{
+		sprite_index = other.sprite_index;
+		image_index = other.image_index;
+		x = other.x;
+		y = other.y;
+		image_xscale = other.image_xscale;
+	}
+}
 
 // move
 switch (state)
