@@ -1,15 +1,6 @@
 // Inherit the parent event
 event_inherited();
 
-
-set_layer("Player",depth_layer.player);
-#region dependencise
-if !instance_exists(oInput)
-{
-	input = instance_create_layer(0,0,"Instances",oInput);
-}
-#endregion
-
 // initialise state engine
 state = "move";
 
@@ -23,3 +14,5 @@ state = "move";
 	//double jump
 	jump = 0;
 	number_of_jump = 2;
+	
+	shadow = noone;
