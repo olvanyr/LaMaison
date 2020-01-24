@@ -1,10 +1,12 @@
+var _cw = camera_get_view_width(view_camera[0]);
+var _ch = camera_get_view_height(view_camera[0]);
+var _cx = camera_get_view_x(view_camera[0]);
+var _cy = camera_get_view_y(view_camera[0]);
+
+
+
 if surface_exists(surface)
-{
-	var _cw = camera_get_view_width(view_camera[0]);
-	var _ch = camera_get_view_height(view_camera[0]);
-	var _cx = camera_get_view_x(view_camera[0]);
-	var _cy = camera_get_view_y(view_camera[0]);
-	
+{	
 	surface_set_target(surface);
 	
 	draw_set_color(c_black);
@@ -36,12 +38,8 @@ if surface_exists(surface)
 
 if !surface_exists(surface)
 {
-	var _cw = camera_get_view_width(view_camera[0]);
-	var _ch = camera_get_view_height(view_camera[0]);
-	var _cx = camera_get_view_x(view_camera[0]);
-	var _cy = camera_get_view_y(view_camera[0]);
 	
-	surface = surface_create(_cw,_ch);
+	surface = surface_create(_cw * global.zoom_max,_ch*global.zoom_max);
 	
 	surface_set_target(surface);
 	draw_set_color(surface_color);
