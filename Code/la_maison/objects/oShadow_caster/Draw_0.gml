@@ -24,8 +24,6 @@ if(!ds_list_empty(lights))
 		if light.y <= y y_factor = lerp(0.8,1,dist / light_range);
 
 		draw_sprite_ext(sprite_index,image_index,x - x_factor,y,image_xscale, image_yscale * y_factor, 0,c,alpha);
-	
-		
     }
 }
 

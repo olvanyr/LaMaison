@@ -51,3 +51,4 @@ if !surface_exists(surface)
 
 surface_reset_target();
 draw_surface(surface,_cx,_cy);
+
