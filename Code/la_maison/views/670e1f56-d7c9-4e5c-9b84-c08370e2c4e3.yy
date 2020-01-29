@@ -1,13 +1,13 @@
 {
-    "id": "c1bfd7f3-9748-4953-a2e4-cab221c64ebe",
+    "id": "670e1f56-d7c9-4e5c-9b84-c08370e2c4e3",
     "modelName": "GMFolder",
     "mvc": "1.1",
-    "name": "c1bfd7f3-9748-4953-a2e4-cab221c64ebe",
+    "name": "670e1f56-d7c9-4e5c-9b84-c08370e2c4e3",
     "children": [
         "43a6972f-30ee-48d9-a407-bdbdb7a35419"
     ],
     "filterType": "GMScript",
-    "folderName": "Menue",
+    "folderName": "Dialogue",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

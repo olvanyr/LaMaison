@@ -5,3 +5,9 @@ right = 0;
 up = 0;
 down = 0;
 jump = 0;
+
+
+//dialogue
+enter = 0;
+menu_up = 0;
+menu_down = 0;
