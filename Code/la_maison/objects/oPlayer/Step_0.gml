@@ -35,7 +35,7 @@ case "move":
 	
 	if (!input.right && !input.left) || (input.right && input.left) 
 	{
-		set_state_sprite(sPlayer_idle,0.5,0);
+		set_state_sprite(sPlayer_idle,0.1,0);
 		move = 0;
 		walk_speed = 0;
 	}

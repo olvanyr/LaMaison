@@ -943,6 +943,14 @@
             }
         },
         {
+            "Key": "d79b9d85-98fa-4e4d-9698-8d55eeca0e5d",
+            "Value": {
+                "id": "4fdb8fda-eaf5-4b99-87fd-094448d893eb",
+                "resourcePath": "sprites\\sPlayer_scarf_idle\\sPlayer_scarf_idle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d968b162-2c44-4ef3-96ee-dfadcf7e1a8c",
             "Value": {
                 "id": "78b19b11-f59d-4fff-b266-15cccb9240ae",

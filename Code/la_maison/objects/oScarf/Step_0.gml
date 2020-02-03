@@ -21,15 +21,24 @@ y = creator.y;
 
 if creator.vsp > 0 && !creator.grounded
 {
+	image_speed = 1;
 	sprite_index = sPlayer_scarf_down;
 }
 if creator.vsp <= 0 && !creator.grounded
 {
+	image_speed = 1;
 	sprite_index = sPlayer_scarf_up;
 }
 
 if creator.hsp > 0 || creator.hsp < 0
 {
+	image_speed = 1;
 	sprite_index = sPlayer_scarf_left_right;
+}
+
+if creator.grounded && creator.hsp == 0
+{
+	image_speed = 0.1;
+	sprite_index = sPlayer_scarf_idle;
 }
 
