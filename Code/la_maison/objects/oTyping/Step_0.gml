@@ -18,6 +18,7 @@ if text_part_lenght == text_lenght
 	{
 		interaction.completed = true;
 	}
+	instance_destroy();
 }
 //show_debug_message("completed : " + string(completed));
 

@@ -1,3 +1,7 @@
+font = noone;
+valign = noone;
+halign = noone;
+
 
 text_part = "";
 //color for the text

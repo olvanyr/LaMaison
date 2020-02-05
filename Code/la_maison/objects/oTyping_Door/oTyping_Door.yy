@@ -27,7 +27,7 @@
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "7c06bb17-addd-455e-89b2-1e91aa55af02",
+    "parentObjectId": "c474c288-f28a-43ad-ac42-aa5c49b84a4f",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -41,8 +41,23 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": null,
+    "properties": [
+        {
+            "id": "7398afaa-10fa-4529-b343-c7195ccf0ff7",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "porte",
+            "varName": "text",
+            "varType": 2
+        }
+    ],
     "solid": false,
-    "spriteId": "f3aa36d1-ed43-425a-b8b0-e12c92ce76bd",
+    "spriteId": "6ce49a64-ce4d-4ee7-924d-6f2f975eddbf",
     "visible": true
 }

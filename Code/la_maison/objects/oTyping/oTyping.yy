@@ -62,7 +62,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "test",
+            "value": "noone",
             "varName": "text",
             "varType": 2
         },

@@ -2,6 +2,7 @@ enum depth_layer
 {
 	sky		= -2000,
 	light	= -1000,
+	typing = - 500,
 	player	= 0,
 	scarf	= 50,
 	shadows	= 100,
