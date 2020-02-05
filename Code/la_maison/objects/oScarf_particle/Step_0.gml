@@ -9,4 +9,4 @@ if instance_exists(oCamera)
 timer += 0.1;
 
 
-y += sin(timer) / 4;
+y += sin(timer) / 6;
