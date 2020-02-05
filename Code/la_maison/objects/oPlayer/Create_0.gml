@@ -17,3 +17,7 @@ state = "move";
 	
 	shadow = noone;
 	
+	
+//specifique room
+running = false;
+running_checkpoint = noone;

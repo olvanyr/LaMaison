@@ -4,6 +4,9 @@ if keyboard_check_pressed(vk_enter)
 }
 
 
+show_debug_message("running_checkpoint : " + string(running_checkpoint));
+
+
 if instance_exists(shadow)
 {
 	with shadow
@@ -26,24 +29,30 @@ case "move":
 	{
 		jump = 0;
 	}
-
-	if input.right 
+	if !running
+	{
+		if input.right 
+		{
+			move = 1;
+			set_state_sprite(sPlayer_walk1,walk_anim_speed,0);
+		
+		}
+		if input.left
+		{
+			move = -1;
+			set_state_sprite(sPlayer_walk1,walk_anim_speed,0);
+		}
+	
+		if (!input.right && !input.left) || (input.right && input.left) 
+		{
+			set_state_sprite(sPlayer_idle,0.1,0);
+			move = 0;
+			walk_speed = 0;
+		}
+	}else 
 	{
 		move = 1;
 		set_state_sprite(sPlayer_walk1,walk_anim_speed,0);
-		
-	}
-	if input.left
-	{
-		move = -1;
-		set_state_sprite(sPlayer_walk1,walk_anim_speed,0);
-	}
-	
-	if (!input.right && !input.left) || (input.right && input.left) 
-	{
-		set_state_sprite(sPlayer_idle,0.1,0);
-		move = 0;
-		walk_speed = 0;
 	}
 	
 	if input.jump && (grounded || jump < number_of_jump)
@@ -61,6 +70,7 @@ case "move":
 		walk_speed += walk_acceleration;
 		if walk_speed > max_walk_speed walk_speed = max_walk_speed;
 	}
+	
 	hsp = walk_speed * move;
 	
 	#region slope

@@ -1,5 +1,5 @@
 
-if keyboard_check_pressed(ord("A"))
+if keyboard_check_pressed(ord("C"))
 {
 	draw = true;
 }
