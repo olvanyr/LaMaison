@@ -5,6 +5,7 @@ enum depth_layer
 	player	= 0,
 	scarf	= 50,
 	shadows	= 100,
+	doors	= 120,
 	tiles	= 150,
 	walls	= 200
 }

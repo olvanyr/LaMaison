@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "05732f74-6dde-4cd1-8c36-d9024d41fd94",
+            "Value": {
+                "id": "d466e008-3255-4e92-ae7f-36f2e3ec6231",
+                "resourcePath": "objects\\oTyping_Door\\oTyping_Door.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0628c24d-8f40-415d-8da2-23ded7305df0",
             "Value": {
                 "id": "60b0c562-05ef-4cf7-af57-2e5ffb987b64",
