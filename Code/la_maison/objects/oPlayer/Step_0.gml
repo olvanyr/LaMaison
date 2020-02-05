@@ -3,10 +3,6 @@ if keyboard_check_pressed(vk_enter)
 	trigger_bullet_time();
 }
 
-
-show_debug_message("running_checkpoint : " + string(running_checkpoint));
-
-
 if instance_exists(shadow)
 {
 	with shadow
@@ -53,6 +49,10 @@ case "move":
 	{
 		move = 1;
 		set_state_sprite(sPlayer_walk1,walk_anim_speed,0);
+		with instance_create_layer(x,y - 9,"Scarf",oScarf_particle)
+		{
+			image_angle = point_direction(x,y - 9, x + other.hsp, y - 9 + other.hsp);
+		}
 	}
 	
 	if input.jump && (grounded || jump < number_of_jump)
