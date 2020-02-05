@@ -4,6 +4,7 @@ event_inherited();
 // initialise state engine
 state = "move";
 
+
 //move state 
 	walk_speed = 0;
 	walk_anim_speed = 0.6;
@@ -15,3 +16,4 @@ state = "move";
 	number_of_jump = 2;
 	
 	shadow = noone;
+	

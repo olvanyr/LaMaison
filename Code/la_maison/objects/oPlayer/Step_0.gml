@@ -1,8 +1,14 @@
+if keyboard_check_pressed(vk_enter)
+{
+	trigger_bullet_time();
+}
+
 
 if instance_exists(shadow)
 {
 	with shadow
 	{
+		image_speed = other.image_speed;
 		sprite_index = other.sprite_index;
 		image_index = other.image_index;
 		x = other.x;
