@@ -7,5 +7,5 @@ if instance_exists(oPlayer)
 }
 if instance_exists(oCamera)
 {
-	oCamera.zoom = 1.5;
+	oCamera.zoom = 1.8;
 }

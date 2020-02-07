@@ -10,7 +10,10 @@
         "9f562b0e-0d8a-485c-a299-151cf14188e1",
         "2faf9c1e-dc23-4578-bab5-8a4d44dff93f",
         "62fe698d-791e-468c-856e-4bc89aadccff",
-        "414fdb0b-a3c1-4514-84a4-29ff0b559806"
+        "414fdb0b-a3c1-4514-84a4-29ff0b559806",
+        "51db5e70-acc1-4014-a07c-e3926b6bdcf0",
+        "abc66146-9637-481c-a8ba-9d99869c2cff",
+        "6aa62c21-6673-4c81-9fd2-09a782dbc02f"
     ],
     "filterType": "GMSprite",
     "folderName": "dialogue test",

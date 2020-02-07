@@ -14,7 +14,7 @@ var start_y = (gheight/2) - ((((ds_height-1)/2)*y_buffer)), start_x = gwidth/2; 
 var ltx = start_x - x_buffer, lty, c, xo; //left text exposition ltx
 
 //Draw Background
-var background_sprite = sBackground_text;
+var background_sprite = sDialogue_box;
 draw_sprite_ext(background_sprite,0,gwidth/2,gheight/2,1,1,0,c_white,1);
 
 
@@ -29,14 +29,19 @@ var yy = 0;
 repeat(ds_height)
 {
 	lty = start_y + (yy*y_buffer);
-	c = c_black;
+	c = make_color_rgb(225,43,43);
 	xo = - string_width(ds_[# 0, 0])/2;
 	
 	if(yy == menu_option[page]) 
 	{
-		c = make_color_rgb(158,11,15);	
+		c = make_color_rgb(220,216,216);	
 		xo = x_buffer/2 - (string_width(ds_[# 0, 0])/2);
 	}
+	
+	if yy = 0
+	{
+		  var ltx = start_x + (3*x_buffer); //left text exposition ltx
+	}else var ltx = start_x - (4*x_buffer); //left text exposition ltx
 	draw_text_color(ltx + xo, lty, ds_[# 0, yy], c,c,c,c, 1);
 	
 	yy++;
@@ -65,6 +70,6 @@ yy = 0; repeat(ds_height){
 
 
 var background_width = sprite_get_width(background_sprite);
-draw_sprite_ext(face_one,0,(gwidth/2) - (background_width/2),gheight/2,1,1,0,c_white,1);
-draw_sprite_ext(face_two,0,(gwidth/2) + (background_width/2),gheight/2,1,1,0,c_white,1);
+draw_sprite_ext(face_one,0,(gwidth/2) - (background_width/2),gheight/2,4,4,0,c_white,1);
+draw_sprite_ext(face_two,0,(gwidth/2) + (background_width/2),gheight/2,4,4,0,c_white,1);
 #endregion

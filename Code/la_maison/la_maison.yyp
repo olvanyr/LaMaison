@@ -383,6 +383,14 @@
             }
         },
         {
+            "Key": "51db5e70-acc1-4014-a07c-e3926b6bdcf0",
+            "Value": {
+                "id": "d45b1d7a-e17a-411f-bbd6-ffda52b10a84",
+                "resourcePath": "sprites\\sDialogue_box\\sDialogue_box.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5218a09e-a19e-480d-9bee-33be15691f4f",
             "Value": {
                 "id": "3bccb403-1c45-4d58-b9d8-e89a370e6204",
@@ -516,6 +524,14 @@
                 "id": "c3848234-0e57-4a9a-9ea8-e9084ad90b22",
                 "resourcePath": "objects\\oInit_running\\oInit_running.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "6aa62c21-6673-4c81-9fd2-09a782dbc02f",
+            "Value": {
+                "id": "30d875d4-55cc-4e74-a3c1-241ed9d2f6a1",
+                "resourcePath": "sprites\\sDad_neutral\\sDad_neutral.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -836,6 +852,14 @@
                 "id": "be999ea7-63c5-43fb-a179-4c51e13c4fc1",
                 "resourcePath": "options\\linux\\options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "abc66146-9637-481c-a8ba-9d99869c2cff",
+            "Value": {
+                "id": "2302fbdf-4e3a-41c0-9a8b-5a55aed2166c",
+                "resourcePath": "sprites\\sPlayer_neutral\\sPlayer_neutral.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
