@@ -9,3 +9,8 @@ if instance_exists(oCamera)
 {
 	oCamera.zoom = 1.8;
 }
+
+if instance_exists(oScarf)
+{
+	instance_destroy(oScarf);
+}

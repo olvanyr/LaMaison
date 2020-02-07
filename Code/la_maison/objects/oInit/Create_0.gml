@@ -8,7 +8,8 @@ enum depth_layer
 	shadows	= 100,
 	doors	= 120,
 	tiles	= 150,
-	walls	= 200
+	walls	= 200,
+	assets	= 1000
 }
 
 global.zoom_max = 4;

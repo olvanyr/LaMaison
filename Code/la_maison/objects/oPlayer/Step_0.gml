@@ -2,6 +2,15 @@ if keyboard_check_pressed(vk_enter)
 {
 	trigger_bullet_time();
 }
+/*
+if keyboard_check_pressed(ord("H"))
+{
+	oCamera.x = 73;
+	oCamera.y = 583;
+	oPlayer.x = 73;
+	oPlayer.y =583;
+
+}*/
 
 if instance_exists(shadow)
 {
@@ -48,10 +57,14 @@ case "move":
 	}else 
 	{
 		move = 1;
+		
 		set_state_sprite(sPlayer_walk1,walk_anim_speed,0);
-		with instance_create_layer(x,y - 9,"Scarf",oScarf_particle)
+		if vsp != 0 || hsp != 0
 		{
-			image_angle = point_direction(x,y - 9, x + other.hsp, y - 9 + other.hsp);
+			with instance_create_layer(x,y - 10,"Scarf",oScarf_particle)
+			{
+				image_angle = point_direction(x,y - 10, x + other.hsp, y - 10 + other.hsp);
+			}
 		}
 	}
 	

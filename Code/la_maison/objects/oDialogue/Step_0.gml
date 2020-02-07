@@ -30,7 +30,7 @@ switch(ds_[# 1, 0]){
 	break;
 }
 //face_one = sprite_get_name(ds_[# 2, 0]); 
-show_debug_message("face_one : " + string((face_one)));
+//show_debug_message("face_one : " + string((face_one)));
 
 
 if !inputting //if we are not inputing it means that we can move in the menu
