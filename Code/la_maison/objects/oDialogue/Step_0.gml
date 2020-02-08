@@ -22,11 +22,37 @@ if(inputting){
 }
 */
 //thing that happen even when not inputing
+
 switch(ds_[# 1, 0]){
 	case menu_element.text: 
 		
 		face_one = (ds_[# 2, 0]); 
 		face_two = (ds_[# 3, 0]); 
+	break;
+}
+switch(ds_[# 1, menu_option[page]]){
+
+	case menu_element.typing: 
+		var text_part_lenght = string_length(text_part);
+		var keyboard_string_lenght = string_length(keyboard_string);
+		var text_lenght = string_length(text);
+
+		//show_debug_message(string_copy(text,text_part_lenght + 1,1));
+		if string_copy(text,text_part_lenght + 1,1) == chr(32)
+		{
+			show_debug_message("space !!!!!!!!");
+			text_part += chr(32);
+			keyboard_string += " "
+		}else if string_copy(keyboard_string,keyboard_string_lenght,1) == string_copy(text,text_part_lenght + 1,1)
+		{
+			text_part += string_copy(keyboard_string,keyboard_string_lenght,1);
+			keyboard_string = "";
+		}
+
+		if text_part_lenght == text_lenght
+		{
+			completed = true;
+		}
 	break;
 }
 //face_one = sprite_get_name(ds_[# 2, 0]); 
@@ -56,8 +82,24 @@ if(input.enter){
 	switch(ds_[# 1, menu_option[page]]){
 		case menu_element.script_runner: script_execute(ds_[# 2, menu_option[page]]); break;
 		case menu_element.page_transfer: page = ds_[# 2, menu_option[page]]; break;
+		case menu_element.typing: 
+			if completed = true 
+			{
+				page = ds_[# 2, menu_option[page]]; 
+				completed = false;
+				text_part = "";
+				text = "";
+			}
+			break;
 			inputting = !inputting;
 			break;
+	}
+	
+	if completed = true 
+	{
+		completed = false;
+		text_part = "";
+		text = "";
 	}
 	//audio
 	audio_play_sound(inputting_sound,5,false);

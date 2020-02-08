@@ -4,6 +4,11 @@ inputting_sound = noone;
 face_one = noone;
 face_two = noone;
 
+//typing constante
+text_part = "";
+text = "";
+completed = false;
+
 // set Enum for the menu
 
 enum menu_page
@@ -18,6 +23,7 @@ enum menu_element
 {
 	script_runner,
 	text,
+	typing,
 	page_transfer
 }
 
@@ -27,9 +33,9 @@ enum menu_element
 
 
 ds_menu_main = create_menu_page(
-	["Are you done with your gender shit ?",				menu_element.text,			sPlayer_neutral, sDad_neutral], 
-	["Never",												menu_element.page_transfer,	menu_page.a], 
-	["NEVER BUT IN CAPS LOCK",													menu_element.page_transfer,	menu_page.b],
+	["Are you done with your gender shit ?",					menu_element.text,			sPlayer_neutral, sDad_neutral], 
+	["je pense pas non",										menu_element.typing,	menu_page.a], 
+	["NEVER BUT IN CAPS LOCK",								menu_element.page_transfer,	menu_page.b],
 );	
 
 ds_menu_a = create_menu_page(

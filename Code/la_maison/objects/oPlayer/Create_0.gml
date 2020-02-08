@@ -11,11 +11,18 @@ state = "move";
 	walk_acceleration = 0.035;
 	max_walk_speed = 1;
 	jump_speed = -4;
+
 	//double jump
 	jump = 0;
 	number_of_jump = 2;
 	
+	
 	shadow = noone;
+	
+	//platform setting
+	//jump_speed = -4;
+	//gravity_speed = 0.3;
+	//max_walk_speed = 1.5;
 	
 	
 //specifique room

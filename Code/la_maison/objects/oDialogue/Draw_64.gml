@@ -42,7 +42,23 @@ repeat(ds_height)
 	{
 		  var ltx = start_x + (3*x_buffer); //left text exposition ltx
 	}else var ltx = start_x - (4*x_buffer); //left text exposition ltx
+	
 	draw_text_color(ltx + xo, lty, ds_[# 0, yy], c,c,c,c, 1);
+	switch(ds_[# 1, menu_option[page]])
+	{
+		
+		case menu_element.typing: 
+			text = ds_[# 0, menu_option[page]];
+			//show_debug_message("text : " + string(text));
+			//show_debug_message("text_part : " + string(text_part));
+			if(yy == menu_option[page]) 
+			{
+				draw_text_color(ltx + xo, lty, text_part, c_blue,c_blue,c_blue,c_blue, 1);
+			}
+			
+		break;
+	}
+	
 	
 	yy++;
 }

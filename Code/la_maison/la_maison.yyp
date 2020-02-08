@@ -1183,6 +1183,14 @@
             }
         },
         {
+            "Key": "f13775e7-a572-4e88-9169-8d836c35a158",
+            "Value": {
+                "id": "13891488-e600-45b5-ae7c-6a989b4c8ad4",
+                "resourcePath": "objects\\oTyping_dialogue\\oTyping_dialogue.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "f3aa36d1-ed43-425a-b8b0-e12c92ce76bd",
             "Value": {
                 "id": "fd13fbca-33ad-4e87-b011-debec5dec674",
