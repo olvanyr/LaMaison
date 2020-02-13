@@ -86,7 +86,51 @@ case "move":
 	
 	hsp = walk_speed * move;
 	
-	#region slope
+	//show_debug_message("walk_speed : " + string(walk_speed));
+	//show_debug_message("vsp : " + string(vsp));
+	//show_debug_message("mask index : " + string(sprite_get_name(mask_index)));
+	//show_debug_message("distance_to_wall : " + string(distance_to_wall));
+	//show_debug_message("distance_to_slope : " + string(distance_to_slope));
+	//show_debug_message("y : " + string(y));
+break;
+
+case "dissociate": 
+
+	//if hsp == 0 goal = noone;
+	if goal = noone
+	{
+		var cam_w_halph = camera_get_view_width(view_camera[0])/2;
+		//check right
+		for (var i = 0; i*global.tile_size < cam_w_halph; i++)
+		{
+			var tile_x = ((x div global.tile_size)*global.tile_size) + (global.tile_size/2);
+			//show_debug_message("i : " + string(i));
+			if place_meeting(tile_x + i*global.tile_size,y,oWall)
+			{
+				goal = tile_x + i*global.tile_size;
+			}
+			if goal != noone break;
+		}
+		show_debug_message("goal : " + string(goal));
+	}else
+	{
+		with instance_create_layer(goal,y - 10,"Instances",oGoal)
+		{
+			text = "left";
+			goal = other.goal;
+		}
+	}
+	
+	
+	
+	
+break;
+}
+
+
+
+
+#region slope
 	//check if there is a slope under 
 	var distance_to_wall = 0;
 	var distance_to_slope = 0;
@@ -116,16 +160,6 @@ case "move":
 		move_contact_solid(270, -1);
 	}
 	
-	#endregion
-	
-	//show_debug_message("walk_speed : " + string(walk_speed));
-	//show_debug_message("vsp : " + string(vsp));
-	//show_debug_message("mask index : " + string(sprite_get_name(mask_index)));
-	//show_debug_message("distance_to_wall : " + string(distance_to_wall));
-	//show_debug_message("distance_to_slope : " + string(distance_to_slope));
-	//show_debug_message("y : " + string(y));
-break;
-}
-
+#endregion
 // Inherit the parent event
 event_inherited();

@@ -1,6 +1,13 @@
 // Inherit the parent event
 event_inherited();
 
+if !instance_exists(oCamera)
+{
+	cam = instance_create_layer(0,0,"Instances",oCamera);
+}
+cam.x = x;
+cam.y = y;
+
 // initialise state engine
 state = "move";
 
@@ -24,7 +31,11 @@ state = "move";
 	//gravity_speed = 0.3;
 	//max_walk_speed = 1.5;
 	
-	
+//dissociate state
+	goal = noone;
+
+
+
 //specifique room
 running = false;
 running_checkpoint = noone;

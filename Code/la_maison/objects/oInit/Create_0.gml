@@ -14,4 +14,6 @@ enum depth_layer
 
 global.zoom_max = 4;
 
+global.tile_size = 8;
+
 room_goto_next();

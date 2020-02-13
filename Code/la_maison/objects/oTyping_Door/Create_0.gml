@@ -13,7 +13,7 @@ sprite_w = sprite_get_width(sprite_index)*image_xscale;
 sprite_h = sprite_get_height(sprite_index)*image_yscale;
 
 //show_debug_message("string_w : " + string(string_w));
-show_debug_message("string_w_empty : " + string(string_w_empty));
+//show_debug_message("string_w_empty : " + string(string_w_empty));
 //show_debug_message("sprite_w : " + string(sprite_w));
 
 if sprite_w - string_w > 0	target_xscale = 1 + (sprite_w - string_w) / sprite_w;
