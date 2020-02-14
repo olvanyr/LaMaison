@@ -38,19 +38,15 @@ case "move":
 	{
 		if input.right 
 		{
-			move = 1;
-			set_state_sprite(sPlayer_walk1,walk_anim_speed,0);
-		
+			move = 1;		
 		}
 		if input.left
 		{
 			move = -1;
-			set_state_sprite(sPlayer_walk1,walk_anim_speed,0);
 		}
 	
 		if (!input.right && !input.left) || (input.right && input.left) 
 		{
-			set_state_sprite(sPlayer_idle,0.1,0);
 			move = 0;
 			walk_speed = 0;
 		}
@@ -76,16 +72,6 @@ case "move":
 		vsp = jump_speed;
 	}
 	
-	if move != 0
-	{
-		image_xscale = move;
-		
-		walk_speed += walk_acceleration;
-		if walk_speed > max_walk_speed walk_speed = max_walk_speed;
-	}
-	
-	hsp = walk_speed * move;
-	
 	//show_debug_message("walk_speed : " + string(walk_speed));
 	//show_debug_message("vsp : " + string(vsp));
 	//show_debug_message("mask index : " + string(sprite_get_name(mask_index)));
@@ -97,7 +83,7 @@ break;
 case "dissociate": 
 
 	//if hsp == 0 goal = noone;
-	if goal = noone
+	if right_goal = noone
 	{
 		var cam_w_halph = camera_get_view_width(view_camera[0])/2;
 		//check right
@@ -107,29 +93,74 @@ case "dissociate":
 			//show_debug_message("i : " + string(i));
 			if place_meeting(tile_x + i*global.tile_size,y,oWall)
 			{
-				goal = tile_x + i*global.tile_size;
+				right_goal = tile_x + i*global.tile_size;
 			}
-			if goal != noone break;
+			
+			if right_goal != noone break;
 		}
-		show_debug_message("goal : " + string(goal));
+		if right_goal == noone right_goal = tile_x + cam_w_halph - (6*global.tile_size);
 	}else
 	{
-		with instance_create_layer(goal,y - 10,"Instances",oGoal)
+		if !instance_exists(right)
 		{
-			text = "left";
-			goal = other.goal;
+			with instance_create_layer(right_goal,y - 10,"Instances",oGoal)
+			{
+				creator = other.id;
+				text = "right";
+				right_goal = other.right_goal;
+				other.right = id;
+			}
 		}
 	}
 	
+	
+	if instance_exists(right)
+	{
+		if right.completed
+		{
+			if x < (right_goal - 2)
+			{
+				move = 1;
+			}else 
+			{
+				move = 0;
+				instance_destroy(right);
+				right_goal = noone;
+			}
+		}
+	}
 	
 	
 	
 break;
 }
 
+//move aplication
+if move != 0
+{
+	image_xscale = move;
+		
+	walk_speed += walk_acceleration;
+	if walk_speed > max_walk_speed walk_speed = max_walk_speed;
+}
+	
+hsp = walk_speed * move;
 
-
-
+#region animation
+if hsp > 0
+{
+	set_state_sprite(sPlayer_walk1,walk_anim_speed,0);
+}
+if hsp < 0
+{
+	set_state_sprite(sPlayer_walk1,walk_anim_speed,0);
+}
+if hsp = 0
+{
+	set_state_sprite(sPlayer_idle,0.1,0);
+}
+	
+#endregion
 #region slope
 	//check if there is a slope under 
 	var distance_to_wall = 0;

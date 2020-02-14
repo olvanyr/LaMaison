@@ -16,7 +16,8 @@ if string_copy(keyboard_string,keyboard_string_lenght,1) == string_copy(text,tex
 
 if text_part_lenght == text_lenght
 {
-	completed = true;
+	instance_destroy();
+	interaction.completed = true;
 }
 //show_debug_message("completed : " + string(completed));
 

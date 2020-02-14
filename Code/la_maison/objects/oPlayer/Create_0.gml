@@ -32,7 +32,8 @@ state = "move";
 	//max_walk_speed = 1.5;
 	
 //dissociate state
-	goal = noone;
+	right = noone;
+	right_goal = noone;
 
 
 

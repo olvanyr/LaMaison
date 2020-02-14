@@ -143,6 +143,14 @@
             }
         },
         {
+            "Key": "1cdef5d1-6402-4cfe-9cde-13752079d207",
+            "Value": {
+                "id": "e6ca1b6d-e260-42f4-8cbd-ef85006ac472",
+                "resourcePath": "objects\\oGoal\\oGoal.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1d79eebe-5c6d-4053-b134-f22ee3b7cddc",
             "Value": {
                 "id": "f2822ca7-65d2-4ae0-b741-1ce5015cd325",
