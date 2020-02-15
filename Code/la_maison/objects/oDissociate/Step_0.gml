@@ -15,7 +15,7 @@ if instance_exists(shadow)
 
 if state = ""
 {
-	//right
+	#region left right
 	right = noone;
 	right_goal = noone;
 	left = noone;
@@ -37,7 +37,20 @@ if state = ""
 	}
 	if right_goal == noone	right_goal = x + cam_w_halph - (6*global.tile_size);
 	if left_goal == noone	left_goal = x - cam_w_halph + (6*global.tile_size);
+	#endregion
+	right_jump = noone;
+	left_jump = noone;
 	
+	if (place_meeting(x + (2*global.tile_size),y,oWall) && 
+		!place_meeting(x + (2*global.tile_size),y - global.tile_size,oWall) &&
+		!place_meeting(x + (2*global.tile_size),y - (2*global.tile_size),oWall) && 
+		!place_meeting(x ,y - (3*global.tile_size),oWall)
+		)
+	{
+		right_jump = true;
+	}
+	show_debug_message("right_jump : " + string(right_jump));
+
 state = "wait";
 }
 
@@ -103,9 +116,9 @@ break;
 //show_debug_message("distance_to_wall : " + string(distance_to_wall));
 //show_debug_message("distance_to_slope : " + string(distance_to_slope));
 //show_debug_message("y : " + string(y));
-show_debug_message("x : " + string(x));
-show_debug_message("left_goal : " + string(left_goal));
-show_debug_message("right_goal : " + string(right_goal));
+//show_debug_message("x : " + string(x));
+//show_debug_message("left_goal : " + string(left_goal));
+//show_debug_message("right_goal : " + string(right_goal));
 
 
 

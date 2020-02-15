@@ -35,6 +35,8 @@ state = "";
 	right_goal = noone;
 	left = noone;
 	left_goal = noone;
+	right_jump = noone;
+	left_jump = noone;
 
 
 
