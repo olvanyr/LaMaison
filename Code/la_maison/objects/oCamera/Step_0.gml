@@ -5,6 +5,8 @@
 
 if zoom > global.zoom_max zoom = global.zoom_max;
 
+
+/*
 if keyboard_check(ord("A"))
 {
 	zoom += 0.001;
@@ -13,6 +15,7 @@ if keyboard_check(ord("E"))
 {
 	zoom -= 0.001;
 }
+*/
 
 //update destination
 if (instance_exists(follow))

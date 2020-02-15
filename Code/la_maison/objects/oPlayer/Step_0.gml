@@ -1,3 +1,4 @@
+/*
 if keyboard_check_pressed(vk_enter)
 {
 	trigger_bullet_time();
@@ -78,60 +79,6 @@ case "move":
 	//show_debug_message("distance_to_wall : " + string(distance_to_wall));
 	//show_debug_message("distance_to_slope : " + string(distance_to_slope));
 	//show_debug_message("y : " + string(y));
-break;
-
-case "dissociate": 
-
-	//if hsp == 0 goal = noone;
-	if right_goal = noone
-	{
-		var cam_w_halph = camera_get_view_width(view_camera[0])/2;
-		//check right
-		for (var i = 0; i*global.tile_size < cam_w_halph; i++)
-		{
-			var tile_x = ((x div global.tile_size)*global.tile_size) + (global.tile_size/2);
-			//show_debug_message("i : " + string(i));
-			if place_meeting(tile_x + i*global.tile_size,y,oWall)
-			{
-				right_goal = tile_x + i*global.tile_size;
-			}
-			
-			if right_goal != noone break;
-		}
-		if right_goal == noone right_goal = tile_x + cam_w_halph - (6*global.tile_size);
-	}else
-	{
-		if !instance_exists(right)
-		{
-			with instance_create_layer(right_goal,y - 10,"Instances",oGoal)
-			{
-				creator = other.id;
-				text = "right";
-				right_goal = other.right_goal;
-				other.right = id;
-			}
-		}
-	}
-	
-	
-	if instance_exists(right)
-	{
-		if right.completed
-		{
-			if x < (right_goal - 2)
-			{
-				move = 1;
-			}else 
-			{
-				move = 0;
-				instance_destroy(right);
-				right_goal = noone;
-			}
-		}
-	}
-	
-	
-	
 break;
 }
 

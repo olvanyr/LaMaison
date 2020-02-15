@@ -36,7 +36,7 @@ repeat(ds_height)
 	{
 		if ds_[# 1, menu_option[page]] == menu_element.typing
 		{
-			c = c_blue;
+			c = global.typing_color;
 		}else c = make_color_rgb(220,216,216);	
 		xo = x_buffer/2 - (string_width(ds_[# 0, 0])/2);
 	}

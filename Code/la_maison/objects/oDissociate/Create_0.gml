@@ -3,13 +3,12 @@ event_inherited();
 
 if !instance_exists(oCamera)
 {
-	cam = instance_create_layer(0,0,"Instances",oCamera);
+	cam = instance_create_layer(x,y,"Instances",oCamera);
 }
-cam.x = x;
-cam.y = y;
-
+x = ((x div global.tile_size)*global.tile_size) + (global.tile_size/2);
+cam.follow = self;
 // initialise state engine
-state = "move";
+state = "";
 
 
 //move state 
@@ -30,6 +29,14 @@ state = "move";
 	//jump_speed = -4;
 	//gravity_speed = 0.3;
 	//max_walk_speed = 1.5;
+	
+//dissociate state
+	right = noone;
+	right_goal = noone;
+	left = noone;
+	left_goal = noone;
+
+
 
 //specifique room
 running = false;

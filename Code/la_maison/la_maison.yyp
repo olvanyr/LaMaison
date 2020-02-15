@@ -991,6 +991,14 @@
             }
         },
         {
+            "Key": "bed4fdc0-96e8-4198-b51b-6bbe3c3e70b4",
+            "Value": {
+                "id": "a7fd902c-9511-4362-893a-315384132a53",
+                "resourcePath": "objects\\oDissociate\\oDissociate.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c037fd16-712b-4ff8-a23c-db0d9183e92e",
             "Value": {
                 "id": "3ff6e6ec-09fa-40c0-b26b-92220352e7b3",

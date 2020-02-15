@@ -11,6 +11,9 @@ enum depth_layer
 	walls	= 200,
 	assets	= 1000
 }
+//unified color for when you have to type siomething
+global.typing_color = c_blue;
+
 
 global.zoom_max = 4;
 
