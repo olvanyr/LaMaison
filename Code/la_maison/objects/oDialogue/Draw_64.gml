@@ -34,7 +34,10 @@ repeat(ds_height)
 	
 	if(yy == menu_option[page]) 
 	{
-		c = make_color_rgb(220,216,216);	
+		if ds_[# 1, menu_option[page]] == menu_element.typing
+		{
+			c = c_blue;
+		}else c = make_color_rgb(220,216,216);	
 		xo = x_buffer/2 - (string_width(ds_[# 0, 0])/2);
 	}
 	
@@ -53,7 +56,8 @@ repeat(ds_height)
 			//show_debug_message("text_part : " + string(text_part));
 			if(yy == menu_option[page]) 
 			{
-				draw_text_color(ltx + xo, lty, text_part, c_blue,c_blue,c_blue,c_blue, 1);
+				var c = make_color_rgb(220,216,216);
+				draw_text_color(ltx + xo, lty, text_part, c,c,c,c, 1);
 			}
 			
 		break;
