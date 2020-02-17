@@ -15,6 +15,7 @@ if instance_exists(shadow)
 
 if state = ""
 {
+	move = 0;
 	#region left right
 	right = noone;
 	right_goal = noone;
@@ -38,8 +39,10 @@ if state = ""
 	if right_goal == noone	right_goal = x + cam_w_halph - (6*global.tile_size);
 	if left_goal == noone	left_goal = x - cam_w_halph + (6*global.tile_size);
 	#endregion
+	#region jump
 	right_jump = noone;
 	left_jump = noone;
+	jump = noone;
 	
 	if (place_meeting(x + (2*global.tile_size),y,oWall) && 
 		!place_meeting(x + (2*global.tile_size),y - global.tile_size,oWall) &&
@@ -49,7 +52,24 @@ if state = ""
 	{
 		right_jump = true;
 	}
-	show_debug_message("right_jump : " + string(right_jump));
+	if (place_meeting(x - (2*global.tile_size),y,oWall) && 
+		!place_meeting(x - (2*global.tile_size),y - global.tile_size,oWall) &&
+		!place_meeting(x - (2*global.tile_size),y - (2*global.tile_size),oWall) && 
+		!place_meeting(x ,y - (3*global.tile_size),oWall)
+		)
+	{
+		left_jump = true;
+	}
+	//show_debug_message("right_jump : " + string(right_jump));
+	#endregion
+	if right_jump = true
+	{
+		right_goal = noone;
+	}
+	if left_jump = true
+	{
+		left_goal = noone;
+	}
 
 state = "wait";
 }
@@ -85,6 +105,33 @@ case "wait":
 			}
 		}
 	}
+	
+	//right_jump
+	if right_jump != noone
+	{
+		if !instance_exists(jump)
+		{
+			with instance_create_layer(x + 16,y - 32,"Instances",oGoal)
+			{
+				creator = other.id;
+				text = "jump";
+				other.jump = id;
+			}
+		}
+	}
+	//right_jump
+	if left_jump != noone
+	{
+		if !instance_exists(jump)
+		{
+			with instance_create_layer(x - 16,y - 32,"Instances",oGoal)
+			{
+				creator = other.id;
+				text = "jump";
+				other.jump = id;
+			}
+		}
+	}
 break;
 case "right":
 	if x <= right_goal 
@@ -92,7 +139,6 @@ case "right":
 		move = 1;
 	}else 
 	{
-		move = 0;
 		state = "";
 	}
 break;
@@ -102,9 +148,34 @@ case "left":
 		move = -1;
 	}else 
 	{
-		move = 0;
 		state = "";
 	}
+break;
+case "jump":
+	
+	if right_jump != noone && grounded
+	{
+		vsp = 0;
+		vsp_fraction = 0;
+		vsp = jump_speed;
+		grounded = false;
+		move = 1;
+		right_jump = noone;
+	}
+	if left_jump != noone && grounded
+	{
+		vsp = 0;
+		vsp_fraction = 0;
+		vsp = jump_speed;
+		grounded = false;
+		move = -1;
+		left_jump = noone;
+	}
+	if grounded
+	{
+		state = "";
+	}
+	
 break;
 }
 
