@@ -13,6 +13,15 @@ if instance_exists(shadow)
 }
 #endregion
 
+if mouse_check_button_pressed(mb_left)
+{
+	with instance_create_layer(mouse_x,mouse_y,"Instances",oDissociate_effect)
+	{
+		_x = mouse_x;
+		_y = mouse_y;
+	}
+}
+
 if state = ""
 {
 	move = 0;

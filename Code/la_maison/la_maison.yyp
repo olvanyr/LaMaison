@@ -271,6 +271,14 @@
             }
         },
         {
+            "Key": "3063651c-8d17-4c90-9cee-61119383d9d2",
+            "Value": {
+                "id": "5cacd294-8096-4af0-bf18-cfc0e0c8387a",
+                "resourcePath": "objects\\oDissociate_effect\\oDissociate_effect.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "33056041-de3b-4d0b-bcad-451feb5ec11c",
             "Value": {
                 "id": "f04b78f6-58f1-4788-be18-280c055a4d95",
