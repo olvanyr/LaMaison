@@ -22,6 +22,17 @@ if mouse_check_button_pressed(mb_left)
 	}
 }
 
+if particle_timer == 100
+{
+	with instance_create_layer(x,y,"Effects",oDissociate_effect)
+	{
+		_x = x + random_range(-50,50);
+		_y = y + random_range(-50,50);
+	}
+	particle_timer = 0;
+}
+particle_timer ++;
+
 if state = ""
 {
 	move = 0;
@@ -91,7 +102,7 @@ case "wait":
 	{
 		if !instance_exists(right)
 		{
-			with instance_create_layer(right_goal,y - 10,"Instances",oGoal)
+			with instance_create_layer(right_goal,y - 30,"Instances",oGoal)
 			{
 				creator = other.id;
 				text = "right";
@@ -105,7 +116,7 @@ case "wait":
 	{
 		if !instance_exists(left)
 		{
-			with instance_create_layer(left_goal,y - 10,"Instances",oGoal)
+			with instance_create_layer(left_goal - 45,y - 30,"Instances",oGoal)
 			{
 				creator = other.id;
 				text = "left";
@@ -120,7 +131,7 @@ case "wait":
 	{
 		if !instance_exists(jump)
 		{
-			with instance_create_layer(x + 16,y - 32,"Instances",oGoal)
+			with instance_create_layer(x + 20,y - 45,"Instances",oGoal)
 			{
 				creator = other.id;
 				text = "jump";
@@ -133,7 +144,7 @@ case "wait":
 	{
 		if !instance_exists(jump)
 		{
-			with instance_create_layer(x - 16,y - 32,"Instances",oGoal)
+			with instance_create_layer(x - 60,y - 45,"Instances",oGoal)
 			{
 				creator = other.id;
 				text = "jump";

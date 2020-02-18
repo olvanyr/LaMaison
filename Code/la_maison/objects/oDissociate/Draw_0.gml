@@ -1,4 +1,6 @@
 event_inherited();
+
+/*
 var c = c_yellow;
 
 var _x = x +  (global.tile_size*2);

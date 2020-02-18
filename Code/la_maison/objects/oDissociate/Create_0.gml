@@ -31,6 +31,8 @@ state = "";
 	//max_walk_speed = 1.5;
 	
 //dissociate state
+	particle_timer = 0;
+
 	right = noone;
 	right_goal = noone;
 	left = noone;

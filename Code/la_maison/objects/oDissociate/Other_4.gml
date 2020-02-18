@@ -1,4 +1,7 @@
 set_layer("Tiles",depth_layer.tiles);
+
+set_layer("Effects",depth_layer.effects);
+
 layer_depth("Assets",depth_layer.assets);
 
 set_layer("Walls",depth_layer.walls);
