@@ -327,6 +327,14 @@
             }
         },
         {
+            "Key": "3e4b923b-197b-4018-94fe-d3fa2b3d754e",
+            "Value": {
+                "id": "d74c8655-4c1c-4072-a769-f6c82d7ae3c5",
+                "resourcePath": "fonts\\fDialogue\\fDialogue.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "3f27a615-126b-4623-a841-a13b19ae47e3",
             "Value": {
                 "id": "08cdd8e1-98fb-4f52-b379-9ea544f5b9f3",

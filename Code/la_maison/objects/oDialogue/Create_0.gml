@@ -34,8 +34,8 @@ enum menu_element
 
 ds_menu_main = create_menu_page(
 	["Are you done with your gender shit ?",					menu_element.text,			sPlayer_neutral, sDad_neutral], 
-	["je pense pas non",										menu_element.typing,	menu_page.a], 
-	["NEVER BUT IN CAPS LOCK",								menu_element.page_transfer,	menu_page.b],
+	["je pense pas non",										menu_element.typing,		menu_page.a], 
+	["NEVER BUT IN CAPS LOCK",									menu_element.page_transfer,	menu_page.b],
 );	
 
 ds_menu_a = create_menu_page(
