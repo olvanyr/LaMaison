@@ -12,6 +12,15 @@ if keyboard_check_pressed(ord("H"))
 	oPlayer.y =583;
 
 }*/
+if keyboard_check_pressed(vk_enter)
+{
+	with instance_create_layer(x,y,"Instances",oClap_effect)
+	{
+		next_room = rRunning;
+		draw = true;
+	}
+}
+
 
 if instance_exists(shadow)
 {
