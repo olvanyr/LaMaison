@@ -5,6 +5,6 @@ set_layer("Walls",depth_layer.walls);
 
 if visible
 {
-	instance_create_layer(x,y,"Tiles",oTile);
+	alarm[0] = 1;
 }
 

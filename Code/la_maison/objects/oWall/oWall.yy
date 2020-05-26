@@ -13,6 +13,16 @@
             "enumb": 0,
             "eventtype": 0,
             "m_owner": "c474c288-f28a-43ad-ac42-aa5c49b84a4f"
+        },
+        {
+            "id": "8c644c1d-607b-4831-b88a-91ded9af2ac7",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 2,
+            "m_owner": "c474c288-f28a-43ad-ac42-aa5c49b84a4f"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -45,6 +55,20 @@
             "value": "true",
             "varName": "visible",
             "varType": 0
+        },
+        {
+            "id": "58b73035-ea41-4535-8242-a1e833401f48",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "Wood",
+            "varName": "zone",
+            "varType": 2
         }
     ],
     "solid": true,
