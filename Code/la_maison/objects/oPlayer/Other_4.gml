@@ -39,3 +39,9 @@ if !instance_exists(oScarf)
 	}
 }*/
 #endregion
+
+//set up camera
+cam = view_camera[0];
+
+global.view_width = camera_get_view_width(cam);
+global.view_height = camera_get_view_height(cam);
