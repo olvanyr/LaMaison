@@ -16,7 +16,7 @@
         "6aa62c21-6673-4c81-9fd2-09a782dbc02f"
     ],
     "filterType": "GMSprite",
-    "folderName": "dialogue test",
+    "folderName": "dialogue",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

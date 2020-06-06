@@ -1,8 +1,8 @@
 enum depth_layer
 {
 	sky			= -2000,
-	effects		= -1500,
-	light		= -1000,
+	light		= -1500,
+	effects		= -1000,
 	typing		= - 500,
 	player		= 0,
 	scarf		= 50,
@@ -11,7 +11,10 @@ enum depth_layer
 	tiles		= 150,
 	grass_back = 170,
 	walls		= 200,
-	assets		= 1000
+	assets		= 1000,
+	lamppost	= 1200,
+	bush		= 1300,
+	tree		= 1500
 }
 //unified color for when you have to type siomething
 global.typing_color = c_blue;
