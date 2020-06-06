@@ -11,7 +11,7 @@ if keyboard_check_pressed(ord("H"))
 	oPlayer.x = 73;
 	oPlayer.y =583;
 
-}*/
+}
 if keyboard_check_pressed(vk_enter)
 {
 	with instance_create_layer(x,y,"Instances",oClap_effect)
@@ -20,21 +20,26 @@ if keyboard_check_pressed(vk_enter)
 		draw = true;
 	}
 }
-
-
-if instance_exists(shadow)
+*/
+if mouse_check_button_pressed(mb_left)
 {
-	with shadow
-	{
-		image_speed = other.image_speed;
-		sprite_index = other.sprite_index;
-		image_index = other.image_index;
-		x = other.x;
-		y = other.y;
-		image_xscale = other.image_xscale;
-	}
+	instance_create_layer(mouse_x,mouse_y,"Instances",oFireflie);
 }
 
+#region shadow
+	if instance_exists(shadow)
+	{
+		with shadow
+		{
+			image_speed = other.image_speed;
+			sprite_index = other.sprite_index;
+			image_index = other.image_index;
+			x = other.x;
+			y = other.y;
+			image_xscale = other.image_xscale;
+		}
+	}
+#endregion
 // move
 switch (state)
 {
@@ -147,6 +152,21 @@ if hsp = 0
 		move_contact_solid(270, -1);
 	}
 	
+#endregion
+#region effects
+	if room == room0
+	{
+		if get_timer() mod 10 == 0
+		{
+			repeat(choose(0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,2,2))
+			{
+				var random_x = x + random_range(-global.view_width/2,global.view_width/2);
+				var random_y = y + random_range(-global.view_height/2,global.view_height/2);
+				instance_create_layer(random_x,random_y,"Instances",oFireflie);
+			}
+		}
+	}
+
 #endregion
 // Inherit the parent event
 event_inherited();

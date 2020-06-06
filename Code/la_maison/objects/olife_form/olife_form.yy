@@ -2,7 +2,7 @@
     "id": "4ef7a41a-af5c-4e6b-9ac0-d660b13951e1",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "olife_form",
+    "name": "oLife_form",
     "eventList": [
         {
             "id": "7144dc94-ade3-4d60-a33c-64eb5b81c0f9",
