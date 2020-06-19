@@ -183,6 +183,14 @@
             }
         },
         {
+            "Key": "17ef8d3f-86b6-40dc-8d09-050ba0ae413a",
+            "Value": {
+                "id": "9fb582f6-e4cf-4be3-aebf-bfea14f5732f",
+                "resourcePath": "objects\\oCandle\\oCandle.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "187d583a-ba6a-4afc-9851-5c9d36b07c72",
             "Value": {
                 "id": "48a69281-2cde-45d3-aad1-54cd3c5c6be3",
@@ -703,6 +711,14 @@
             }
         },
         {
+            "Key": "549b068b-2f8a-4e53-90dd-8996e9284a2a",
+            "Value": {
+                "id": "9d70011d-ea5b-4aba-8ed7-5ed8d55845d5",
+                "resourcePath": "sprites\\sCandle_lignting\\sCandle_lignting.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "572a837e-d9d7-486d-8858-0905fa0a4839",
             "Value": {
                 "id": "a04ad059-1428-4918-a520-cceb9e8d7f0c",
@@ -860,6 +876,14 @@
                 "id": "c0a3cf1f-1741-49e7-b8bf-2edae3cf17a6",
                 "resourcePath": "views\\670e1f56-d7c9-4e5c-9b84-c08370e2c4e3.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "67605f63-60e4-4e08-9b17-a4e3465c278d",
+            "Value": {
+                "id": "1e9f513b-722e-408d-bc2f-5620adbb3e16",
+                "resourcePath": "sprites\\sCandle_shut\\sCandle_shut.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1195,6 +1219,14 @@
             "Value": {
                 "id": "48a036fa-c5ae-4f4b-9a85-ae3c8f9b7a34",
                 "resourcePath": "sprites\\sPlatform\\sPlatform.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8afae929-083b-4fc4-8083-2f40308a7e6b",
+            "Value": {
+                "id": "f8971169-0ff9-4f27-8803-45294bac396f",
+                "resourcePath": "sprites\\sPlayer_jump\\sPlayer_jump.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1716,6 +1748,14 @@
                 "id": "9e434f88-a67c-4b6b-933a-21e41e166778",
                 "resourcePath": "scripts\\draw_sprite_skew_ext\\draw_sprite_skew_ext.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "c0e03494-5d87-450c-91b7-9c46098333db",
+            "Value": {
+                "id": "47ef5bf5-2eda-439e-9401-291cab60ae07",
+                "resourcePath": "sprites\\sCandle_loop\\sCandle_loop.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

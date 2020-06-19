@@ -21,28 +21,13 @@ if keyboard_check_pressed(vk_enter)
 	}
 }
 */
-if mouse_check_button_pressed(mb_left)
-{
-	instance_create_layer(mouse_x,mouse_y,"Instances",oFireflie);
-}
 
-#region shadow
-	if instance_exists(shadow)
-	{
-		with shadow
-		{
-			image_speed = other.image_speed;
-			sprite_index = other.sprite_index;
-			image_index = other.image_index;
-			x = other.x;
-			y = other.y;
-			image_xscale = other.image_xscale;
-		}
-	}
-#endregion
 // move
 switch (state)
 {
+case "lighting": 
+	state = "move";
+break;
 case "move": 
 	//reset everything when grounded
 	if grounded 
@@ -70,13 +55,6 @@ case "move":
 		move = 1;
 		
 		set_state_sprite(sPlayer_walk1,walk_anim_speed,0);
-		if vsp != 0 || hsp != 0
-		{
-			with instance_create_layer(x,y - 10,"Scarf",oScarf_particle)
-			{
-				image_angle = point_direction(x,y - 10, x + other.hsp, y - 10 + other.hsp);
-			}
-		}
 	}
 	
 	if input.jump && (grounded || jump < number_of_jump)
@@ -87,6 +65,12 @@ case "move":
 		vsp = jump_speed;
 	}
 	
+	if place_meeting(x,y,oCandle) && input.action
+	{
+		state = "lighting";
+	}
+	
+	
 	//show_debug_message("walk_speed : " + string(walk_speed));
 	//show_debug_message("vsp : " + string(vsp));
 	//show_debug_message("mask index : " + string(sprite_get_name(mask_index)));
@@ -94,6 +78,7 @@ case "move":
 	//show_debug_message("distance_to_slope : " + string(distance_to_slope));
 	//show_debug_message("y : " + string(y));
 break;
+
 }
 
 //move aplication
@@ -119,6 +104,12 @@ if hsp < 0
 if hsp = 0
 {
 	set_state_sprite(sPlayer_idle,0.1,0);
+}
+if !grounded
+{
+	if vsp > 0 set_state_sprite(sPlayer_jump,0,1);
+	if vsp <= 0 set_state_sprite(sPlayer_jump,0,0);
+		
 }
 	
 #endregion
@@ -154,7 +145,7 @@ if hsp = 0
 	
 #endregion
 #region effects
-	if room == room0
+	if room == rRunning
 	{
 		if get_timer() mod 10 == 0
 		{
@@ -170,3 +161,5 @@ if hsp = 0
 #endregion
 // Inherit the parent event
 event_inherited();
+
+//show_debug_message("state : " + string(state));

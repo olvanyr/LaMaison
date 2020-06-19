@@ -16,6 +16,9 @@ left_cam = 0;
 jump = keyboard_check_pressed(vk_space);
 jump_released = keyboard_check_released(vk_space);
 
+//action
+action = keyboard_check_pressed(ord("A"));
+
 
 //dialogue
 enter = keyboard_check_pressed(vk_enter);

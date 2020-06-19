@@ -5,6 +5,7 @@ right = 0;
 up = 0;
 down = 0;
 jump = 0;
+action = 0;
 
 
 //dialogue
