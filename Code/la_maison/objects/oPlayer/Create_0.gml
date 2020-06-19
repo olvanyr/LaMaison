@@ -23,7 +23,6 @@ state = "move";
 	jump = 0;
 	number_of_jump = 2;
 	
-	
 	shadow = noone;
 	
 	//platform setting
