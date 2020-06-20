@@ -26,7 +26,19 @@ if keyboard_check_pressed(vk_enter)
 switch (state)
 {
 case "lighting": 
-	state = "move";
+	set_state_sprite(sPlayer_match,1,0);
+	if animation_hit_frame(2)
+	{
+		temp_light = instance_create_layer(x,y-14,"Effects",oLight_child)
+		{
+			light_color = make_color_rgb(255,124,34);
+		}
+	}
+	if animation_hit_frame(image_number -1) 
+	{
+		instance_destroy(temp_light);
+		state = "move";
+	}
 break;
 case "move": 
 	//reset everything when grounded
@@ -69,7 +81,27 @@ case "move":
 	{
 		state = "lighting";
 	}
+	#region animation
+	if hsp > 0
+	{
+		set_state_sprite(sPlayer_walk1,walk_anim_speed,0);
+	}
+	if hsp < 0
+	{
+		set_state_sprite(sPlayer_walk1,walk_anim_speed,0);
+	}
+	if hsp = 0
+	{
+		set_state_sprite(sPlayer_idle,0.1,0);
+	}
+	if !grounded
+	{
+		if vsp > 0 set_state_sprite(sPlayer_jump,0,1);
+		if vsp <= 0 set_state_sprite(sPlayer_jump,0,0);
+		
+	}
 	
+	#endregion
 	
 	//show_debug_message("walk_speed : " + string(walk_speed));
 	//show_debug_message("vsp : " + string(vsp));
@@ -92,27 +124,7 @@ if move != 0
 	
 hsp = walk_speed * move;
 
-#region animation
-if hsp > 0
-{
-	set_state_sprite(sPlayer_walk1,walk_anim_speed,0);
-}
-if hsp < 0
-{
-	set_state_sprite(sPlayer_walk1,walk_anim_speed,0);
-}
-if hsp = 0
-{
-	set_state_sprite(sPlayer_idle,0.1,0);
-}
-if !grounded
-{
-	if vsp > 0 set_state_sprite(sPlayer_jump,0,1);
-	if vsp <= 0 set_state_sprite(sPlayer_jump,0,0);
-		
-}
-	
-#endregion
+
 #region slope
 	//check if there is a slope under 
 	var distance_to_wall = 0;
@@ -145,21 +157,40 @@ if !grounded
 	
 #endregion
 #region effects
-	if room == rRunning
+if room == rRunning
+{
+	if get_timer() mod 10 == 0
 	{
-		if get_timer() mod 10 == 0
+		repeat(choose(0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,2,2))
 		{
-			repeat(choose(0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,2,2))
-			{
-				var random_x = x + random_range(-global.view_width/2,global.view_width/2);
-				var random_y = y + random_range(-global.view_height/2,global.view_height/2);
-				instance_create_layer(random_x,random_y,"Instances",oFireflie);
-			}
+			var random_x = x + random_range(-global.view_width/2,global.view_width/2);
+			var random_y = y + random_range(-global.view_height/2,global.view_height/2);
+			instance_create_layer(random_x,random_y,"Instances",oFireflie);
 		}
 	}
+}
+
+if number_of_jump != previous_jump_number
+{
+	with oJump
+	{
+		if creator == other instance_destroy();
+	}
+	for(var i = 1;i < number_of_jump +1; i++)
+	{
+		with instance_create_layer(x,y,"Effects",oJump)
+		{
+			creator = other;
+			counter = i;
+		}
+	}
+}
+previous_jump_number = number_of_jump;
+
 
 #endregion
 // Inherit the parent event
 event_inherited();
 
 //show_debug_message("state : " + string(state));
+show_debug_message("jump : " + string(jump));

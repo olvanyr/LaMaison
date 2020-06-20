@@ -71,4 +71,4 @@ with place_meeting(x,y,oPlayer)
 	}
 }
 
-show_debug_message("ligth : " + string(light));
+//show_debug_message("ligth : " + string(light));

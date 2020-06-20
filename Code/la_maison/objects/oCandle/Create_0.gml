@@ -1,13 +1,16 @@
-// light_alpha : set the intensity of the light, 1 means the color on the light sprite are removed completely from the surface
+target_depth = depth_layer.lamppost;
+target_layer = "Lamppost";
 
-//light_color : this can change the color set to noone, if no color 
-//light_color_alpha : set the intensity of the color on the light, to much don't look great
+if !layer_exists(target_layer)
+{
+	layer_create(target_depth,target_layer);
+}
+layer_depth(layer_get_id(target_layer), target_depth);
+layer = layer_get_id(target_layer);
 
-//light_x = this can be change to make some efect 
 
-// light_xscale : this can be change to change size of the light
 
-//light_angle : this can be change to oriantate the light
+
 state = "shut";
 image_speed = 0;
 image_index = image_number -1;

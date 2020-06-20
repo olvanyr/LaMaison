@@ -21,7 +21,8 @@ state = "move";
 
 	//double jump
 	jump = 0;
-	number_of_jump = 2;
+	number_of_jump = 1;
+	previous_jump_number = 0;
 	
 	shadow = noone;
 	
@@ -33,3 +34,7 @@ state = "move";
 //specifique room
 running = false;
 running_checkpoint = noone;
+
+// matches light animation
+temp_light = noone;
+

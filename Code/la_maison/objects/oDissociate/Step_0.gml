@@ -1,27 +1,3 @@
-#region shadow
-if instance_exists(shadow)
-{
-	with shadow
-	{
-		image_speed = other.image_speed;
-		sprite_index = other.sprite_index;
-		image_index = other.image_index;
-		x = other.x;
-		y = other.y;
-		image_xscale = other.image_xscale;
-	}
-}
-#endregion
-
-if mouse_check_button_pressed(mb_left)
-{
-	with instance_create_layer(mouse_x,mouse_y,"Instances",oDissociate_effect)
-	{
-		_x = mouse_x;
-		_y = mouse_y;
-	}
-}
-
 if particle_timer == 100
 {
 	with instance_create_layer(x,y,"Effects",oDissociate_effect)
@@ -299,6 +275,12 @@ if hsp < 0
 if hsp = 0
 {
 	set_state_sprite(sPlayer_idle,0.1,0);
+}
+if !grounded
+{
+	if vsp > 0 set_state_sprite(sPlayer_jump,0,1);
+	if vsp <= 0 set_state_sprite(sPlayer_jump,0,0);
+		
 }
 	
 #endregion

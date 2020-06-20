@@ -15,14 +15,6 @@ if !instance_exists(oCamera)
 	cam = instance_create_layer(0,0,"Instances",oCamera);
 }
 
-/*
-if !instance_exists(oScarf)
-{
-	with instance_create_layer(x,y,"player",oScarf)
-	{
-		creator = other.id;
-	}
-}*/
 #endregion
 
 //set up camera
