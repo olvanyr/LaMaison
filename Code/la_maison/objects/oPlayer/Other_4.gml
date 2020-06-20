@@ -1,7 +1,12 @@
+set_layer("Effects",depth_layer.effects);
+
+set_layer("Background",depth_layer.background);
+
 set_layer("Tiles",depth_layer.tiles);
-layer_depth("Assets",depth_layer.assets);
 
 set_layer("Walls",depth_layer.walls);
+
+set_layer("Assets",depth_layer.assets);
 
 set_layer("Player",depth_layer.player);
 #region dependencise

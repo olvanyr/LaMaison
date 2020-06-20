@@ -1,10 +1,3 @@
-
-if keyboard_check_pressed(ord("C"))
-{
-	draw = true;
-}
-
-
 if draw == true
 {
 	if _y < -21

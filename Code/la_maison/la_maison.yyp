@@ -207,6 +207,14 @@
             }
         },
         {
+            "Key": "1a193706-f2bc-4857-8191-a63972181176",
+            "Value": {
+                "id": "19ae75ef-5631-4be7-9f1f-39b68eeb0c78",
+                "resourcePath": "sounds\\aText_04\\aText_04.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "1a8a7493-8c43-498f-a361-0bba7c00a6a9",
             "Value": {
                 "id": "80114ece-cca9-4a4d-b780-df769f82e310",
@@ -460,6 +468,14 @@
                 "id": "d2399f32-32a5-422b-a57f-9273ac7947e5",
                 "resourcePath": "sprites\\sSky_disk\\sSky_disk.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3aa82e63-83fb-46cd-9163-0c6c8fd37bf7",
+            "Value": {
+                "id": "953214e2-020f-4e7c-b7d3-11b661009759",
+                "resourcePath": "objects\\oSound\\oSound.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -951,6 +967,14 @@
             }
         },
         {
+            "Key": "7096983d-fdfa-42d0-97e1-aa4e74d81338",
+            "Value": {
+                "id": "a644d7ad-fdc3-47e9-8900-f9d6861ccb2d",
+                "resourcePath": "datafiles_yy\\sT-shirt.aseprite.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "710a3b0f-f79c-48f8-ba9d-25b43528db34",
             "Value": {
                 "id": "44c08ced-1663-4f9e-9128-9b6d013d2269",
@@ -991,11 +1015,27 @@
             }
         },
         {
+            "Key": "78305c0e-7a77-48dd-9e82-928ebebae0ca",
+            "Value": {
+                "id": "5dd79d79-5ad5-4317-8f16-ae23b837cb85",
+                "resourcePath": "objects\\oBuanderie\\oBuanderie.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "789299f3-42c8-480b-b4d6-f278fd86c020",
             "Value": {
                 "id": "4c84c226-5631-4989-ad45-b146cbd9c2e8",
                 "resourcePath": "sprites\\sLamppost1\\sLamppost1.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "79c3cc0d-7fb8-4c2b-aff4-1c713ebaf2a5",
+            "Value": {
+                "id": "002b9773-efcd-4841-b56a-1c87949f9f49",
+                "resourcePath": "rooms\\rBuanderie\\rBuanderie.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -1259,6 +1299,14 @@
             "Value": {
                 "id": "1a0d2db1-bf3a-443f-864b-f274d4063dd0",
                 "resourcePath": "sprites\\sLamppost2\\sLamppost2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8fcb8dab-92fe-4d6f-9122-262c27849d2a",
+            "Value": {
+                "id": "688b05f3-03a7-4037-add4-bc7920242b4e",
+                "resourcePath": "sprites\\sSound\\sSound.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2143,6 +2191,14 @@
             }
         },
         {
+            "Key": "f0c60aad-2170-44e8-81fb-1c9355e7aaa6",
+            "Value": {
+                "id": "798ee463-341b-4b3b-bf42-fc369fa3b0fb",
+                "resourcePath": "datafiles_yy\\sT-shirt.png.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "f3aa36d1-ed43-425a-b8b0-e12c92ce76bd",
             "Value": {
                 "id": "fd13fbca-33ad-4e87-b011-debec5dec674",
@@ -2307,6 +2363,14 @@
             "Value": {
                 "id": "795a21d6-2585-43d8-8d42-f287506bd238",
                 "resourcePath": "sprites\\sFish\\sFish.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "fe558193-b589-4276-a940-4f090edc9cf1",
+            "Value": {
+                "id": "1ed9b006-aa09-4bb9-a357-1202cca16c38",
+                "resourcePath": "sprites\\sT_shirt\\sT_shirt.yy",
                 "resourceType": "GMSprite"
             }
         }

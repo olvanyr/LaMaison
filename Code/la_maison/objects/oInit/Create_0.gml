@@ -14,7 +14,8 @@ enum depth_layer
 	assets		= 1000,
 	lamppost	= 1200,
 	bush		= 1300,
-	tree		= 1500
+	tree		= 1500,
+	background  = 3600
 }
 //unified color for when you have to type siomething
 global.typing_color = c_blue;
