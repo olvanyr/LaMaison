@@ -13,15 +13,16 @@
 			ds_map_add(_map, "MASTERVOLUME"		, global.mastervolume);
 			ds_map_add(_map, "SOUNDSVOLUME"		, global.soundsvolume);
 			ds_map_add(_map, "MUSICVOLUME"		, global.musicvolume);
+			// control
 			ds_map_add(_map, "up"				, global.key_up);
 			ds_map_add(_map, "left"				, global.key_left);
 			ds_map_add(_map, "right"			, global.key_right);
 			ds_map_add(_map, "down"				, global.key_down);
 			ds_map_add(_map, "jump"				, global.key_jump);
-			ds_map_add(_map, "attack"			, global.key_attack);
-			ds_map_add(_map, "slide"			, global.key_slide);
-			ds_map_add(_map, "cast"				, global.key_cast);
-			ds_map_add(_map, "use"				, global.key_use);
+			ds_map_add(_map, "action"			, global.key_action);
+			ds_map_add(_map, "menu_up"			, global.key_menu_up);
+			ds_map_add(_map, "menu_down"		, global.key_menu_down);
+			ds_map_add(_map, "enter"			, global.key_menu_enter);
 			ds_map_add(_map, "objects"			, global.objects);
 
 	// Wrap the root list up in a map ! beacause gms2 "dosen't like" starting with enything othe rthan a ds_map

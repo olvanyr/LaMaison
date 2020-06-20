@@ -535,6 +535,14 @@
             }
         },
         {
+            "Key": "3ebb0dc5-74aa-4688-ae6e-cd3d351afef1",
+            "Value": {
+                "id": "3a82e51f-15b5-4443-891a-361ad869710b",
+                "resourcePath": "objects\\oCollectible\\oCollectible.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3f27a615-126b-4623-a841-a13b19ae47e3",
             "Value": {
                 "id": "08cdd8e1-98fb-4f52-b379-9ea544f5b9f3",

@@ -25,7 +25,18 @@ global.zoom_max = 4;
 
 global.tile_size = 8;
 
+//global.objects_array : { { bidule,truc },  }
+//global.objects_array : { { bidule,btruc },  }
 global.objects = noone;
+global.objects_array = noone;
+
+//fullscreen
+global.fullscreen = true;
+
+// volume
+global.mastervolume = 1;
+global.soundsvolume = 1;
+global.musicvolume = 1;
 
 // control
 //game
@@ -39,4 +50,6 @@ global.key_action					= ord("A");
 global.key_menu_up				= ord("Z");
 global.key_menu_down			= ord("S");
 global.key_menu_enter			= vk_space;
+
+load_game();
 room_goto_next();

@@ -1,0 +1,1 @@
+if in_list(global.objects_array,name) instance_destroy();

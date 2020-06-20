@@ -1,3 +1,10 @@
+if keyboard_check_pressed(ord("H"))
+{
+save_game();
+
+}
+
+
 /*
 if keyboard_check_pressed(vk_enter)
 {
@@ -193,4 +200,5 @@ previous_jump_number = number_of_jump;
 event_inherited();
 
 //show_debug_message("state : " + string(state));
-show_debug_message("jump : " + string(jump));
+//show_debug_message("jump : " + string(jump));
+//show_debug_message("global.objects_array : " + string(global.objects_array[1]));
