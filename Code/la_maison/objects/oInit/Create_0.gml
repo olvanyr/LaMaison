@@ -25,4 +25,18 @@ global.zoom_max = 4;
 
 global.tile_size = 8;
 
+global.objects = noone;
+
+// control
+//game
+global.key_left					= ord("Q");
+global.key_right				= ord("D");
+global.key_up					= ord("Z");
+global.key_down					= ord("S");
+global.key_jump					= vk_space;
+global.key_action					= ord("A");
+//dialogue
+global.key_menu_up				= ord("Z");
+global.key_menu_down			= ord("S");
+global.key_menu_enter			= vk_space;
 room_goto_next();

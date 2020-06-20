@@ -127,6 +127,14 @@
             }
         },
         {
+            "Key": "0fc473d7-7968-46ad-a700-987d51f37105",
+            "Value": {
+                "id": "24c5e830-19d3-4cef-b497-bd0cef75cb89",
+                "resourcePath": "views\\0fc473d7-7968-46ad-a700-987d51f37105.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "12f2dbf0-eee2-4d19-b7e6-5d5a87ac194a",
             "Value": {
                 "id": "412097d8-4f5f-4f95-880d-1b2152ee4ef9",
@@ -188,6 +196,14 @@
                 "id": "9fb582f6-e4cf-4be3-aebf-bfea14f5732f",
                 "resourcePath": "objects\\oCandle\\oCandle.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "182438ed-c2c0-46ff-bcd0-1bbc9300f5b0",
+            "Value": {
+                "id": "912cff1e-e98a-499e-8317-f13fee0061a8",
+                "resourcePath": "views\\182438ed-c2c0-46ff-bcd0-1bbc9300f5b0.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -319,6 +335,14 @@
             }
         },
         {
+            "Key": "2711833e-9fe8-4ada-842c-2a130701a447",
+            "Value": {
+                "id": "285bdbc6-96f7-4043-a7fe-acf666a30147",
+                "resourcePath": "views\\2711833e-9fe8-4ada-842c-2a130701a447.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "29284184-10ed-45b7-9705-7cbd2ad1b404",
             "Value": {
                 "id": "7dfd3324-009a-4d6f-8682-eb52ef3654f4",
@@ -420,6 +444,14 @@
                 "id": "c478f51a-d51b-4fd8-8205-601cce0b9b53",
                 "resourcePath": "sprites\\sTiles_Forest_1corner_bl\\sTiles_Forest_1corner_bl.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "326f18cf-a596-414b-8525-ba5ab806742d",
+            "Value": {
+                "id": "4b416c74-f627-477a-85d4-05ac269ed2ac",
+                "resourcePath": "scripts\\save_game\\save_game.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -716,6 +748,14 @@
                 "id": "d45b1d7a-e17a-411f-bbd6-ffda52b10a84",
                 "resourcePath": "sprites\\sDialogue_box\\sDialogue_box.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5202f56d-4d0d-40b9-a91a-d7b78e693453",
+            "Value": {
+                "id": "010fc7c7-95ca-4b97-96d5-4e9b16a217f8",
+                "resourcePath": "scripts\\load_game\\load_game.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1175,6 +1215,14 @@
             }
         },
         {
+            "Key": "82486ed5-8b98-4b6f-8c27-2b0f5487f9bd",
+            "Value": {
+                "id": "5646d2da-4479-4e0e-a57c-3f18500973b2",
+                "resourcePath": "scripts\\load_instances\\load_instances.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "83312867-d060-4366-8ce1-733655509857",
             "Value": {
                 "id": "1af10465-43e9-440b-9402-8561c637bee1",
@@ -1356,6 +1404,14 @@
                 "id": "c8824a8e-ad05-4973-86e4-9b4071f3c210",
                 "resourcePath": "sprites\\sTiles_Forest_2side_b_r\\sTiles_Forest_2side_b_r.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "93ac0f81-3a55-4c37-8974-f8dd0af8fba4",
+            "Value": {
+                "id": "36befb29-bfde-4e22-a9a2-6036b7769d3e",
+                "resourcePath": "scripts\\load_JSON_from_file\\load_JSON_from_file.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1655,6 +1711,14 @@
             }
         },
         {
+            "Key": "b19a1fab-ba69-488c-ac12-55b49158df19",
+            "Value": {
+                "id": "7b2d9810-fa1a-43ef-8672-13b97ed58098",
+                "resourcePath": "scripts\\save_instances\\save_instances.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "b24bc3e1-6613-4abb-a3fa-d284cf6228f5",
             "Value": {
                 "id": "a6e1285a-f487-44fe-972e-548f9032c612",
@@ -1708,6 +1772,14 @@
                 "id": "51763a44-d7f8-43fe-8dd0-35d5951f0d01",
                 "resourcePath": "objects\\oLight_manager\\oLight_manager.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "b82e74cb-bd61-4d47-9cb1-d64a104bfaa2",
+            "Value": {
+                "id": "68ed3679-8b9a-43eb-8ce9-78abf24a4a08",
+                "resourcePath": "scripts\\save_string_to_file\\save_string_to_file.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2378,18 +2450,24 @@
     "script_order": [
         "97365aa3-83a4-4907-9456-4d27dd2ec86c",
         "20ea4152-ac7d-4ee5-a5ca-aa2700e148cb",
+        "2b4829f1-41d0-41f3-8a98-ada9191d9953",
+        "c037fd16-712b-4ff8-a23c-db0d9183e92e",
+        "6b46bc80-41d8-4c1d-bea9-da25c86b8549",
         "b24bc3e1-6613-4abb-a3fa-d284cf6228f5",
         "3686e456-ee60-49fd-a80c-dd8cb91fea23",
         "ef5be34f-d4c9-42c0-b648-881160fd52d6",
         "3f27a615-126b-4623-a841-a13b19ae47e3",
-        "2b4829f1-41d0-41f3-8a98-ada9191d9953",
-        "c037fd16-712b-4ff8-a23c-db0d9183e92e",
-        "6b46bc80-41d8-4c1d-bea9-da25c86b8549",
-        "643dc6c7-8062-4ca4-b430-9cfb4b6af19d",
         "43a6972f-30ee-48d9-a407-bdbdb7a35419",
         "58c09e29-9a6f-416b-b944-5e913a3322f7",
+        "643dc6c7-8062-4ca4-b430-9cfb4b6af19d",
         "c0c49559-04ab-482c-bb77-290acd39a0b4",
-        "c49c5e12-9f90-4c8f-b5e3-fe8920444314"
+        "c49c5e12-9f90-4c8f-b5e3-fe8920444314",
+        "b82e74cb-bd61-4d47-9cb1-d64a104bfaa2",
+        "93ac0f81-3a55-4c37-8974-f8dd0af8fba4",
+        "b19a1fab-ba69-488c-ac12-55b49158df19",
+        "82486ed5-8b98-4b6f-8c27-2b0f5487f9bd",
+        "326f18cf-a596-414b-8525-ba5ab806742d",
+        "5202f56d-4d0d-40b9-a91a-d7b78e693453"
     ],
     "tutorial": ""
 }

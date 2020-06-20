@@ -1,14 +1,14 @@
 //all input needed
 
-left  = 0;
-right = 0;
-up = 0;
-down = 0;
-jump = 0;
-action = 0;
+left  =		keyboard_check(global.key_left);
+right =		keyboard_check(global.key_right);
+up =		keyboard_check(global.key_up);
+down =		keyboard_check(global.key_down);
+jump =		keyboard_check_pressed(global.key_jump);
+action =	keyboard_check_pressed(global.key_action);
 
 
 //dialogue
-enter = 0;
-menu_up = 0;
-menu_down = 0;
+enter =		keyboard_check_pressed(global.key_menu_enter);
+menu_up =	keyboard_check_pressed(global.key_menu_up);
+menu_down = keyboard_check_pressed(global.key_menu_down);
