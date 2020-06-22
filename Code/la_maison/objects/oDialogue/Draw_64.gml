@@ -97,15 +97,18 @@ var gauge_buffer = ((gwidth/2)/5)-15;
 var gauge_x = start_x - gwidth/4 + gauge_buffer;
 var gauge_y = start_y - gheight/3;
 
-for(var i=0;i< array_length_1d(rate_score);i++)
+
+if rate
 {
-	var gauge_x = start_x - gwidth/4 + (gauge_buffer*(i+1));
-	draw_roundrect_color_ext(gauge_x,gauge_y,gauge_x + 30,gauge_y + 150,15,15,c_black,c_black,false);
-	if rate_score[i] != 0
+	for(var i=0;i< array_length_1d(rate_score);i++)
 	{
-		draw_roundrect_color_ext(gauge_x + 6,gauge_y + 5,gauge_x + 30 - 5,gauge_y + ((150 - 5)*(rate_score[i]/max_score)),10,10,color[i],color[i],false);
+		var gauge_x = start_x - gwidth/4 + (gauge_buffer*(i+1));
+		draw_roundrect_color_ext(gauge_x,gauge_y,gauge_x + 30,gauge_y + 150,15,15,c_black,c_black,false);
+		if rate_score[i] != 0
+		{
+			draw_roundrect_color_ext(gauge_x + 6,gauge_y + 5,gauge_x + 30 - 5,gauge_y + ((150 - 5)*(rate_score[i]/max_score)),10,10,color[i],color[i],false);
+		}
 	}
 }
-
 
 #endregion

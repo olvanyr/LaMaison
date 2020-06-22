@@ -1,6 +1,6 @@
 if instance_exists(oPlayer)
 {
-	if abs(x - oPlayer.x) < fov
+	if distance_to_object(oPlayer) < fov
 	{
 		oCamera.follow = self;
 	}else oCamera.follow = oPlayer;

@@ -29,6 +29,20 @@ if keyboard_check_pressed(vk_enter)
 }
 */
 
+//fix the move and knockback against wall bug 
+if place_meeting(x,y,oWall)
+{
+	if !place_meeting(x + 1,y,oWall)
+	{
+		x += 1
+	}
+	if !place_meeting(x - 1,y,oWall)
+	{
+		x -= 1
+	}
+}
+
+
 // move
 switch (state)
 {
@@ -164,6 +178,7 @@ hsp = walk_speed * move;
 	
 #endregion
 #region effects
+//create the firefly for the forest
 if room == rRunning
 {
 	if get_timer() mod 10 == 0
@@ -176,24 +191,32 @@ if room == rRunning
 		}
 	}
 }
-
-if number_of_jump != previous_jump_number
+//display the number of jump left
+if room == room0
 {
-	with oJump
+	if number_of_jump != previous_jump_number
 	{
-		if creator == other instance_destroy();
-	}
-	for(var i = 1;i < number_of_jump +1; i++)
-	{
-		with instance_create_layer(x,y,"Effects",oJump)
+		with oJump
 		{
-			creator = other;
-			counter = i;
+			if creator == other instance_destroy();
+		}
+		for(var i = 1;i < number_of_jump +1; i++)
+		{
+			with instance_create_layer(x,y,"Effects",oJump)
+			{
+				creator = other;
+				counter = i;
+			}
 		}
 	}
+	previous_jump_number = number_of_jump;
 }
-previous_jump_number = number_of_jump;
 
+//add the black background for in the dark platforming
+if room == room0
+{
+	draw_black_sprite = true;
+}
 
 #endregion
 // Inherit the parent event

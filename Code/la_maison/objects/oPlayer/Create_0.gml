@@ -37,4 +37,5 @@ running_checkpoint = noone;
 
 // matches light animation
 temp_light = noone;
+draw_black_sprite = false;
 

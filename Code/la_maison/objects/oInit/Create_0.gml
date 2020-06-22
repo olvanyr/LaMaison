@@ -1,12 +1,12 @@
 enum depth_layer
 {
 	sky				= -2000,
+	glowing_walls	= -1700,
 	light			= -1500,
 	effects			= -1000,
 	typing			= - 500,
 	player			= 0,
 	scarf			= 50,
-	glowing_walls	= 60,
 	shadows			= 100,
 	doors			= 120,
 	tiles			= 150,
@@ -30,6 +30,8 @@ global.tile_size = 8;
 //global.objects_array : { { bidule,btruc },  }
 global.objects = noone;
 global.objects_array = noone;
+
+global.all_objects[0] = "shirt";
 
 //fullscreen
 global.fullscreen = true;

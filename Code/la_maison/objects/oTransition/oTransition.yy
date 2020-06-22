@@ -1,33 +1,43 @@
 {
-    "id": "3ebb0dc5-74aa-4688-ae6e-cd3d351afef1",
+    "id": "6562a548-309c-4fec-a3e6-ecae41b42f85",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oCollectible",
+    "name": "oTransition",
     "eventList": [
         {
-            "id": "d762403a-8cbb-45cd-9bcd-3d178b5982d2",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "3ebb0dc5-74aa-4688-ae6e-cd3d351afef1"
-        },
-        {
-            "id": "9077aa78-c559-4b0a-af17-d80d777ac7a4",
+            "id": "ddb5b0f7-db68-443c-968d-e8eb28a51584",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "3ebb0dc5-74aa-4688-ae6e-cd3d351afef1"
+            "m_owner": "6562a548-309c-4fec-a3e6-ecae41b42f85"
+        },
+        {
+            "id": "cffaf992-6752-41b8-be1e-6b168897ba55",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 75,
+            "eventtype": 8,
+            "m_owner": "6562a548-309c-4fec-a3e6-ecae41b42f85"
+        },
+        {
+            "id": "faa949c1-eecb-42c5-a52c-854fd0914920",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
+            "m_owner": "6562a548-309c-4fec-a3e6-ecae41b42f85"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "5fb4757e-90a0-48e6-9faf-6b1652aa4698",
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -43,7 +53,7 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "fa46a8ed-6e1c-4281-ab84-bd90f3fcbf78",
+            "id": "5585801c-a11d-476a-a4fa-4010bb2a0d15",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -52,12 +62,12 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "noone",
-            "varName": "name",
+            "value": "\"oppening\"",
+            "varName": "state",
             "varType": 2
         }
     ],
     "solid": false,
-    "spriteId": "fe558193-b589-4276-a940-4f090edc9cf1",
+    "spriteId": "33c85347-a459-4136-bb57-aede6b0a7d3d",
     "visible": true
 }
