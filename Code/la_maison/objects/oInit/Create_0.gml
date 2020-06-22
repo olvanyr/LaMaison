@@ -46,11 +46,11 @@ global.key_right				= ord("D");
 global.key_up					= ord("Z");
 global.key_down					= ord("S");
 global.key_jump					= vk_space;
-global.key_action					= ord("A");
+global.key_action				= ord("A");
 //dialogue
-global.key_menu_up				= ord("Z");
-global.key_menu_down			= ord("S");
-global.key_menu_enter			= vk_space;
+global.key_menu_up				= vk_up;
+global.key_menu_down			= vk_down;
+global.key_menu_enter			= vk_enter;
 
 load_game();
 room_goto_next();

@@ -20,7 +20,7 @@
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 64,
+            "enumb": 75,
             "eventtype": 8,
             "m_owner": "7aabe745-1320-41a1-8b36-3f552b7a524c"
         }
@@ -52,7 +52,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "rRunning",
+            "value": "noone",
             "varName": "next_room",
             "varType": 5
         },
@@ -66,9 +66,23 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "-20",
+            "value": "4000",
             "varName": "_y",
             "varType": 0
+        },
+        {
+            "id": "524d5ef9-2ecf-4e2a-b18d-06d51664d547",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "draw",
+            "varType": 3
         }
     ],
     "solid": false,

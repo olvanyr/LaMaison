@@ -1,3 +1,7 @@
+width = display_get_gui_width() + 20;
+height = display_get_gui_height() + 20;
+
+
 if draw == true
 {
 	if _y < -21
@@ -9,6 +13,7 @@ if draw == true
 	}
 	if _y > height
 	{
+		_y = height;
 		spd = 0;
 		dir = "neg"
 		

@@ -82,12 +82,27 @@ if !inputting //if we are not inputing it means that we can move in the menu
 
 //when we presse enter, I input and execute the action if simple or a sinlge script
 if(input.enter){
+		
 	switch(ds_[# 1, menu_option[page]]){
 		case menu_element.script_runner: script_execute(ds_[# 2, menu_option[page]]); break;
-		case menu_element.page_transfer: page = ds_[# 2, menu_option[page]]; break;
+		case menu_element.page_transfer: 
+		{
+			if rate
+			{
+				add_dialogue_score(ds_);	
+				//show_debug_message(rate_score);
+			}
+			page = ds_[# 2, menu_option[page]]; 
+			menu_option[page] = 1;
+		}break;
 		case menu_element.typing: 
 			if completed = true 
 			{
+				if rate
+				{
+					add_dialogue_score(ds_);
+					//show_debug_message(rate_score);
+				}
 				page = ds_[# 2, menu_option[page]]; 
 				completed = false;
 				text_part = "";
