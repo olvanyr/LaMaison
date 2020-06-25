@@ -213,7 +213,7 @@ if room == room0
 }
 
 //add the black background for in the dark platforming
-if room == room0
+if room == rRunning
 {
 	draw_black_sprite = true;
 }
