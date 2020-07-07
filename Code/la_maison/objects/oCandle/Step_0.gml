@@ -64,7 +64,7 @@ if light
 
 with place_meeting(x,y,oPlayer)
 {
-	if state == "lighting"
+	if state == "lighting" && animation_hit_frame(3)
 	{
 		other.light = true;
 		other.state = state;

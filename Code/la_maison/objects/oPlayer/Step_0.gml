@@ -179,7 +179,7 @@ hsp = walk_speed * move;
 #endregion
 #region effects
 //create the firefly for the forest
-if room == rRunning
+if room == room0
 {
 	if get_timer() mod 10 == 0
 	{
@@ -192,7 +192,7 @@ if room == rRunning
 	}
 }
 //display the number of jump left
-if room == room0
+if room == rRunning
 {
 	if number_of_jump != previous_jump_number
 	{
@@ -224,4 +224,4 @@ event_inherited();
 
 //show_debug_message("state : " + string(state));
 //show_debug_message("jump : " + string(jump));
-//show_debug_message("global.objects_array : " + string(global.objects_array[1]));
+show_debug_message("global.objects_array : " + string(global.objects_array[1]));
