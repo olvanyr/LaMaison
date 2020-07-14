@@ -179,7 +179,7 @@ hsp = walk_speed * move;
 #endregion
 #region effects
 //create the firefly for the forest
-if room == room0
+if room == rRunning
 {
 	if get_timer() mod 10 == 0
 	{

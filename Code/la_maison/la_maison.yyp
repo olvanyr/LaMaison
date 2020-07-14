@@ -2247,6 +2247,14 @@
             }
         },
         {
+            "Key": "de411626-a5a9-46e4-b678-352ccd339277",
+            "Value": {
+                "id": "58188d6f-3097-46e3-9de2-0a7ced5de860",
+                "resourcePath": "objects\\oCircle_display\\oCircle_display.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e003b8db-a59e-4c13-bd76-b24ecad1e61e",
             "Value": {
                 "id": "be7cf7ca-6b30-48ef-a76e-e7d12f6b31dc",
