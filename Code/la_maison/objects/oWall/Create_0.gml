@@ -6,4 +6,3 @@ if visible
 {
 	alarm[0] = 1;
 }
-

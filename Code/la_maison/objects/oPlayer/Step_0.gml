@@ -224,4 +224,4 @@ event_inherited();
 
 //show_debug_message("state : " + string(state));
 //show_debug_message("jump : " + string(jump));
-show_debug_message("global.objects_array : " + string(global.objects_array[1]));
+//show_debug_message("global.objects_array : " + string(global.objects_array[1]));

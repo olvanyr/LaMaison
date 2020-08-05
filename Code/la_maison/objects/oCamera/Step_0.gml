@@ -24,9 +24,15 @@ if (instance_exists(follow))
 	yTo = follow.y
 }
 
+
+	
+
 //update object position
-x += (xTo - x) / 25;
-y += (yTo - y) / 25;
+var _x = (xTo - x) / 25
+var _y = (yTo - y) / 25
+
+x += _x;
+y += _y;
 
 //Keep camera centre isnide room
 x = clamp(x, view_w_half + buff, room_width - view_w_half - buff);

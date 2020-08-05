@@ -95,13 +95,17 @@ if right && left && top && bottom && top_left && top_right && bottom_left && bot
 sprite_index = asset_get_index("sTiles_" + string(zone) + string(state));
 auto_tile_random_sprite();
 
-
-if right&&left&&top&&bottom
-{
-	var sprite = layer_sprite_create("Tiles",x,y,sprite_index);
+ sprite = layer_sprite_create("Tiles",x,y,sprite_index);
+	layer_sprite_x(sprite,x);
+	layer_sprite_y(sprite,y);
+	layer_sprite_xscale(sprite,1.001)
+	layer_sprite_yscale(sprite,1.001)
 	layer_sprite_angle(sprite,image_angle);
 	layer_sprite_speed(sprite,image_speed);
 	layer_sprite_index(sprite,image_index);
+
+if right&&left&&top&&bottom
+{
 	alarm[1] = 1;
 }
 
