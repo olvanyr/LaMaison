@@ -83,6 +83,23 @@ case "move":
 			move = 0;
 			walk_speed = 0;
 		}
+		
+		if grounded && hsp != 0
+		{
+			if animation_hit_frame(1) || animation_hit_frame(5)
+			{
+				//audio_sound_pitch(aFootstep,choose(0.8,1.0,1.2));
+				//audio_play_sound(aFootstep,priority.low,0);
+				
+				repeat(3)
+				{
+					with (instance_create_layer(x,bbox_bottom,"Effects",oGround_effect))
+					{
+						vsp = 0;
+					}
+				}
+			}
+		}
 	}else 
 	{
 		move = 1;
@@ -102,6 +119,10 @@ case "move":
 	{
 		state = "lighting";
 	}
+	
+	// is landing ? 
+	if !grounded alarm[9] = 2;
+	
 	#region animation
 	if hsp > 0
 	{
@@ -130,6 +151,7 @@ case "move":
 	//show_debug_message("distance_to_wall : " + string(distance_to_wall));
 	//show_debug_message("distance_to_slope : " + string(distance_to_slope));
 	//show_debug_message("y : " + string(y));
+	
 break;
 
 }

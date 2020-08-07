@@ -559,6 +559,14 @@
             }
         },
         {
+            "Key": "3a211f7b-8438-4548-a35a-c6109cfc7b8e",
+            "Value": {
+                "id": "bccbd75e-6164-42e0-af29-00dc75ce3ae0",
+                "resourcePath": "sprites\\sDust\\sDust.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3aa82e63-83fb-46cd-9163-0c6c8fd37bf7",
             "Value": {
                 "id": "953214e2-020f-4e7c-b7d3-11b661009759",
@@ -1932,6 +1940,14 @@
                 "id": "401b8621-13f4-49c7-bb65-9edef3e66c96",
                 "resourcePath": "sprites\\sTiles_Wood_1side_l\\sTiles_Wood_1side_l.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b598cbd6-9b5d-43b4-afd6-872d4ba86863",
+            "Value": {
+                "id": "8d541623-e21a-47e9-b71e-933b1f0299f9",
+                "resourcePath": "objects\\oGround_effect\\oGround_effect.yy",
+                "resourceType": "GMObject"
             }
         },
         {
