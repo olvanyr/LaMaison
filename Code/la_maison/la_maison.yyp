@@ -319,6 +319,14 @@
             }
         },
         {
+            "Key": "1cf44b8f-eadb-45c7-b30b-de63ed65e1f7",
+            "Value": {
+                "id": "097ae693-54ba-4c14-9641-a65a1f345db2",
+                "resourcePath": "objects\\oDoor\\oDoor.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1d79eebe-5c6d-4053-b134-f22ee3b7cddc",
             "Value": {
                 "id": "f2822ca7-65d2-4ae0-b741-1ce5015cd325",
@@ -2291,6 +2299,14 @@
             "Value": {
                 "id": "7bcb03f0-5221-4656-bd65-0665b6a6d603",
                 "resourcePath": "sprites\\sTiles_Wood_2corner_tr_bl\\sTiles_Wood_2corner_tr_bl.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "db9d8903-b106-4240-9208-fcd7c7dff07e",
+            "Value": {
+                "id": "0db59403-f449-4ba6-8df6-54d86befc50d",
+                "resourcePath": "sprites\\sDoor_1\\sDoor_1.yy",
                 "resourceType": "GMSprite"
             }
         },
