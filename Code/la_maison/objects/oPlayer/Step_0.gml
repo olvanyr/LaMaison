@@ -47,6 +47,7 @@ if place_meeting(x,y,oWall)
 switch (state)
 {
 case "lighting": 
+	hsp = 0;
 	set_state_sprite(sPlayer_match,1,0);
 	if animation_hit_frame(2)
 	{
@@ -200,6 +201,14 @@ hsp = walk_speed * move;
 	
 #endregion
 #region effects
+//create the match
+if room == room0
+{
+	if !instance_exists(oMatch)
+	{
+		instance_create_layer(x,y,"Scarf",oMatch);
+	}
+}
 //create the firefly for the forest
 if room == rRunning
 {

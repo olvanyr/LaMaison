@@ -8,7 +8,11 @@ set_layer("Walls",depth_layer.walls);
 
 set_layer("Assets",depth_layer.assets);
 
+set_layer("Scarf",depth_layer.scarf);
+
 set_layer("Player",depth_layer.player);
+
+
 #region dependencise
 if !instance_exists(oInput)
 {
