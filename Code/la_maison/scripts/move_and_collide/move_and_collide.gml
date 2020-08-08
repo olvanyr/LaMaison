@@ -1,8 +1,8 @@
 /// @description hsp_and_collide
 
-if place_meeting(x + hsp, y, oWall)
+if place_meeting(x + hsp, y, oCollision_parent)
 {
-	while !place_meeting(x + (sign(hsp)/100), y, oWall)
+	while !place_meeting(x + (sign(hsp)/100), y, oCollision_parent)
 	{
 		x += (sign(hsp)/100);
 	}
@@ -12,9 +12,9 @@ if place_meeting(x + hsp, y, oWall)
 x += hsp;
 
 
-if place_meeting(x, y + vsp, oWall)
+if place_meeting(x, y + vsp, oCollision_parent)
 {
-	while !place_meeting(x, y + sign(vsp), oWall)
+	while !place_meeting(x, y + sign(vsp), oCollision_parent)
 	{
 		y += sign(vsp);
 	}
