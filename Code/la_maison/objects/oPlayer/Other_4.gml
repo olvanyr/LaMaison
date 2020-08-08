@@ -16,12 +16,12 @@ set_layer("Player",depth_layer.player);
 #region dependencise
 if !instance_exists(oInput)
 {
-	input = instance_create_layer(0,0,"Instances",oInput);
+	input = instance_create_layer(x,y,"Instances",oInput);
 }
 
 if !instance_exists(oCamera)
 {
-	cam = instance_create_layer(0,0,"Instances",oCamera);
+	cam = instance_create_layer(x,y,"Instances",oCamera);
 }
 
 #endregion

@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "0a488f91-3706-4c80-a230-f3e527bd5856",
+            "Value": {
+                "id": "38e950b2-2038-4c41-b654-98dd6c6636f0",
+                "resourcePath": "sprites\\sLock1\\sLock1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0c1bf148-e04c-428b-869c-dba7ef536fde",
             "Value": {
                 "id": "fd96dc69-822e-478c-a6bf-22ca326b8144",
@@ -359,6 +367,14 @@
             }
         },
         {
+            "Key": "1eef5038-bfb0-43c2-80cc-c55221271078",
+            "Value": {
+                "id": "15bc38f3-a35b-4b55-8eb8-0a52e083b342",
+                "resourcePath": "sprites\\sLock\\sLock.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1f53028b-8425-4f39-9400-8eaaa4b656dc",
             "Value": {
                 "id": "8a6cc38b-635e-4329-995d-0847e7453dce",
@@ -532,6 +548,14 @@
                 "id": "f04b78f6-58f1-4788-be18-280c055a4d95",
                 "resourcePath": "sprites\\sTiles_Wood_2corner_tl_tr\\sTiles_Wood_2corner_tl_tr.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "337924f0-87da-4609-892b-b6f396f49c36",
+            "Value": {
+                "id": "8e1f9fa7-d554-48ad-abde-f4135bc21029",
+                "resourcePath": "objects\\oCollision_parent\\oCollision_parent.yy",
+                "resourceType": "GMObject"
             }
         },
         {
