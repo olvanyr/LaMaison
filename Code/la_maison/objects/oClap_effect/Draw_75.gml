@@ -19,6 +19,14 @@ if draw == true
 		
 		if room_exists(next_room)
 		{
+			if instance_exists(oPlayer)
+			{
+				oPlayer.x = player_x;
+				oPlayer.y = player_y;
+				if player_state != "noone" oPlayer.state = player_state;
+			}
+			
+			
 			room_goto(next_room);
 		}
 	}
@@ -36,8 +44,6 @@ if draw == true
 	
 	var c = c_black;
 	draw_rectangle_color(-20,-20,width,_y,c,c,c,c,false);
-	
-
 }
 
 //show_debug_message("_y" + string(_y));

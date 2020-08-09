@@ -11,8 +11,9 @@ instance_activate_object(oInput);
 instance_activate_object(oLight_manager);
 instance_activate_object(oSurface_light);
 instance_activate_object(oCamera);
-instance_activate_object(oTransition);
+instance_activate_object(oClap_effect);
 instance_activate_object(oSky);
+
 
 if keyboard_check_pressed(ord("H"))
 {
