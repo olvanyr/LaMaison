@@ -13,6 +13,7 @@ instance_activate_object(oSurface_light);
 instance_activate_object(oCamera);
 instance_activate_object(oClap_effect);
 instance_activate_object(oSky);
+instance_activate_object(oMenu);
 
 
 if keyboard_check_pressed(ord("H"))

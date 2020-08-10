@@ -3,9 +3,9 @@
 global.view_width	= camera_get_view_width(view_camera[0]) * 8;
 global.view_height	= camera_get_view_height(view_camera[0]) * 8;
 
-display_set_gui_size(global.view_width, global.view_height);
-
 var gwidth = global.view_width, gheight = global.view_height;
+
+display_set_gui_size(gwidth, gheight);
 
 
 var ds_ = menu_pages[page], ds_height = ds_grid_height(ds_); // I actualy just need the current grid that y draw
