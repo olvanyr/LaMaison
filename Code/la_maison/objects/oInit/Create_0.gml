@@ -33,6 +33,18 @@ global.objects_array = noone;
 
 global.all_objects[0] = "shirt";
 
+
+
+//load audio group
+if !audio_group_is_loaded(audiogroup_sound)
+{
+	audio_group_load(audiogroup_sound);
+}
+if !audio_group_is_loaded(audiogroup_music)
+{
+	audio_group_load(audiogroup_music);
+}
+
 //fullscreen
 global.fullscreen = true;
 
@@ -49,6 +61,8 @@ global.key_up					= ord("Z");
 global.key_down					= ord("S");
 global.key_jump					= vk_space;
 global.key_action				= ord("A");
+global.key_pause				= ord("P");
+
 //dialogue
 global.key_menu_up				= vk_up;
 global.key_menu_down			= vk_down;
