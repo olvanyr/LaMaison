@@ -6,6 +6,7 @@ enum pause_menu_tab
 };
 
 tab = 1;
+text_color = c_white;
 
 #region // menu
 // some constante
@@ -45,7 +46,7 @@ enum pause_menu_element
 ds_menu_main = create_menu_page(
 	["FULLSCREEN",			pause_menu_element.toggle,		change_fullscreen,		global.fullscreen,		["ON", "OFF"]],
 	["SOUND",				pause_menu_element.page_transfer,	pause_menu_page.sound],
-	["control",				pause_menu_element.page_transfer,	pause_menu_page.input],
+	["CONTROL",				pause_menu_element.page_transfer,	pause_menu_page.input],
 );	
 
 ds_menu_audio = create_menu_page(
@@ -81,5 +82,7 @@ inputting = false;
 toggle = false;
 
 any_pressed = 0;
+
+last_input = 0;
 
 #endregion

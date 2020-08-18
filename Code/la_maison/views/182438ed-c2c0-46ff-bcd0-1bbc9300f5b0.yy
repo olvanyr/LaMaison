@@ -6,8 +6,6 @@
     "children": [
         "b82e74cb-bd61-4d47-9cb1-d64a104bfaa2",
         "93ac0f81-3a55-4c37-8974-f8dd0af8fba4",
-        "b19a1fab-ba69-488c-ac12-55b49158df19",
-        "82486ed5-8b98-4b6f-8c27-2b0f5487f9bd",
         "326f18cf-a596-414b-8525-ba5ab806742d",
         "5202f56d-4d0d-40b9-a91a-d7b78e693453"
     ],

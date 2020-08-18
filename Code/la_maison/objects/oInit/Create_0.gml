@@ -31,8 +31,6 @@ global.tile_size = 8;
 global.objects = noone;
 global.objects_array = noone;
 
-global.all_objects[0] = "shirt";
-
 
 
 //load audio group
@@ -46,7 +44,7 @@ if !audio_group_is_loaded(audiogroup_music)
 }
 
 //fullscreen
-global.fullscreen = true;
+global.fullscreen = window_get_fullscreen();
 
 // volume
 global.mastervolume = 1;
@@ -64,6 +62,9 @@ global.key_action				= ord("A");
 global.key_pause				= ord("P");
 
 //dialogue
+
+global.key_menu_left			= vk_left;
+global.key_menu_right			= vk_right;
 global.key_menu_up				= vk_up;
 global.key_menu_down			= vk_down;
 global.key_menu_enter			= vk_enter;

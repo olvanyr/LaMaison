@@ -6,11 +6,10 @@ if (file_exists("sav.json"))
 	{
 	var _map = _list[| i];
 		
-		if(_map[? "fullscreen"]) 
-		{
-			window_set_fullscreen(true);
-			global.fullscreen = false;
-		}
+		window_set_fullscreen(_map[? "fullscreen"]);
+		global.fullscreen = _map[? "fullscreen"];
+		
+		
 		if ds_map_exists(_map,"MASTERVOLUME")	global.mastervolume				= _map[? "MASTERVOLUME"];
 		if ds_map_exists(_map,"SOUNDSVOLUME")	global.soundsvolume				= _map[? "SOUNDSVOLUME"];
 		if ds_map_exists(_map,"MUSICVOLUME")	global.musicvolume				= _map[? "MUSICVOLUME"];

@@ -2,14 +2,17 @@ var gwidth = global.view_width, gheight = global.view_height;
 
 display_set_gui_size(gwidth, gheight);
 
+// draw menu back
+var c = c_black;
+draw_set_alpha(0.6);
+draw_rectangle_color(-10,-10,gwidth+10,gheight+10,c,c,c,c,false);
+draw_set_alpha(1);
+draw_sprite_ext(sMenu_back,0,gwidth/2,gheight/2,(gwidth/(sprite_get_width(sMenu_back))),(gheight/(sprite_get_height(sMenu_back))),0,c_white,1);
+
 if visible
 {
 	if tab == pause_menu_tab.collectible
 	{
-		var c = c_black;
-		draw_set_alpha(0.6);
-		draw_rectangle_color(-10,-10,gwidth+10,gheight+10,c,c,c,c,false);
-		draw_set_alpha(1);
 		circle_display(gwidth/2,gheight/2,50,global.objects_array,1.7,1.7);
 		var scale = 2;
 		draw_sprite_ext(sPlayer_idle1,0,gwidth/2,(gheight/2)+((sprite_get_height(sPlayer_idle1)/2)*scale),scale,scale,0,c_white,1);
@@ -18,16 +21,12 @@ if visible
 	{
 		
 		var ds_ = menu_pages[page], ds_height = ds_grid_height(ds_); // I actualy just need the current grid that y draw
-		var y_buffer = 15, x_buffer = 3; //how far away the element are from each other or from the divide line
+		var y_buffer = 15, x_buffer = 10; //how far away the element are from each other or from the divide line
 		var start_y = (gheight/2) - ((((ds_height-1)/2)*y_buffer)), start_x = gwidth/2; // where I start to draw the text, so it is half the amout of space that I need from the center
 		var ltx = start_x - x_buffer, lty, c, xo; //left text exposition ltx
 
 		//Draw Background
-		var c = c_black;
-		draw_set_alpha(0.6);
-		draw_rectangle_color(-10,-10,gwidth+10,gheight+10,c,c,c,c,false);
-		draw_set_alpha(1);
-
+		
 		#region Draw elements on Left Side
 		draw_set_font(fMenu);
 		draw_set_valign(fa_middle);
@@ -36,7 +35,7 @@ if visible
 		var yy = 0; repeat(ds_height)
 		{
 			lty = start_y + (yy*y_buffer);
-			c = c_black;
+			c = text_color;
 			xo = 0;
 	
 			if(yy == menu_option[page]) 
@@ -58,7 +57,7 @@ if visible
 	
 			switch(ds_[# 1, yy]){
 				case pause_menu_element.slider:
-					c = c_black;
+					c = text_color;
 					var len = 64;
 					var current_val =(ds_[# 4, yy]);
 					draw_line_width(rtx, rty, rtx + len, rty, 2);
@@ -71,16 +70,14 @@ if visible
 				break;
 		
 				case pause_menu_element.toggle:
-					c = c_black;
+					c = text_color;
 					var current_val = ds_[# 3, yy];
-					var c1, c2;
-					if(inputting and yy == menu_option[page]){ c = c_aqua; }
+					var c1;
+					var screen = "ON";
+					if(current_val == 0){ c1 = c;screen = "OFF"; }
+					if(current_val == 1){ c1 = c;screen = "ON"; }
 			
-					if(current_val == 0){ c1 = c; c2 = c_dkgray; }
-					else				{ c1 = c_dkgray; c2 = c; }
-			
-					draw_text_color(rtx, rty, "ON", c1,c1,c1,c1, 1);
-					draw_text_color(rtx + 64, rty, "OFF", c2,c2,c2,c2, 1);
+					draw_text_color(rtx, rty, screen, c1,c1,c1,c1, 1);
 
 				break;
 		
@@ -96,7 +93,7 @@ if visible
 						case vk_enter:	current_val = "ENTER"; break;
 						default:		current_val = chr(current_val); 
 					}
-					c = c_white;
+					c = text_color;
 					if(inputting and yy == menu_option[page]){ c = c_yellow; }
 					draw_text_color(rtx, rty, current_val, c,c,c,c, 1);
 				break;

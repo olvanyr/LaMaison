@@ -9,6 +9,8 @@ action =	keyboard_check_pressed(global.key_action);
 
 
 //dialogue
-enter =		keyboard_check_pressed(global.key_menu_enter);
-menu_up =	keyboard_check_pressed(global.key_menu_up);
-menu_down = keyboard_check_pressed(global.key_menu_down);
+enter =			keyboard_check_pressed(global.key_menu_enter);
+menu_left =		keyboard_check_pressed(global.key_menu_left);
+menu_right =	keyboard_check_pressed(global.key_menu_right);
+menu_up =		keyboard_check_pressed(global.key_menu_up);
+menu_down =		keyboard_check_pressed(global.key_menu_down);
