@@ -23,7 +23,6 @@ if (!instance_exists(oCamera))
 {
 	cam = instance_create_layer(x,y,"Instances",oCamera);
 }
-
 #endregion
 
 //set up camera

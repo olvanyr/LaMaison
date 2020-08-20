@@ -1,6 +1,7 @@
 // Inherit the parent event
 event_inherited();
 
+
 if (!instance_exists(oCamera))
 {
 	cam = instance_create_layer(0,0,"Instances",oCamera);

@@ -14,6 +14,7 @@ instance_activate_object(oCamera);
 instance_activate_object(oClap_effect);
 instance_activate_object(oSky);
 instance_activate_object(oMenu);
+instance_activate_object(oEffect_controller);
 
 
 if (input.pause || keyboard_check_pressed(vk_escape))
@@ -21,6 +22,12 @@ if (input.pause || keyboard_check_pressed(vk_escape))
 	global.pause = !global.pause;
 }
 
+
+
+
+
+	
+layer_sprite_index(layer_sprite_get_id("Assets",sDoor_1),sprite_get_number(sDoor_1)-1);
 
 /*
 if keyboard_check_pressed(vk_enter)

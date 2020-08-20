@@ -36,6 +36,7 @@
     {"id":{"name":"sBookshelf_big","path":"sprites/sBookshelf_big/sBookshelf_big.yy",},"order":4,},
     {"id":{"name":"sBookshelf_small","path":"sprites/sBookshelf_small/sBookshelf_small.yy",},"order":5,},
     {"id":{"name":"sChair_front","path":"sprites/sChair_front/sChair_front.yy",},"order":6,},
+    {"id":{"name":"oEffect_controller","path":"objects/oEffect_controller/oEffect_controller.yy",},"order":16,},
     {"id":{"name":"sClock_wall_temp","path":"sprites/sClock_wall_temp/sClock_wall_temp.yy",},"order":7,},
     {"id":{"name":"sWallpaper_temp","path":"sprites/sWallpaper_temp/sWallpaper_temp.yy",},"order":8,},
     {"id":{"name":"sTemp","path":"sprites/sTemp/sTemp.yy",},"order":9,},

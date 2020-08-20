@@ -41,9 +41,9 @@ if (creator != noone)
 }else
 {
 
-	with (place_meeting(x,y,oPlayer))
+	if (place_meeting(x,y,oPlayer))
 	{
-		if (object_index == oPlayer)
+		with (oPlayer)
 		{
 			number_of_jump += 1;
 			instance_destroy(other);
