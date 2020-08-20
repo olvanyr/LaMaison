@@ -1,0 +1,42 @@
+{
+  "spriteId": {
+    "name": "sLight",
+    "path": "sprites/sLight/sLight.yy",
+  },
+  "solid": false,
+  "visible": false,
+  "spriteMaskId": null,
+  "persistent": false,
+  "parentObjectId": {
+    "name": "oLight",
+    "path": "objects/oLight/oLight.yy",
+  },
+  "physicsObject": false,
+  "physicsSensor": false,
+  "physicsShape": 1,
+  "physicsGroup": 0,
+  "physicsDensity": 0.5,
+  "physicsRestitution": 0.1,
+  "physicsLinearDamping": 0.1,
+  "physicsAngularDamping": 0.1,
+  "physicsFriction": 0.2,
+  "physicsStartAwake": true,
+  "physicsKinematic": false,
+  "physicsShapePoints": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"oFollowing_light","path":"objects/oFollowing_light/oFollowing_light.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
+  "properties": [],
+  "overriddenProperties": [
+    {"propertyId":{"name":"light_x","path":"objects/oLight/oLight.yy",},"objectId":{"name":"oLight","path":"objects/oLight/oLight.yy",},"value":"x","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"light_y","path":"objects/oLight/oLight.yy",},"objectId":{"name":"oLight","path":"objects/oLight/oLight.yy",},"value":"y","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+  ],
+  "parent": {
+    "name": "Light",
+    "path": "folders/Objects/Light.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "oFollowing_light",
+  "tags": [],
+  "resourceType": "GMObject",
+}
