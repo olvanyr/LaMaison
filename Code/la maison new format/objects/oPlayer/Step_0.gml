@@ -1,33 +1,11 @@
 
-var _vx = camera_get_view_x(view_camera[0]);
-var _vy = camera_get_view_y(view_camera[0]);
-var _vw = camera_get_view_width(view_camera[0]);
-var _vh = camera_get_view_height(view_camera[0]);
-instance_activate_all();
 
-//instance_activate_region(_vx - 64, _vy - 64, _vw + 128, _vh + 128, true);
-instance_deactivate_region(_vx - 64, _vy - 64, _vw + 128, _vh + 128, false, true);
-instance_activate_object(oInput);
-instance_activate_object(oLight_manager);
-instance_activate_object(oSurface_light);
-instance_activate_object(oCamera);
-instance_activate_object(oClap_effect);
-instance_activate_object(oSky);
-instance_activate_object(oMenu);
-instance_activate_object(oEffect_controller);
-
+manage_instance_activation();
 
 if (input.pause || keyboard_check_pressed(vk_escape))
 {
 	global.pause = !global.pause;
 }
-
-
-
-
-
-	
-layer_sprite_index(layer_sprite_get_id("Assets",sDoor_1),sprite_get_number(sDoor_1)-1);
 
 /*
 if keyboard_check_pressed(vk_enter)
@@ -53,7 +31,7 @@ if keyboard_check_pressed(vk_enter)
 }
 */
 
-//fix the move and knockback against wall bug 
+//fix the move against wall bug 
 if (place_meeting(x,y,oWall))
 {
 	if (!place_meeting(x + 1,y,oWall))
@@ -67,119 +45,127 @@ if (place_meeting(x,y,oWall))
 }
 
 
-// move
+// state normal
+
 switch (state)
 {
-case "lighting": 
-	hsp = 0;
-	set_state_sprite(sPlayer_match,1,0);
-	if (animation_hit_frame(2))
-	{
-		temp_light = instance_create_layer(x,y-14,"Effects",oLight_child)
+	#region lighting
+	case "lighting": 
+		hsp = 0;
+		set_state_sprite(sPlayer_match,1,0);
+		if (animation_hit_frame(2))
 		{
-			light_color = make_color_rgb(255,124,34);
-		}
-	}
-	if (animation_hit_frame(image_number -1))
-	{
-		instance_destroy(temp_light);
-		state = "move";
-	}
-break;
-case "move": 
-	//reset everything when grounded
-	if (grounded) 
-	{
-		jump = 0;
-	}
-	if (!running)
-	{
-		if (input.right) 
-		{
-			move = 1;		
-		}
-		if (input.left)
-		{
-			move = -1;
-		}
-	
-		if ((!input.right && !input.left) || (input.right && input.left))
-		{
-			move = 0;
-			walk_speed = 0;
-		}
-		
-		if (grounded && hsp != 0)
-		{
-			if (animation_hit_frame(1) || animation_hit_frame(5))
+			temp_light = instance_create_layer(x,y-14,"Effects",oLight_child)
 			{
-				//audio_sound_pitch(aFootstep,choose(0.8,1.0,1.2));
-				//audio_play_sound(aFootstep,priority.low,0);
-				
-				repeat(3)
+				light_color = make_color_rgb(255,124,34);
+			}
+		}
+		if (animation_hit_frame(image_number -1))
+		{
+			instance_destroy(temp_light);
+			state = "move";
+		}
+	break;
+	#endregion
+	
+	#region move
+	case "move": 
+		//reset everything when grounded
+		if (grounded) 
+		{
+			jump = 0;
+		}
+		if (!running)
+		{
+			if (input.right) 
+			{
+				move = 1;		
+			}
+			if (input.left)
+			{
+				move = -1;
+			}
+	
+			if ((!input.right && !input.left) || (input.right && input.left))
+			{
+				move = 0;
+				walk_speed = 0;
+			}
+		
+			if (grounded && hsp != 0)
+			{
+				if (animation_hit_frame(1) || animation_hit_frame(5))
 				{
-					with (instance_create_layer(x,bbox_bottom,"Effects",oGround_effect))
+					//audio_sound_pitch(aFootstep,choose(0.8,1.0,1.2));
+					//audio_play_sound(aFootstep,priority.low,0);
+				
+					repeat(3)
 					{
-						vsp = 0;
+						with (instance_create_layer(x,bbox_bottom,"Effects",oGround_effect))
+						{
+							vsp = 0;
+						}
 					}
 				}
 			}
+		}else 
+		{
+			move = 1;
+		
+			set_state_sprite(sPlayer_walk1,walk_anim_speed,0);
 		}
-	}else 
-	{
-		move = 1;
+	
+		if (input.jump && (grounded || jump < number_of_jump))
+		{
+			jump ++;
+			vsp = 0;
+			vsp_fraction = 0;
+			vsp = jump_speed;
+		}
+	
+		if (place_meeting(x,y,oCandle) && input.action)
+		{
+			state = "lighting";
+		}
+	
+		// is landing ? 
+		if (!grounded) {alarm[9] = 2;}
+	
+		#region animation
+		if (hsp > 0)
+		{
+			set_state_sprite(sPlayer_walk1,walk_anim_speed,0);
+		}
+		if (hsp < 0)
+		{
+			set_state_sprite(sPlayer_walk1,walk_anim_speed,0);
+		}
+		if (hsp = 0)
+		{
+			set_state_sprite(sPlayer_idle,0.1,0);
+		}
+		if (!grounded)
+		{
+			if (vsp > 0)  {set_state_sprite(sPlayer_jump,0,1);}
+			if (vsp <= 0) {set_state_sprite(sPlayer_jump,0,0);}
 		
-		set_state_sprite(sPlayer_walk1,walk_anim_speed,0);
-	}
+		}
 	
-	if (input.jump && (grounded || jump < number_of_jump))
-	{
-		jump ++;
-		vsp = 0;
-		vsp_fraction = 0;
-		vsp = jump_speed;
-	}
+		#endregion
 	
-	if (place_meeting(x,y,oCandle) && input.action)
-	{
-		state = "lighting";
-	}
+		//show_debug_message("walk_speed : " + string(walk_speed));
+		//show_debug_message("vsp : " + string(vsp));
+		//show_debug_message("mask index : " + string(sprite_get_name(mask_index)));
+		//show_debug_message("distance_to_wall : " + string(distance_to_wall));
+		//show_debug_message("distance_to_slope : " + string(distance_to_slope));
+		//show_debug_message("y : " + string(y));
 	
-	// is landing ? 
-	if (!grounded) {alarm[9] = 2;}
-	
-	#region animation
-	if (hsp > 0)
-	{
-		set_state_sprite(sPlayer_walk1,walk_anim_speed,0);
-	}
-	if (hsp < 0)
-	{
-		set_state_sprite(sPlayer_walk1,walk_anim_speed,0);
-	}
-	if (hsp = 0)
-	{
-		set_state_sprite(sPlayer_idle,0.1,0);
-	}
-	if (!grounded)
-	{
-		if (vsp > 0)  {set_state_sprite(sPlayer_jump,0,1);}
-		if (vsp <= 0) {set_state_sprite(sPlayer_jump,0,0);}
-		
-	}
-	
+	break;
 	#endregion
-	
-	//show_debug_message("walk_speed : " + string(walk_speed));
-	//show_debug_message("vsp : " + string(vsp));
-	//show_debug_message("mask index : " + string(sprite_get_name(mask_index)));
-	//show_debug_message("distance_to_wall : " + string(distance_to_wall));
-	//show_debug_message("distance_to_slope : " + string(distance_to_slope));
-	//show_debug_message("y : " + string(y));
-	
-break;
 
 }
+
+
 
 //move aplication
 if (move != 0)
@@ -191,6 +177,7 @@ if (move != 0)
 }
 	
 hsp = walk_speed * move;
+
 
 
 #region slope
@@ -274,6 +261,8 @@ if (room == rRunning)
 }
 
 #endregion
+
+
 // Inherit the parent event
 event_inherited();
 

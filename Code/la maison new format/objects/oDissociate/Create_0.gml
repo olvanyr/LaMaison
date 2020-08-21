@@ -4,7 +4,7 @@ event_inherited();
 if (!instance_exists(oCamera))
 {
 	cam = instance_create_layer(x,y,"Instances",oCamera);
-}
+}else {cam = oCamera;}
 x = ((x div global.tile_size)*global.tile_size) + (global.tile_size/2);
 cam.follow = self;
 // initialise state engine
@@ -40,6 +40,9 @@ state = "";
 	right_jump = noone;
 	left_jump = noone;
 
+//two variable used to make shure we are not stuck in a loop
+move_timer = 0;
+dissociate_time = 100;
 
 
 //specifique room

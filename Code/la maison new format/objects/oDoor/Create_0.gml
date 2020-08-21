@@ -13,3 +13,5 @@ if (!instance_exists(oEffect_controller))
 {
 	controller = oEffect_controller;
 }
+
+_x = 0;

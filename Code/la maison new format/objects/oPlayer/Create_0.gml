@@ -8,6 +8,12 @@ if (!instance_exists(oCamera))
 }
 cam.x = x;
 cam.y = y;
+cam.follow = self;
+
+
+// matches light animation
+temp_light = noone;
+draw_black_sprite = false;
 
 // initialise state engine
 state = "move";
@@ -36,10 +42,4 @@ state = "move";
 running = false;
 running_checkpoint = noone;
 
-// matches light animation
-temp_light = noone;
-draw_black_sprite = false;
-
-// particle 
-land = false;
 

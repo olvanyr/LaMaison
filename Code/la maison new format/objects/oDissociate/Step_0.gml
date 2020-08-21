@@ -12,6 +12,7 @@ particle_timer ++;
 if (state = "")
 {
 	move = 0;
+	move_timer = 0;
 	#region left right
 	right = noone;
 	right_goal = noone;
@@ -133,6 +134,7 @@ case "right":
 	if (x <= right_goal) 
 	{
 		move = 1;
+		move_timer ++;
 	}else 
 	{
 		state = "";
@@ -142,6 +144,7 @@ case "left":
 	if (x >= left_goal) 
 	{
 		move = -1;
+		move_timer ++;
 	}else 
 	{
 		state = "";
@@ -175,7 +178,7 @@ case "jump":
 break;
 }
 
-
+if (move_timer > dissociate_time){state = ""};
 
 //show_debug_message("walk_speed : " + string(walk_speed));
 //show_debug_message("vsp : " + string(vsp));
@@ -187,69 +190,6 @@ break;
 //show_debug_message("left_goal : " + string(left_goal));
 //show_debug_message("right_goal : " + string(right_goal));
 
-
-
-
-
-/*
-// move
-switch (state)
-{
-case "dissociate": 
-
-	//if hsp == 0 goal = noone;
-	if right_goal = noone
-	{
-		var cam_w_halph = camera_get_view_width(view_camera[0])/2;
-		//check right
-		for (var i = 0; i*global.tile_size < cam_w_halph; i++)
-		{
-			var tile_x = ((x div global.tile_size)*global.tile_size) + (global.tile_size/2);
-			//show_debug_message("i : " + string(i));
-			if place_meeting(tile_x + i*global.tile_size,y,oWall)
-			{
-				right_goal = tile_x + i*global.tile_size;
-			}
-			
-			if right_goal != noone break;
-		}
-		if right_goal == noone right_goal = tile_x + cam_w_halph - (6*global.tile_size);
-	}else
-	{
-		if !instance_exists(right)
-		{
-			with instance_create_layer(right_goal,y - 10,"Instances",oGoal)
-			{
-				creator = other.id;
-				text = "right";
-				right_goal = other.right_goal;
-				other.right = id;
-			}
-		}
-	}
-	
-	
-	if instance_exists(right)
-	{
-		if right.completed
-		{
-			if x < (right_goal - 2)
-			{
-				move = 1;
-			}else 
-			{
-				move = 0;
-				instance_destroy(right);
-				right_goal = noone;
-			}
-		}
-	}
-	
-	
-	
-break;
-}
-*/
 
 #region applied movement
 //move aplication
@@ -315,5 +255,5 @@ if (!grounded)
 	}
 	
 #endregion
-// Inherit the parent event
+
 event_inherited();

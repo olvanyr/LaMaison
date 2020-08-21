@@ -32,6 +32,7 @@
     {"id":{"name":"sFlower_pot","path":"sprites/sFlower_pot/sFlower_pot.yy",},"order":0,},
     {"id":{"name":"sLamp","path":"sprites/sLamp/sLamp.yy",},"order":1,},
     {"id":{"name":"sPainting_ref","path":"sprites/sPainting_ref/sPainting_ref.yy",},"order":2,},
+    {"id":{"name":"manage_instance_activation","path":"scripts/manage_instance_activation/manage_instance_activation.yy",},"order":11,},
     {"id":{"name":"sPainting_small","path":"sprites/sPainting_small/sPainting_small.yy",},"order":3,},
     {"id":{"name":"sBookshelf_big","path":"sprites/sBookshelf_big/sBookshelf_big.yy",},"order":4,},
     {"id":{"name":"sBookshelf_small","path":"sprites/sBookshelf_small/sBookshelf_small.yy",},"order":5,},

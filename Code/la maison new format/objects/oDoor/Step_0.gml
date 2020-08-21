@@ -1,26 +1,29 @@
-if (instance_exists(oPlayer))
+if (instance_exists(oDissociate)){target = oDissociate;}
+if (instance_exists(oPlayer)){target = oPlayer;}
+
+if (instance_exists(target))
 {
 	if (image_index == 0)
 	{
-		var x_dist = x - oPlayer.x;
+		var x_dist = x - target.x;
 		if (abs(x_dist) < open_distance && closed == "noone")
 		{
 			image_speed = 1;
-			image_xscale =  oPlayer.image_xscale;
+			image_xscale =  target.image_xscale;
 			mask_index = -1;
 		}
 		
 		if (abs(x_dist) < open_distance && sign(x_dist) >= 0 && closed == "left")
 		{
 			image_speed = 1;
-			image_xscale =  oPlayer.image_xscale;
+			image_xscale =  target.image_xscale;
 			mask_index = -1;
 		}
 		
 		if (abs(x_dist) < open_distance && sign(x_dist) <= 0 && closed == "right")
 		{
 			image_speed = 1;
-			image_xscale =  oPlayer.image_xscale;
+			image_xscale =  target.image_xscale;
 			mask_index = -1;
 		}
 	}

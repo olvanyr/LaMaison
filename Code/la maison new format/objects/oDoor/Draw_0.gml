@@ -1,6 +1,9 @@
 draw_self();
-
-var x_dist = x - oPlayer.x;
+var x_dist = 0;
+if (instance_exists(target))
+{
+	var x_dist = x - target.x;
+}
 
 if (abs(x_dist) < open_distance)
 {
