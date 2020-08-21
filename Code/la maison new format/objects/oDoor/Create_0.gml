@@ -8,5 +8,8 @@ half_height = sprite_get_height(sprite)/2;
 
 if (!instance_exists(oEffect_controller))
 {
-	instance_create_layer(x,y,"Instances",oEffect_controller);
+	controller = instance_create_layer(x,y,"Instances",oEffect_controller);
+}else
+{
+	controller = oEffect_controller;
 }

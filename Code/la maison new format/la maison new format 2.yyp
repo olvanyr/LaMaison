@@ -171,6 +171,7 @@
     {"id":{"name":"sWallpaper3","path":"sprites/sWallpaper3/sWallpaper3.yy",},"order":0,},
     {"id":{"name":"sWallpaper5","path":"sprites/sWallpaper5/sWallpaper5.yy",},"order":1,},
     {"id":{"name":"test_light","path":"sprites/test_light/test_light.yy",},"order":0,},
+    {"id":{"name":"sTiles_Wood_4side","path":"sprites/sTiles_Wood_4side/sTiles_Wood_4side.yy",},"order":46,},
     {"id":{"name":"Sprite_0001","path":"sprites/Sprite_0001/Sprite_0001.yy",},"order":1,},
     {"id":{"name":"sCandle_shut","path":"sprites/sCandle_shut/sCandle_shut.yy",},"order":10,},
     {"id":{"name":"sCandle_lignting","path":"sprites/sCandle_lignting/sCandle_lignting.yy",},"order":11,},

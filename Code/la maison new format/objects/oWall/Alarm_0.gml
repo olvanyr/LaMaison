@@ -15,22 +15,22 @@ bottom_right =	position_meeting(bbox_right+1,bbox_bottom+1,oWall);
 //state machin
 state = "";
 #region 3side
-if (right && !left && !top && !bottom) {state =																	"_3side_t_b_l";}
-if (right && left && !top && !bottom) {state =																	"_3side_t_b_r";}
-if (!right && !left && top && !bottom) {state =																	"_3side_b_l_r";}
-if (!right && !left && !top && bottom) {state =																	"_3side_t_l_r";}
+if (right && !left && !top && !bottom)						{state =		"_3side_t_b_l";}
+if (!right && left && !top && !bottom)						{state =		"_3side_t_b_r";}
+if (!right && !left && top && !bottom)						{state =		"_3side_b_l_r";}
+if (!right && !left && !top && bottom)						{state =		"_3side_t_l_r";}
 #endregion
 #region 2side_1corner
-if (right && !left && top && !bottom)  {state =															"_2side_b_l_1corner";}
-if (!right && left && top && !bottom) {state  =															"_2side_b_r_1corner";}
-if (right && !left && !top && bottom) {state =																"_2side_t_l_1corner";}
-if (!right && left && !top && bottom)  {state =															"_2side_t_r_1corner";}
+if (right && !left && top && !bottom)						{state =		"_2side_b_l_1corner";}
+if (!right && left && top && !bottom)						{state =		"_2side_b_r_1corner";}
+if (right && !left && !top && bottom)						{state =		"_2side_t_l_1corner";}
+if (!right && left && !top && bottom)						{state =		"_2side_t_r_1corner";}
 #endregion
 #region 2side
-if (right && !left && top && !bottom && top_right) {state =												"_2side_b_l";}
-if (!right && left && top && !bottom && top_left) {state =													"_2side_b_r";}
-if (right && !left && !top && bottom && bottom_right) {state =												"_2side_t_l";}
-if (!right && left && !top && bottom && bottom_left) {state =												"_2side_t_r";}
+if (right && !left && top && !bottom && top_right)			{state =		"_2side_b_l";}
+if (!right && left && top && !bottom && top_left)			{state =		"_2side_b_r";}
+if (right && !left && !top && bottom && bottom_right)		{state =		"_2side_t_l";}
+if (!right && left && !top && bottom && bottom_left)		{state =		"_2side_t_r";}
 #endregion
 #region 2side_op
 if (!right && !left && top && bottom)  {state =															"_2side_l_r";}
@@ -102,12 +102,27 @@ layer_sprite_angle(sprite,image_angle);
 layer_sprite_speed(sprite,image_speed);
 layer_sprite_index(sprite,image_index);
 
+if (instance_exists(controller))
+{
+	if (controller.tile[0] == -4)
+	{
+		var position = 0;
+	}else
+	{
+		var position = array_length(controller.tile)
+	}
+	controller.tile[position]= sprite;
+	controller.tile[position+1] = image_index;
+}
+
+
 if (right&&left&&top&&bottom)
 {
 	alarm[1] = 1;
 }
 
-/*
+if (show)
+{
 	show_debug_message("++++++++++++++++++++++++++++++++++++++++++");
 	show_debug_message("left : " + string(left));
 	show_debug_message("right : " + string(right));
@@ -122,6 +137,6 @@ if (right&&left&&top&&bottom)
 	show_debug_message("++++++++++++++++++++++++++++++++++++++++++");
 	show_debug_message("state : " + string(state));
 	show_debug_message("name : " +"sTile_" + string(zone) + string(state));
-
 	show_debug_message("++++++++++++++++++++++++++++++++++++++++++");
 
+}

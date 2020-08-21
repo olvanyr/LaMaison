@@ -35,17 +35,17 @@ if (image_index > image_number-1)
 	layer_sprite_xscale(sprite,image_xscale);
 	layer_sprite_speed(sprite,image_speed);
 	layer_sprite_index(sprite,image_number-1);
-	if (instance_exists(oEffect_controller))
+	if (instance_exists(controller.id))
 	{
-		if (oEffect_controller.door[0] == -4)
+		if (controller.door[0] == -4)
 		{
 			var position = 0;
 		}else
 		{
-			var position = array_length(oEffect_controller.door)
+			var position = array_length(controller.door)
 		}
-		oEffect_controller.door[position]= sprite;
-		oEffect_controller.door[position+1] = image_number-1;
+		controller.door[position]= sprite;
+		controller.door[position+1] = image_number-1;
 	}
 	instance_destroy();
 }
