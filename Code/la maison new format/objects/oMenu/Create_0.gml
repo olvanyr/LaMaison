@@ -14,6 +14,7 @@ down_up_sound = noone;
 inputting_sound = noone;
 face_one = noone;
 face_two = noone;
+circle_perimeter = 50;
 
 //typing constante
 text_part = "";
