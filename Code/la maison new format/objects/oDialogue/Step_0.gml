@@ -84,7 +84,7 @@ if !inputting //if we are not inputing it means that we can move in the menu
 
 
 //when we presse enter, I input and execute the action if simple or a sinlge script
-if(input.enter){
+if(input.enter && !oClap_effect.draw){
 		
 	switch(ds_[# 1, menu_option[page]]){
 		case menu_element.script_runner: script_execute(ds_[# 2, menu_option[page]]); break;

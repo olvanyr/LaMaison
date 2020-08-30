@@ -19,7 +19,7 @@ draw_sprite_ext(background_sprite,0,start_x,gheight/2,1,1,0,c_white,1);
 
 
 #region Draw text elements
-draw_set_font(fMenu);
+draw_set_font(fDialogue);
 draw_set_valign(fa_middle);
 draw_set_halign(fa_left);
 
