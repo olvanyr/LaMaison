@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"a6ac8f4f-31e0-4ad2-91c6-5eaca6cb651c","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "la maison new format 2",
-    "path": "la maison new format 2.yyp",
+    "name": "Furnitures",
+    "path": "folders/Sprites/Furnitures.yy",
   },
   "resourceVersion": "1.0",
   "name": "sMirror",
