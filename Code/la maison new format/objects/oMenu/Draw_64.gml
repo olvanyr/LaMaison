@@ -7,8 +7,9 @@ if (global.pause)
 
 	// draw menu back
 	var c = c_black;
+	var rad = 5;
 	draw_set_alpha(0.6);
-	draw_rectangle_color(-10,-10,gwidth+10,gheight+10,c,c,c,c,false);
+	draw_roundrect_color_ext(-10,-10,gwidth+10,gheight+10,rad,rad,c,c,false);
 	draw_set_alpha(1);
 	draw_sprite_ext(sMenu_back,0,gwidth/2,gheight/2,(gwidth/(sprite_get_width(sMenu_back))),(gheight/(sprite_get_height(sMenu_back))),0,c_white,1);
 
