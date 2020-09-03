@@ -14,11 +14,15 @@ if (global.pause)
 
 	
 	//changing tab
-	if (keyboard_check_pressed(ord("A"))) {tab ++;}
-	if (keyboard_check_pressed(ord("E"))) {tab --;}
+	if (!inputting && page == 0)
+	{
+		if (keyboard_check_pressed(ord("A"))) {tab ++;}
+		if (keyboard_check_pressed(ord("E"))) {tab --;}
+	}
 	
 	if (tab > pause_menu_tab.length-1) {tab = 0;}
 	if (tab < 0) {tab = pause_menu_tab.length-1;}
+	
 	
 	if (tab == pause_menu_tab.settings)
 	{

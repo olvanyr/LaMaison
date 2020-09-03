@@ -29,7 +29,6 @@ global.tile_size = 8;
 
 //global.objects_array : { { bidule,truc },  }
 //global.objects_array : { { bidule,btruc },  }
-global.objects = noone;
 global.objects_array = noone;
 
 

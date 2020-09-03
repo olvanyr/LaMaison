@@ -4,7 +4,11 @@ manage_instance_activation();
 
 if (input.pause || keyboard_check_pressed(vk_escape))
 {
-	global.pause = !global.pause;
+	if (instance_exists(oMenu))
+	{
+		if (oMenu.inputting == false){global.pause = !global.pause;}
+	}
+	
 }
 
 /*

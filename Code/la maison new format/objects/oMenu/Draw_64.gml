@@ -19,12 +19,11 @@ if (global.pause)
 		display_letter(gwidth-35,gheight/2,1,1,"E",false);
 		
 		if (tab == pause_menu_tab.collectible)
-		{
-			
-			
-			
+		{	
 			draw_circle(gwidth/2,gheight/2,circle_perimeter,true);
+			
 			circle_display(gwidth/2,gheight/2,circle_perimeter,global.objects_array,1.7,1.7);
+			
 			var scale = 2;
 			draw_sprite_ext(sPlayer_idle1,0,gwidth/2,(gheight/2)+((sprite_get_height(sPlayer_idle1)/2)*scale),scale,scale,0,c_white,1);
 		}

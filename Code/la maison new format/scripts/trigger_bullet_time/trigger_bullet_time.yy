@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "Effects",
-    "path": "folders/Scripts/Effects.yy",
+    "path": "folders/Sounds/Scripts/Effects.yy",
   },
   "resourceVersion": "1.0",
   "name": "trigger_bullet_time",

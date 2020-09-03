@@ -21,7 +21,10 @@ function circle_display(argument0, argument1, argument2, argument3, argument4, a
 		angle = i * 360/number
 		var _x_angle = _x + lengthdir_x(perimeter,angle);
 		var _y_angle = _y + lengthdir_y(perimeter,angle);
-		draw_sprite_ext(string_to_object(array[i]),0,_x_angle,_y_angle,xscale,yscale,0,c_white,1);
+		if (sprite_exists(string_to_object(array[i])))
+		{
+			draw_sprite_ext(string_to_object(array[i]),0,_x_angle,_y_angle,xscale,yscale,0,c_white,1);
+		}
 	}
 
 
