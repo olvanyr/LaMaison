@@ -62,15 +62,12 @@ if (light)
 	}
 }
 
-with (place_meeting(x,y,oPlayer))
+with (instance_place(x,y,oPlayer))
 {
-	if (object_index == oPlayer)
+	if (state == "lighting" && animation_hit_frame(3))
 	{
-		if (state == "lighting" && animation_hit_frame(3))
-		{
-			other.light = true;
-			other.state = state;
-		}
+		other.light = true;
+		other.state = state;
 	}
 }
 

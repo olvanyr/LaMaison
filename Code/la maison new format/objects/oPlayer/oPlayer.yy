@@ -48,6 +48,7 @@
   "name": "oPlayer",
   "tags": [
     "reflect",
+    "player",
   ],
   "resourceType": "GMObject",
 }

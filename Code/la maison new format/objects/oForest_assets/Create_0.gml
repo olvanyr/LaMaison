@@ -1,11 +1,14 @@
 
-
-if (!layer_exists(target_layer))
+if (!instance_exists(oEffect_controller))
 {
-	layer_create(target_depth,target_layer);
+	controller = instance_create_layer(x,y,"Instances",oEffect_controller);
+}else
+{
+	controller = oEffect_controller;
 }
-layer_depth(layer_get_id(target_layer), target_depth);
-layer = layer_get_id(target_layer);
+
+
+set_layer(target_layer,target_depth)
 
 move_contact_solid(270, -1);
 
@@ -17,6 +20,15 @@ image_index = irandom(image_number-1);
 
 var sprite = layer_sprite_create(target_layer,x,y,sprite_index);
 layer_sprite_speed(sprite,image_speed);
-layer_sprite_index(sprite,image_index);
+
+if (controller.forest_assets[0] == -4)
+{
+	var position = 0;
+}else
+{
+	var position = array_length(controller.forest_assets)
+}
+controller.forest_assets[position]= sprite;
+controller.forest_assets[position+1] = image_index;
 
 instance_destroy();

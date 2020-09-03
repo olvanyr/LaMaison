@@ -95,23 +95,6 @@ switch (state)
 				move = 0;
 				walk_speed = 0;
 			}
-		
-			if (grounded && hsp != 0)
-			{
-				if (animation_hit_frame(1) || animation_hit_frame(5))
-				{
-					//audio_sound_pitch(aFootstep,choose(0.8,1.0,1.2));
-					//audio_play_sound(aFootstep,priority.low,0);
-				
-					repeat(3)
-					{
-						with (instance_create_layer(x,bbox_bottom,"Effects",oGround_effect))
-						{
-							vsp = 0;
-						}
-					}
-				}
-			}
 		}else 
 		{
 			move = 1;
@@ -132,9 +115,6 @@ switch (state)
 			state = "lighting";
 		}
 	
-		// is landing ? 
-		if (!grounded) {alarm[9] = 2;}
-	
 		#region animation
 		if (hsp > 0)
 		{
@@ -148,7 +128,7 @@ switch (state)
 		{
 			set_state_sprite(sPlayer_idle,0.1,0);
 		}
-		if (!grounded)
+		if (!grounded && !place_meeting(x,y+8,oSlope))
 		{
 			if (vsp > 0)  {set_state_sprite(sPlayer_jump,0,1);}
 			if (vsp <= 0) {set_state_sprite(sPlayer_jump,0,0);}
@@ -182,7 +162,8 @@ if (move != 0)
 	
 hsp = walk_speed * move;
 
-
+// Inherit the parent event
+event_inherited();
 
 #region slope
 	//check if there is a slope under 
@@ -210,12 +191,35 @@ hsp = walk_speed * move;
 	//put the player in the air and back on the top of the slope 
 	if ((position_meeting(x,y + 1,oSlope) || place_meeting(x,y,oSlope)) && mask_index == sPlayer_colision)
 	{
-		y-= 3;
+		y-= 5;
 		move_contact_solid(270, -1);
+		grounded = true;
 	}
 	
 #endregion
 #region effects
+//dust and sound effect when landing
+// is landing ? 
+if (!grounded) {alarm[9] = 2;}
+
+// dust and sound effect when walking
+if (grounded && hsp != 0)
+{
+	if (animation_hit_frame(1) || animation_hit_frame(5))
+	{
+		//audio_sound_pitch(aFootstep,choose(0.8,1.0,1.2));
+		//audio_play_sound(aFootstep,priority.low,0);		
+		repeat(3)
+		{
+			with (instance_create_layer(x,bbox_bottom,"Effects",oGround_effect))
+			{
+				vsp = 0;
+			}
+		}
+	}
+}
+
+
 //create the match
 if (room == room0)
 {
@@ -266,9 +270,6 @@ if (room == rRunning)
 
 #endregion
 
-
-// Inherit the parent event
-event_inherited();
 
 //show_debug_message("state : " + string(state));
 //show_debug_message("jump : " + string(jump));

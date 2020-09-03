@@ -27,7 +27,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Running",
-    "path": "folders/Objects/Structure/Running.yy",
+    "path": "folders/Objects/Running.yy",
   },
   "resourceVersion": "1.0",
   "name": "oRunning_checkpoint",

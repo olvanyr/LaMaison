@@ -10,6 +10,6 @@ if (draw_black_sprite)
 switch (state)
 {
 	case "lighting": 
-		draw_sprite(sPlayer_flame,image_index,x,y);
+		draw_sprite_ext(sPlayer_flame,image_index,x,y,image_xscale,image_yscale,direction,c_white,1);
 	break;
 }

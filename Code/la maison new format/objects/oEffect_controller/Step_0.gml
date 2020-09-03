@@ -14,3 +14,11 @@ if (tile[0]!= -4)
 	}
 
 }
+if (forest_assets[0]!= -4)
+{
+	for(var i = 0; i < array_length(forest_assets); i+=2)
+	{
+		layer_sprite_index(forest_assets[i],forest_assets[i+1]);
+	}
+
+}
