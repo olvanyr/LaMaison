@@ -1,3 +1,5 @@
+set_layer("light",depth_layer.light);
+
 // light_alpha : set the intensity of the light, 1 means the color on the light sprite are removed completely from the surface
 
 //light_color : this can change the color set to noone, if no color 
