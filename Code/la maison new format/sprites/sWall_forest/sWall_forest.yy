@@ -60,7 +60,7 @@
     "eventStubScript": null,
     "parent": {"name":"sWall_forest","path":"sprites/sWall_forest/sWall_forest.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "sWall_forest",
     "tags": [],
     "resourceType": "GMSequence",
   },
