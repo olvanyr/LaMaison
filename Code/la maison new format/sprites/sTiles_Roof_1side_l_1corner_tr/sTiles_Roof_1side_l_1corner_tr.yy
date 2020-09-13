@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"bba434d4-82be-42af-a49b-b4d208669078","path":"sprites/sTiles_Roof_1side_l_1corner_tr/sTiles_Roof_1side_l_1corner_tr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"bba434d4-82be-42af-a49b-b4d208669078","path":"sprites/sTiles_Roof_1side_l_1corner_tr/sTiles_Roof_1side_l_1corner_tr.yy",},"LayerId":{"name":"237e76e4-235c-4bbf-9b1d-a4392f12623d","path":"sprites/sTiles_Roof_1side_l_1corner_tr/sTiles_Roof_1side_l_1corner_tr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sTiles_Roof_1side_l_1corner_tr","path":"sprites/sTiles_Roof_1side_l_1corner_tr/sTiles_Roof_1side_l_1corner_tr.yy",},"resourceVersion":"1.0","name":"bba434d4-82be-42af-a49b-b4d208669078","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"e6fde11d-faeb-4580-afc1-8a33a61ba2bf","path":"sprites/sTiles_Roof_1side_l_1corner_tr/sTiles_Roof_1side_l_1corner_tr.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"e6fde11d-faeb-4580-afc1-8a33a61ba2bf","path":"sprites/sTiles_Roof_1side_l_1corner_tr/sTiles_Roof_1side_l_1corner_tr.yy",},"LayerId":{"name":"ed66b64b-20b0-4b9f-aa91-07a4b482021e","path":"sprites/sTiles_Roof_1side_l_1corner_tr/sTiles_Roof_1side_l_1corner_tr.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTiles_Roof_1side_l_1corner_tr","path":"sprites/sTiles_Roof_1side_l_1corner_tr/sTiles_Roof_1side_l_1corner_tr.yy",},"resourceVersion":"1.0","name":"e6fde11d-faeb-4580-afc1-8a33a61ba2bf","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"sTiles_Roof_1side_l_1corner_tr","path":"sprites/sTiles_Roof_1side_l_1corner_tr/sTiles_Roof_1side_l_1corner_tr.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"267792bf-cff6-4402-a7d1-031845899275","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"bba434d4-82be-42af-a49b-b4d208669078","path":"sprites/sTiles_Roof_1side_l_1corner_tr/sTiles_Roof_1side_l_1corner_tr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"46b75c8e-f335-4d94-9df3-a8dd12b55d73","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e6fde11d-faeb-4580-afc1-8a33a61ba2bf","path":"sprites/sTiles_Roof_1side_l_1corner_tr/sTiles_Roof_1side_l_1corner_tr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"237e76e4-235c-4bbf-9b1d-a4392f12623d","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ed66b64b-20b0-4b9f-aa91-07a4b482021e","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "Tiles Roof",

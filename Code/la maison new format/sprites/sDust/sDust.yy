@@ -80,7 +80,7 @@
     "eventStubScript": null,
     "parent": {"name":"sDust","path":"sprites/sDust/sDust.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "sDust",
     "tags": [],
     "resourceType": "GMSequence",
   },
