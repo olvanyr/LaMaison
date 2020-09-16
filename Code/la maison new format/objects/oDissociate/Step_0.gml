@@ -13,6 +13,7 @@ if (state = "")
 {
 	move = 0;
 	move_timer = 0;
+	random_goal = noone;
 	#region left right
 	right = noone;
 	right_goal = noone;
@@ -67,13 +68,33 @@ if (state = "")
 	{
 		left_goal = noone;
 	}
+	
+	// set a random goal
+	var rng = irandom(4)
+	if (rng == 0)
+	{
+		// reset everithyng so it doesen't show on screen
+		move = 0;
+		move_timer = 0;
+		right = noone;
+		right_goal = noone;
+		left = noone;
+		left_goal = noone;
+		right_jump = noone;
+		left_jump = noone;
+		jump = noone;
+		
+		
+		
+		random_goal = true;
+	}
 
-state = "wait";
+state = "create";
 }
 
 switch (state)
 {
-case "wait":
+case "create":
 //right
 	if (right_goal != noone)
 	{
@@ -129,6 +150,16 @@ case "wait":
 			}
 		}
 	}
+	//random goal
+	if (random_goal != noone)
+	{
+		with (instance_create_layer(x - 60,y - 45,"Instances",oGoal))
+		{
+			creator = other.id;
+			text = choose("breath","concentrate");
+		}
+	}
+	state = "wait";
 break;
 case "right":
 	if (x <= right_goal) 

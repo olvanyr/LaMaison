@@ -26,7 +26,7 @@
   "eventList": [],
   "properties": [],
   "overriddenProperties": [
-    {"propertyId":{"name":"zone","path":"objects/oWall/oWall.yy",},"objectId":{"name":"oWall","path":"objects/oWall/oWall.yy",},"value":"Attic","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"zone","path":"objects/oWall/oWall.yy",},"objectId":{"name":"oWall","path":"objects/oWall/oWall.yy",},"value":"Laundry","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "Structure",

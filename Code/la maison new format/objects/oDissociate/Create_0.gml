@@ -40,6 +40,7 @@ state = "";
 	right_jump = noone;
 	left_jump = noone;
 
+	random_goal = noone;
 //two variable used to make shure we are not stuck in a loop
 move_timer = 0;
 dissociate_time = 100;

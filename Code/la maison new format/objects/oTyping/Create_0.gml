@@ -1,3 +1,5 @@
+set_layer("Effects",depth_layer.effects);
+
 font = noone;
 valign = noone;
 halign = noone;
