@@ -80,8 +80,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"fe5b52d0-6495-42c5-8a51-2d3e2dcd2128","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "tiles forest",
-    "path": "folders/Sprites/Tiles/tiles forest.yy",
+    "name": "Tiles Forest",
+    "path": "folders/Sprites/Tiles/Tiles Forest.yy",
   },
   "resourceVersion": "1.0",
   "name": "sTiles_Forest_2side_t_l",

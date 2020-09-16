@@ -11,6 +11,11 @@ if (input.pause || keyboard_check_pressed(vk_escape))
 	
 }
 
+
+if mouse_check_button_pressed(mb_left)
+{
+	instance_create_layer(mouse_x,mouse_y,"Effects",oDust);
+}
 /*
 if keyboard_check_pressed(vk_enter)
 {
@@ -218,6 +223,15 @@ if (grounded && hsp != 0)
 				vsp = 0;
 			}
 		}
+	}
+}
+
+//dust effect in the attic
+if (get_timer() mod 50 == 0)
+{
+	if (place_meeting(x,y + 5,oWall_attic))
+	{
+		instance_create_layer(x + (random_range(-20,20)),y - 30 +(random_range(-20,20)),"Effects",oDust);
 	}
 }
 

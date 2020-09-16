@@ -1,6 +1,9 @@
 sprite_index = sprite;
 set_layer("Assets",depth_layer.assets);
 
+target = oPlayer;
+
+
 open_distance = 27;
 image_speed = 0;
 
