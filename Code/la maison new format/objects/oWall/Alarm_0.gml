@@ -92,28 +92,36 @@ if (right && left && top && bottom && !top_left && !top_right && !bottom_left &&
 if (right && left && top && bottom && top_left && top_right && bottom_left && bottom_right) {state =	"_template";}
 #endregion
 
-sprite_index = asset_get_index("sTiles_" + string(zone) + string(state));
-auto_tile_random_sprite();
 
-var sprite = layer_sprite_create("Tiles",x,y,sprite_index);
-layer_sprite_xscale(sprite,1.001)
-layer_sprite_yscale(sprite,1.001)
-layer_sprite_angle(sprite,image_angle);
-layer_sprite_speed(sprite,image_speed);
-layer_sprite_index(sprite,image_index);
-
-if (instance_exists(controller))
+	sprite_index = asset_get_index("sTiles_" + string(zone) + string(state));
+	auto_tile_random_sprite();
+	
+if (object_get_name(object_index) != "oOne_way_wall")
 {
-	if (controller.tile[0] == -4)
+	var sprite = layer_sprite_create("Tiles",x,y,sprite_index);
+	layer_sprite_xscale(sprite,1.001)
+	layer_sprite_yscale(sprite,1.001)
+	layer_sprite_angle(sprite,image_angle);
+	layer_sprite_speed(sprite,image_speed);
+	layer_sprite_index(sprite,image_index);
+	if (instance_exists(controller))
 	{
-		var position = 0;
-	}else
-	{
-		var position = array_length(controller.tile)
+		if (controller.tile[0] == -4)
+		{
+			var position = 0;
+		}else
+		{
+			var position = array_length(controller.tile)
+		}
+		controller.tile[position]= sprite;
+		controller.tile[position+1] = image_index;
 	}
-	controller.tile[position]= sprite;
-	controller.tile[position+1] = image_index;
+}else 
+{
+	alarm[2] = 1;
 }
+
+
 
 
 if (right&&left&&top&&bottom)
@@ -136,7 +144,9 @@ if (show)
 	
 	show_debug_message("++++++++++++++++++++++++++++++++++++++++++");
 	show_debug_message("state : " + string(state));
-	show_debug_message("name : " +"sTile_" + string(zone) + string(state));
+	show_debug_message("is not one way wall ?  : " + string(object_get_name(object_index) != "oOne_way_wall"));
+	show_debug_message("Tile name : " +"sTile_" + string(zone) + string(state));
+	show_debug_message("Object name : " + string(object_get_name(object_index)));
 	show_debug_message("++++++++++++++++++++++++++++++++++++++++++");
 
 }

@@ -41,13 +41,13 @@ if keyboard_check_pressed(vk_enter)
 */
 
 //fix the move against wall bug 
-if (place_meeting(x,y,oWall))
+if (place_meeting(x,y,oCollision_parent))
 {
-	if (!place_meeting(x + 1,y,oWall))
+	if (!place_meeting(x + 1,y,oCollision_parent))
 	{
 		x += 1
 	}
-	if (!place_meeting(x - 1,y,oWall))
+	if (!place_meeting(x - 1,y,oCollision_parent))
 	{
 		x -= 1
 	}
