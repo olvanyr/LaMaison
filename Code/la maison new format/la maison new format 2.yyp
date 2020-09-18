@@ -188,7 +188,7 @@
     {"id":{"name":"sTiles_Wood_2side_b_r","path":"sprites/sTiles_Wood_2side_b_r/sTiles_Wood_2side_b_r.yy",},"order":26,},
     {"id":{"name":"sTiles_Roof_2corner_tl_tr","path":"sprites/sTiles_Roof_2corner_tl_tr/sTiles_Roof_2corner_tl_tr.yy",},"order":39,},
     {"id":{"name":"sTiles_Wood_2side_b_r_1corner","path":"sprites/sTiles_Wood_2side_b_r_1corner/sTiles_Wood_2side_b_r_1corner.yy",},"order":27,},
-    {"id":{"name":"TileSet1","path":"tilesets/TileSet1/TileSet1.yy",},"order":20,},
+    {"id":{"name":"Tile_wallpaper","path":"tilesets/Tile_wallpaper/Tile_wallpaper.yy",},"order":0,},
     {"id":{"name":"sTiles_Laundry_1side_t","path":"sprites/sTiles_Laundry_1side_t/sTiles_Laundry_1side_t.yy",},"order":17,},
     {"id":{"name":"sTiles_Wood_2side_l_r","path":"sprites/sTiles_Wood_2side_l_r/sTiles_Wood_2side_l_r.yy",},"order":28,},
     {"id":{"name":"sTiles_Wood_2side_t_b","path":"sprites/sTiles_Wood_2side_t_b/sTiles_Wood_2side_t_b.yy",},"order":29,},

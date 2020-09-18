@@ -1,5 +1,5 @@
 {
-  "name": "TileSet1",
+  "name": "Tile_wallpaper",
   "spriteId": {
     "name": "sWallpaper_tile",
     "path": "sprites/sWallpaper_tile/sWallpaper_tile.yy",
@@ -65,8 +65,8 @@
     "TileSerialiseData": [],
   },
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Tile Sets",
+    "path": "folders/Tile Sets.yy",
   },
   "resourceVersion": "1.0",
   "tags": [],
