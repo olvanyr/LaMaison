@@ -7,3 +7,7 @@ if (place_meeting(x,y,oPlayer) && once)
 	oClap_effect.player_y = player_y;
 	oClap_effect.player_state = player_state;
 }
+
+y = anchorY + sin(timer*frequency)*amplitude;
+timer++;
+if (timer == 630){timer = 1;}

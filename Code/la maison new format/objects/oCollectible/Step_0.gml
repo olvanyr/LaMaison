@@ -12,3 +12,7 @@ if (place_meeting(x,y,oPlayer))
 	save_game();
 	instance_destroy();
 }
+
+y = anchorY + sin(timer*frequency)*amplitude;
+timer++;
+if (timer == 630){timer = 1;}

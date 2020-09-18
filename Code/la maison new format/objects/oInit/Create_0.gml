@@ -16,6 +16,7 @@ enum depth_layer
 	lamppost		= 1200,
 	bush			= 1300,
 	tree			= 1500,
+	wallpaper		= 3000,
 	background		= 3600
 }
 //unified color for when you have to type siomething
