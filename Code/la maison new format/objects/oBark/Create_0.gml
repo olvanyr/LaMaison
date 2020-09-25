@@ -1,5 +1,7 @@
 text = "";
 font = fTyping;
+valign = fa_top;
+halign = fa_left;
 
 xscale = 1;
 yscale = 1;
@@ -16,3 +18,5 @@ vsp = 0;
 lifespan = 60;
 timer = 0;
 c = c_white;
+
+length = 200;
