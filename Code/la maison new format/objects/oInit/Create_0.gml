@@ -73,4 +73,3 @@ global.key_menu_enter			= vk_enter;
 
 load_game();
 room_goto_next();
-instance_create_layer(0,0,"Instances",oClap_effect);

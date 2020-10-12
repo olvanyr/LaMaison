@@ -19,7 +19,7 @@ set_layer("Player",depth_layer.player);
 if (!instance_exists(oInput))
 {
 	input = instance_create_layer(x,y,"Instances",oInput);
-}
+}else input = oInput.id;
 
 if (!instance_exists(oCamera))
 {

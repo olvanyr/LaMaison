@@ -1,6 +1,6 @@
 width = display_get_gui_width() + 20;
 height = display_get_gui_height() + 20;
-
+var c = c_black;
 
 if (draw == true)
 {
@@ -42,8 +42,12 @@ if (draw == true)
 		
 	_y += spd;
 	
-	var c = c_black;
 	draw_rectangle_color(-20,-20,width,_y,c,c,c,c,false);
 }
 
 //show_debug_message("_y" + string(_y));
+
+if (_y > 30)
+{
+	draw_rectangle_color(-20,-20,width,_y,c,c,c,c,false);
+}
