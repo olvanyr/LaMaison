@@ -25,6 +25,15 @@ if (!instance_exists(oCamera))
 {
 	cam = instance_create_layer(x,y,"Instances",oCamera);
 }
+
+if (!instance_exists(oLight_manager))
+{
+	instance_create_layer(x,y,"Instances",oLight_manager);
+}
+if (!instance_exists(oMenu))
+{
+	instance_create_layer(x,y,"Instances",oMenu);
+}
 #endregion
 
 //set up camera

@@ -245,7 +245,7 @@ if (room == room0)
 	}
 }
 //create the firefly for the forest
-if (room == room0)
+if (room == rForest)
 {
 	if (get_timer() mod 10 == 0)
 	{

@@ -1,5 +1,4 @@
 {
-  "name": "Tile_wallpaper",
   "spriteId": {
     "name": "sWallpaper_tile",
     "path": "sprites/sWallpaper_tile/sWallpaper_tile.yy",
@@ -69,6 +68,7 @@
     "path": "folders/Tile Sets.yy",
   },
   "resourceVersion": "1.0",
+  "name": "Tile_wallpaper",
   "tags": [],
   "resourceType": "GMTileSet",
 }

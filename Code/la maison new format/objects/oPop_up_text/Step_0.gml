@@ -5,6 +5,8 @@ if (instance_place(x,y,oPlayer))
 		instance = instance_create_layer(x,y - 10,"Instances",oBark);
 		instance.text = text;
 		instance.lifespan = lifespan;
+		instance.halign = fa_center;
+		instance.valign = fa_middle;
 		if (once){instance_destroy()};
 	}
 	

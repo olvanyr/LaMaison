@@ -16,6 +16,7 @@
     {"id":{"name":"sLamp_roof","path":"sprites/sLamp_roof/sLamp_roof.yy",},"order":17,},
     {"id":{"name":"sCharacter2_nothappy","path":"sprites/sCharacter2_nothappy/sCharacter2_nothappy.yy",},"order":6,},
     {"id":{"name":"sLetter_D","path":"sprites/sLetter_D/sLetter_D.yy",},"order":5,},
+    {"id":{"name":"rForest","path":"rooms/rForest/rForest.yy",},"order":4,},
     {"id":{"name":"sDialogue_box","path":"sprites/sDialogue_box/sDialogue_box.yy",},"order":7,},
     {"id":{"name":"sPlayer_neutral","path":"sprites/sPlayer_neutral/sPlayer_neutral.yy",},"order":8,},
     {"id":{"name":"sTiles_Attic_2side_b_l","path":"sprites/sTiles_Attic_2side_b_l/sTiles_Attic_2side_b_l.yy",},"order":27,},
@@ -506,6 +507,7 @@
     {"name":"room0","path":"rooms/room0/room0.yy",},
     {"name":"rRunning","path":"rooms/rRunning/rRunning.yy",},
     {"name":"rBuanderie","path":"rooms/rBuanderie/rBuanderie.yy",},
+    {"name":"rForest","path":"rooms/rForest/rForest.yy",},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
