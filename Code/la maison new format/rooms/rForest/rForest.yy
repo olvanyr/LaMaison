@@ -14,7 +14,6 @@
   ],
   "layers": [
     {"instances":[
-        {"properties":[],"isDnd":false,"objectId":{"name":"oClap_effect","path":"objects/oClap_effect/oClap_effect.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":80.0,"y":56.0,"resourceVersion":"1.0","name":"inst_613C11B7","tags":[],"resourceType":"GMRInstance",},
         {"properties":[
             {"propertyId":{"name":"text","path":"objects/oPop_up_text/oPop_up_text.yy",},"objectId":{"name":"oPop_up_text","path":"objects/oPop_up_text/oPop_up_text.yy",},"value":"Noone come here anymore","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
             {"propertyId":{"name":"lifespan","path":"objects/oPop_up_text/oPop_up_text.yy",},"objectId":{"name":"oPop_up_text","path":"objects/oPop_up_text/oPop_up_text.yy",},"value":"120","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
@@ -1127,7 +1126,6 @@
     {"name":"inst_19A34B4D","path":"rooms/rForest/rForest.yy",},
     {"name":"inst_2A857B3B","path":"rooms/rForest/rForest.yy",},
     {"name":"inst_5AB293E7","path":"rooms/rForest/rForest.yy",},
-    {"name":"inst_613C11B7","path":"rooms/rForest/rForest.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
