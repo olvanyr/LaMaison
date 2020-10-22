@@ -1,16 +1,18 @@
-width = display_get_gui_width() + 20;
-height = display_get_gui_height() + 20;
+
 var c = c_black;
 
 if (draw == true)
 {
+	width = display_get_gui_width() + 20;
+	height = display_get_gui_height() + 20;
 	if (_y < -21)
 	{
 		draw = false;
-		_y = 20;
+		_y = -20;
 		spd = 0;
 		dir = "pos"
 	}
+	
 	if (_y > height)
 	{
 		_y = height;
@@ -41,13 +43,8 @@ if (draw == true)
 	}
 		
 	_y += spd;
-	
-	draw_rectangle_color(-20,-20,width,_y,c,c,c,c,false);
 }
 
-//show_debug_message("_y" + string(_y));
-
-if (_y > 30)
-{
+draw_set_alpha(1);
 	draw_rectangle_color(-20,-20,width,_y,c,c,c,c,false);
-}
+	draw_set_alpha(1);

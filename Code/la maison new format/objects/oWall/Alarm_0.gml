@@ -99,8 +99,8 @@ if (right && left && top && bottom && top_left && top_right && bottom_left && bo
 if (object_get_name(object_index) != "oOne_way_wall")
 {
 	var sprite = layer_sprite_create("Tiles",x,y,sprite_index);
-	layer_sprite_xscale(sprite,1.001)
-	layer_sprite_yscale(sprite,1.001)
+	layer_sprite_xscale(sprite,image_xscale + .001)
+	layer_sprite_yscale(sprite,image_yscale + .001)
 	layer_sprite_angle(sprite,image_angle);
 	layer_sprite_speed(sprite,image_speed);
 	layer_sprite_index(sprite,image_index);
