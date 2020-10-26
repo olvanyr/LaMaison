@@ -19,6 +19,13 @@ enum depth_layer
 	wallpaper		= 3000,
 	background		= 3600
 }
+
+//in witch room do the game start ?
+global.start_param [0] = room0; //in witchroom ? 
+global.start_param [1] = 87; //at what position on x ?
+global.start_param [2] = 87; //at what position on y ?
+
+
 //unified color for when you have to type siomething
 global.typing_color = c_blue;
 
@@ -72,4 +79,23 @@ global.key_menu_down			= vk_down;
 global.key_menu_enter			= vk_enter;
 
 load_game();
-room_goto_next();
+
+
+set_layer("Effects",depth_layer.effects);
+
+if (!instance_exists(oCamera))
+{
+	cam = instance_create_layer(x,y,"Instances",oCamera);
+}
+
+
+//set up camera
+cam = view_camera[0];
+
+global.view_width = camera_get_view_width(cam);
+global.view_height = camera_get_view_height(cam);
+
+with instance_create_layer(0,0,"Effects",oMenu)
+{
+	global.pause = true;
+}

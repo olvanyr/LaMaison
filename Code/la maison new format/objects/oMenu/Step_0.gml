@@ -14,7 +14,7 @@ if (global.pause)
 
 	
 	//changing tab
-	if (!inputting && page == 0)
+	if (!inputting && page == 1 && !intro_menu)
 	{
 		if (keyboard_check_pressed(ord("A"))) {tab ++;}
 		if (keyboard_check_pressed(ord("E"))) {tab --;}

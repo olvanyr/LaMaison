@@ -1,3 +1,4 @@
+
 enum pause_menu_tab
 {
 	collectible,
@@ -25,6 +26,7 @@ completed = false;
 
 enum pause_menu_page
 {
+	intro,
 	main,
 	sound,
 	input,
@@ -42,13 +44,32 @@ enum pause_menu_element
 
 //creat the "pages" of the menu and store them into ds_grid
 
+ds_menu_intro = create_menu_page(
+	["START GAME",			pause_menu_element.script_runner,	start_game],
+	["SETTINGS",			pause_menu_element.page_transfer,	pause_menu_page.main				 ],
+	["EXIT",				pause_menu_element.script_runner,	game_end						     ],
+);	
 
 
+if (intro_menu) {
+	
+ds_menu_main = create_menu_page(
+	["FULLSCREEN",			pause_menu_element.toggle,			change_fullscreen,		global.fullscreen,		["ON", "OFF"]],
+	["SOUND",				pause_menu_element.page_transfer,	pause_menu_page.sound],
+	["CONTROL",				pause_menu_element.page_transfer,	pause_menu_page.input],
+	["BACK",				pause_menu_element.page_transfer,	pause_menu_page.intro],
+);	
+
+}else{
 ds_menu_main = create_menu_page(
 	["FULLSCREEN",			pause_menu_element.toggle,		change_fullscreen,		global.fullscreen,		["ON", "OFF"]],
 	["SOUND",				pause_menu_element.page_transfer,	pause_menu_page.sound],
 	["CONTROL",				pause_menu_element.page_transfer,	pause_menu_page.input],
-);	
+	["EXIT",				pause_menu_element.script_runner,	game_end						     ],
+);		
+
+
+};
 
 ds_menu_audio = create_menu_page(
 	["MASTER",		pause_menu_element.slider,		change_volume,			"mastervolume",				global.mastervolume,		[0,1]],
@@ -69,8 +90,11 @@ ds_menu_controls = create_menu_page(
 	["BACK",			pause_menu_element.page_transfer,	pause_menu_page.main],
 );
 
-page = 0;
-menu_pages = [ds_menu_main,ds_menu_audio,ds_menu_controls];
+
+if (intro_menu) {page = 0}else{page = 1};
+
+
+menu_pages = [ds_menu_intro,ds_menu_main,ds_menu_audio,ds_menu_controls];
 var i = 0, array_len = array_length_1d(menu_pages);
 
 repeat(array_len)

@@ -16,8 +16,12 @@ if (global.pause)
 	if (visible)
 	{
 		
-		display_letter(3,gheight/2,1,1,"A",false);
-		display_letter(gwidth-35,gheight/2,1,1,"E",false);
+		if (!intro_menu)
+		{
+			display_letter(3,gheight/2,1,1,"A",false);
+			display_letter(gwidth-35,gheight/2,1,1,"E",false);
+		}
+		
 		
 		if (tab == pause_menu_tab.collectible)
 		{	

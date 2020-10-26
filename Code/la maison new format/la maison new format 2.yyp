@@ -348,6 +348,7 @@
     {"id":{"name":"sPlatform","path":"sprites/sPlatform/sPlatform.yy",},"order":6,},
     {"id":{"name":"sTiles_Attic_3corner_tl_tr_bl","path":"sprites/sTiles_Attic_3corner_tl_tr_bl/sTiles_Attic_3corner_tl_tr_bl.yy",},"order":38,},
     {"id":{"name":"sWall1","path":"sprites/sWall1/sWall1.yy",},"order":7,},
+    {"id":{"name":"start_game","path":"scripts/start_game/start_game.yy",},"order":13,},
     {"id":{"name":"sGlowing_platform","path":"sprites/sGlowing_platform/sGlowing_platform.yy",},"order":8,},
     {"id":{"name":"sTiles_Attic_1side_t_2corner","path":"sprites/sTiles_Attic_1side_t_2corner/sTiles_Attic_1side_t_2corner.yy",},"order":20,},
     {"id":{"name":"sSlope","path":"sprites/sSlope/sSlope.yy",},"order":9,},

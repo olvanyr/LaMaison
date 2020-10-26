@@ -10,6 +10,16 @@ cam.x = x;
 cam.y = y;
 cam.follow = self;
 
+if (!instance_exists(oMenu))
+{
+	with instance_create_layer(x,y,"Instances",oMenu)
+	{
+		intro_menu = false;
+		page = 1;
+	}
+}
+
+
 
 // matches light animation
 temp_light = noone;
