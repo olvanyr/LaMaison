@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "Save",
-    "path": "folders/Sounds/Scripts/Save.yy",
+    "path": "folders/Scripts/Save.yy",
   },
   "resourceVersion": "1.0",
   "name": "load_game",

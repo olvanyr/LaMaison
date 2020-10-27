@@ -2,10 +2,18 @@
 event_inherited();
 
 
+#region dependencise
+
+if (!instance_exists(oInput))
+{
+	input = instance_create_layer(x,y,"Instances",oInput);
+}else {input = oInput.id;}
+
 if (!instance_exists(oCamera))
 {
 	cam = instance_create_layer(0,0,"Instances",oCamera);
-}
+}else {cam = oCamera;}
+
 cam.x = x;
 cam.y = y;
 cam.follow = self;
@@ -18,6 +26,8 @@ if (!instance_exists(oMenu))
 		page = 1;
 	}
 }
+
+#endregion
 
 
 

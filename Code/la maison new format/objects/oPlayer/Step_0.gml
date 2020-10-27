@@ -237,11 +237,11 @@ if (get_timer() mod 50 == 0)
 
 
 //create the match
-if (room == room0)
+if (room == rMaison)
 {
 	if (!instance_exists(oMatch))
 	{
-		instance_create_layer(x,y,"Scarf",oMatch);
+		instance_create_layer(x,y,"Instances",oMatch);
 	}
 }
 //create the firefly for the forest

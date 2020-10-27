@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "Animation",
-    "path": "folders/Sounds/Scripts/Animation.yy",
+    "path": "folders/Scripts/Animation.yy",
   },
   "resourceVersion": "1.0",
   "name": "animation_hit_frame",

@@ -6,11 +6,12 @@ function start_game() {
 		global.pause = false;
 		instance_destroy(oMenu);
 		room_goto(global.start_param[0]);
-		if(instance_exists(oPlayer))
+		if(!instance_exists(oPlayer))
 		{
-			oPlayer.x = global.start_param[1];
-			oPlayer.y = global.start_param[2];
-			oCamera.x = global.start_param[1];
-			oCamera.y = global.start_param[2];	
+			instance_create_layer(x,y,"Instances",oPlayer);
 		}
+		oPlayer.x = global.start_param[1];
+		oPlayer.y = global.start_param[2];
+		oCamera.x = global.start_param[1];
+		oCamera.y = global.start_param[2];
 }

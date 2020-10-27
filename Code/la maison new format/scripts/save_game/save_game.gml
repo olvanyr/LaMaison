@@ -9,8 +9,9 @@ function save_game() {
 		var _map = ds_map_create(); //just creat a pointer
 		ds_list_add(_root_list,_map); //add pointer to a pointer
 		ds_list_mark_as_map(_root_list,ds_list_size(_root_list)-1); // actuali add the data
-
+				// screen
 				ds_map_add(_map, "fullscreen"		, window_get_fullscreen());
+				// volume settings
 				ds_map_add(_map, "MASTERVOLUME"		, global.mastervolume);
 				ds_map_add(_map, "SOUNDSVOLUME"		, global.soundsvolume);
 				ds_map_add(_map, "MUSICVOLUME"		, global.musicvolume);
@@ -25,7 +26,10 @@ function save_game() {
 				ds_map_add(_map, "menu_down"		, global.key_menu_down);
 				ds_map_add(_map, "enter"			, global.key_menu_enter);
 				ds_map_add(_map, "pause"			, global.key_pause);
+				// object 
 				ds_map_add(_map, "objects"			, global.objects);
+				// room 
+				ds_map_add(_map, "room"				, global.start_param[0]);
 
 		// Wrap the root list up in a map ! beacause gms2 "dosen't like" starting with enything othe rthan a ds_map
 

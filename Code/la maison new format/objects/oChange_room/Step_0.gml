@@ -1,5 +1,7 @@
 if (place_meeting(x,y,oPlayer) && once)
 {
+	
+	show_debug_message("place metting with o Player");
 	once = false;
 	oClap_effect.next_room = next_room;
 	oClap_effect.draw = true;

@@ -25,6 +25,7 @@ function load_game() {
 			if (ds_map_exists(_map,"enter")	)		{global.key_menu_enter				= _map[? "enter"];}
 			if (ds_map_exists(_map,"pause"))		{global.key_pause					= _map[? "pause"];}
 			if (ds_map_exists(_map,"objects"))		{global.objects						= _map[? "objects"];}
+			if (ds_map_exists(_map,"room"))			{global.start_param[0]				= _map[? "room"];}
 		}
 		ds_map_destroy(_wrapper);
 	

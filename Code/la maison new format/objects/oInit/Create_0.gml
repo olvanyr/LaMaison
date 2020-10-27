@@ -21,7 +21,7 @@ enum depth_layer
 }
 
 //in witch room do the game start ?
-global.start_param [0] = room0; //in witchroom ? 
+global.start_param [0] = rForest; //in witchroom ? 
 global.start_param [1] = 87; //at what position on x ?
 global.start_param [2] = 87; //at what position on y ?
 
@@ -87,6 +87,7 @@ if (!instance_exists(oCamera))
 {
 	cam = instance_create_layer(x,y,"Instances",oCamera);
 }
+
 
 
 //set up camera

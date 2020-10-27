@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "pause_menu",
-    "path": "folders/Sounds/Scripts/pause_menu.yy",
+    "path": "folders/Scripts/pause_menu.yy",
   },
   "resourceVersion": "1.0",
   "name": "circle_display",
