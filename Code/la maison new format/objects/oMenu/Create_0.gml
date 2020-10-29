@@ -30,6 +30,9 @@ enum pause_menu_page
 	main,
 	sound,
 	input,
+	restart,
+	restart2,
+	reset,
 	height //so I now how many number of ellement I have
 }
 
@@ -45,8 +48,9 @@ enum pause_menu_element
 //creat the "pages" of the menu and store them into ds_grid
 
 ds_menu_intro = create_menu_page(
-	["START GAME",			pause_menu_element.script_runner,	start_game],
+	["START",				pause_menu_element.script_runner,	start_game],
 	["SETTINGS",			pause_menu_element.page_transfer,	pause_menu_page.main				 ],
+	["RESET GAME",			pause_menu_element.page_transfer,	pause_menu_page.restart				 ],
 	["EXIT",				pause_menu_element.script_runner,	game_end						     ],
 );	
 
@@ -57,6 +61,7 @@ ds_menu_main = create_menu_page(
 	["FULLSCREEN",			pause_menu_element.toggle,			change_fullscreen,		global.fullscreen,		["ON", "OFF"]],
 	["SOUND",				pause_menu_element.page_transfer,	pause_menu_page.sound],
 	["CONTROL",				pause_menu_element.page_transfer,	pause_menu_page.input],
+	["RESET SETTINGS",	pause_menu_element.page_transfer,	pause_menu_page.reset],
 	["BACK",				pause_menu_element.page_transfer,	pause_menu_page.intro],
 );	
 
@@ -65,9 +70,9 @@ ds_menu_main = create_menu_page(
 	["FULLSCREEN",			pause_menu_element.toggle,		change_fullscreen,		global.fullscreen,		["ON", "OFF"]],
 	["SOUND",				pause_menu_element.page_transfer,	pause_menu_page.sound],
 	["CONTROL",				pause_menu_element.page_transfer,	pause_menu_page.input],
-	["EXIT",				pause_menu_element.script_runner,	game_end						     ],
+	["RESET SETTINGS",	pause_menu_element.page_transfer,	pause_menu_page.reset],
+	["EXIT GAME",				pause_menu_element.script_runner,	game_end						     ],
 );		
-
 
 };
 
@@ -90,11 +95,23 @@ ds_menu_controls = create_menu_page(
 	["BACK",			pause_menu_element.page_transfer,	pause_menu_page.main],
 );
 
+ds_menu_restart = create_menu_page(
+	["NO",				pause_menu_element.page_transfer,	pause_menu_page.intro],
+	["YES",				pause_menu_element.page_transfer,	pause_menu_page.restart2],
+);	
+ds_menu_reset = create_menu_page(
+	["NO",				pause_menu_element.page_transfer,	pause_menu_page.reset],
+	["YES",				pause_menu_element.script_runner,	reset_settings],
+);	
+ds_menu_restart2 = create_menu_page(
+	["NO",							pause_menu_element.page_transfer,	pause_menu_page.intro],
+	["YES, DELET MY SAVE",			pause_menu_element.script_runner,	reset_game						     ],
+);
 
 if (intro_menu) {page = 0}else{page = 1};
 
 
-menu_pages = [ds_menu_intro,ds_menu_main,ds_menu_audio,ds_menu_controls];
+menu_pages = [ds_menu_intro,ds_menu_main,ds_menu_audio,ds_menu_controls,ds_menu_restart,ds_menu_restart2,ds_menu_reset];
 var i = 0, array_len = array_length_1d(menu_pages);
 
 repeat(array_len)

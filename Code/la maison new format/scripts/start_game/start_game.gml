@@ -3,8 +3,8 @@
 
 
 function start_game() {
+		//instance_destroy(oMenu);
 		global.pause = false;
-		instance_destroy(oMenu);
 		room_goto(global.start_param[0]);
 		if(!instance_exists(oPlayer))
 		{

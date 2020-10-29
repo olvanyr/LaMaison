@@ -6,7 +6,7 @@
     "path": "folders/Scripts/pause_menu.yy",
   },
   "resourceVersion": "1.0",
-  "name": "start_game",
+  "name": "restart_game",
   "tags": [],
   "resourceType": "GMScript",
 }
